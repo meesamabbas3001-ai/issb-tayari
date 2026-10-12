@@ -72,3 +72,24 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* ---- Hero & entrance animations ---- */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(184, 150, 46, 0.45); }
+  50% { box-shadow: 0 0 0 7px rgba(184, 150, 46, 0); }
+}
+.anim-fade-up { opacity: 0; animation: fade-up 0.7s ease-out forwards; }
+.anim-delay-1 { animation-delay: 0.1s; }
+.anim-delay-2 { animation-delay: 0.22s; }
+.anim-delay-3 { animation-delay: 0.34s; }
+.anim-delay-4 { animation-delay: 0.46s; }
+.anim-float { animation: float-soft 5s ease-in-out infinite; }
+.anim-glow { animation: glow-pulse 2.6s ease-in-out infinite; }

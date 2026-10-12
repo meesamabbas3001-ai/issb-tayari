@@ -12,6 +12,13 @@ import {
   Eye,
   EyeOff,
   Quote,
+  Dumbbell,
+  Zap,
+  PenLine,
+  Image as ImageIcon,
+  MessageSquareText,
+  Mic,
+  Layers,
 } from 'lucide-react';
 import type { Navigate } from '../types';
 import { allNotes } from '../data';
@@ -42,40 +49,40 @@ export const HomePage: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
         />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <p className="stamp inline-block text-gold-400 text-xs px-3 py-1.5 mb-5 border-gold-500">
+            <p className="stamp inline-block text-gold-400 text-xs px-3 py-1.5 mb-5 border-gold-500 anim-fade-up">
               Free ISSB Preparation
             </p>
-            <h1 className="font-serif font-black text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4">
+            <h1 className="font-serif font-black text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4 anim-fade-up anim-delay-1">
               ISSB ki Tayari,
               <br />
               <span className="text-gold-400">Seedhi Zubaan</span> Me.
             </h1>
-            <p className="text-khaki-200 text-lg sm:text-xl mb-2 font-medium">
+            <p className="text-khaki-200 text-lg sm:text-xl mb-2 font-medium anim-fade-up anim-delay-2">
               100% Free &bull; Urdu + English &bull; Real Guidance
             </p>
-            <p className="text-khaki-300 mb-8 max-w-2xl leading-relaxed">
-              Original notes, a WAT simulator, timed intelligence quizzes, and a 30-day plan —
+            <p className="text-khaki-300 mb-8 max-w-2xl leading-relaxed anim-fade-up anim-delay-3">
+              29 original notes, 7 timed practice tools, video lectures, and a 30-day plan —
               written honestly for Pakistani students. No copied material, no fake promises.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 anim-fade-up anim-delay-4">
+              <button
+                onClick={() => navigate({ page: 'practice' })}
+                className="anim-glow inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-army-950 font-bold px-6 py-3 rounded-sm transition-colors"
+              >
+                <Dumbbell className="w-5 h-5" />
+                Practice All Tests
+              </button>
               <button
                 onClick={() => navigate({ page: 'plan' })}
-                className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-army-950 font-bold px-6 py-3 rounded-sm transition-colors"
+                className="inline-flex items-center gap-2 border-2 border-khaki-400 hover:border-gold-400 text-khaki-100 hover:text-gold-400 font-bold px-6 py-3 rounded-sm transition-colors"
               >
                 <CalendarDays className="w-5 h-5" />
                 Start 30-Day Plan
               </button>
-              <button
-                onClick={() => navigate({ page: 'wat' })}
-                className="inline-flex items-center gap-2 border-2 border-khaki-400 hover:border-gold-400 text-khaki-100 hover:text-gold-400 font-bold px-6 py-3 rounded-sm transition-colors"
-              >
-                <Timer className="w-5 h-5" />
-                Practice WAT
-              </button>
             </div>
           </div>
-          <div className="hidden lg:block">
-            <figure className="border-2 border-gold-500/60 rounded-sm overflow-hidden shadow-2xl">
+          <div className="hidden lg:block anim-fade-up anim-delay-2">
+            <figure className="anim-float border-2 border-gold-500/60 rounded-sm overflow-hidden shadow-2xl">
               <img src="https://drive.google.com/thumbnail?id=1SDaMJ2xvaCs9K2gdSqnxDDZx4m9frsAD&sz=w1200" alt="ISSB candidates walking toward the academy at dawn" className="w-full h-auto object-cover" loading="eager" />
             </figure>
             <p className="text-khaki-400 text-xs mt-2 italic">Subah ki tayari — har din ek qadam manzil ki taraf.</p>
@@ -125,34 +132,19 @@ export const HomePage: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
           </button>
 
           <button
-            onClick={() => navigate({ page: 'wat' })}
-            className="text-left bg-paper border-2 border-army-900 rounded-sm p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all group"
+            onClick={() => navigate({ page: 'practice' })}
+            className="text-left bg-army-900 text-white border-2 border-army-900 rounded-sm p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all group sm:col-span-2"
           >
-            <span className="w-11 h-11 rounded-sm bg-army-900 text-gold-400 flex items-center justify-center mb-4">
-              <Timer className="w-6 h-6" />
+            <span className="w-11 h-11 rounded-sm bg-gold-500 text-army-950 flex items-center justify-center mb-4">
+              <Dumbbell className="w-6 h-6" />
             </span>
-            <h3 className="font-serif font-bold text-lg text-army-950 mb-2">WAT Simulator</h3>
-            <p className="text-sm text-ink-soft leading-relaxed mb-4">
-              Random words, 10-second timer — asal test jaisa pressure, ghar baithe.
+            <h3 className="font-serif font-bold text-lg mb-2">Practice Ground — 7 Timed Tests</h3>
+            <p className="text-sm text-khaki-200 leading-relaxed mb-4">
+              WAT, Sentence Completion, Picture Story, OPI, Intelligence Quiz, Lecturette,
+              Interview Flashcards — sab tests ki practice, timer ke saath.
             </p>
-            <span className="inline-flex items-center gap-1 text-sm font-bold text-army-800 group-hover:text-gold-600">
-              Start practice <ArrowRight className="w-4 h-4" />
-            </span>
-          </button>
-
-          <button
-            onClick={() => navigate({ page: 'quiz' })}
-            className="text-left bg-paper border-2 border-army-900 rounded-sm p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all group"
-          >
-            <span className="w-11 h-11 rounded-sm bg-army-900 text-gold-400 flex items-center justify-center mb-4">
-              <Brain className="w-6 h-6" />
-            </span>
-            <h3 className="font-serif font-bold text-lg text-army-950 mb-2">Intelligence Quiz</h3>
-            <p className="text-sm text-ink-soft leading-relaxed mb-4">
-              10 sample verbal questions, 30 seconds each, with explanations.
-            </p>
-            <span className="inline-flex items-center gap-1 text-sm font-bold text-army-800 group-hover:text-gold-600">
-              Take quiz <ArrowRight className="w-4 h-4" />
+            <span className="inline-flex items-center gap-1 text-sm font-bold text-gold-400 group-hover:gap-2 transition-all">
+              Start practicing <ArrowRight className="w-4 h-4" />
             </span>
           </button>
 
@@ -171,6 +163,44 @@ export const HomePage: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
               View plan <ArrowRight className="w-4 h-4" />
             </span>
           </button>
+        </div>
+      </section>
+
+      {/* PRACTICE STRIP — all 7 tests */}
+      <section className="bg-army-950 py-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <p className="text-gold-400 text-xs font-bold uppercase tracking-[0.2em] mb-1">Practice Ground</p>
+              <h2 className="font-serif font-black text-2xl sm:text-3xl text-white">Sab Tests Ki Practice</h2>
+            </div>
+            <button
+              onClick={() => navigate({ page: 'practice' })}
+              className="hidden sm:inline-flex items-center gap-1 text-sm font-bold text-gold-400 hover:text-gold-300"
+            >
+              View all <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
+            {[
+              { icon: <Zap className="w-5 h-5" />, label: 'WAT', route: { page: 'wat' } as const },
+              { icon: <PenLine className="w-5 h-5" />, label: 'Sentence', route: { page: 'sentence-completion' } as const },
+              { icon: <ImageIcon className="w-5 h-5" />, label: 'Picture Story', route: { page: 'picture-story' } as const },
+              { icon: <MessageSquareText className="w-5 h-5" />, label: 'OPI', route: { page: 'opi-practice' } as const },
+              { icon: <Brain className="w-5 h-5" />, label: 'Quiz', route: { page: 'quiz' } as const },
+              { icon: <Mic className="w-5 h-5" />, label: 'Lecturette', route: { page: 'lecturette' } as const },
+              { icon: <Layers className="w-5 h-5" />, label: 'Flashcards', route: { page: 'interview-flashcards' } as const },
+            ].map((t) => (
+              <button
+                key={t.label}
+                onClick={() => navigate(t.route)}
+                className="flex flex-col items-center gap-2 bg-army-900 border border-khaki-700/40 rounded-sm py-5 px-2 hover:border-gold-500 hover:-translate-y-1 transition-all group"
+              >
+                <span className="text-gold-400 group-hover:scale-110 transition-transform">{t.icon}</span>
+                <span className="text-xs font-bold text-khaki-100">{t.label}</span>
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 
