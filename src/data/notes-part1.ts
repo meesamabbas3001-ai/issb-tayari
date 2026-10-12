@@ -179,7 +179,7 @@ export const notes: Note[] = [
           'Prepare a short introduction about yourself, know basic current affairs, and speak clearly. This interview is shorter than the ISSB Deputy interview, but the same honesty rules apply.',
         ],
         image: {
-          src: '/images/initial-interview.png',
+          src: 'https://drive.google.com/thumbnail?id=1cBhm30yAyAblhGz-DWRwgCNq_RO7CzEo&sz=w1200',
           caption: 'Initial interview at AS&RC: shorter than the ISSB interview, but scored — communicate clearly and stay honest.',
         },
       },
