@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Timer, Play, Eye, PenLine, CheckCircle2, RotateCcw, Info, ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
 import { pointerPrompts, type PointerPrompt } from '../data/pointerStories';
 
-const WRITE_TIME = 180; // 3 minutes per story
+const WRITE_TIME = 180; // 3 minutes per story (v1.1)
 const STORAGE_KEY = 'pointer-story-v1';
 
 type Phase = 'pick' | 'write' | 'done';
