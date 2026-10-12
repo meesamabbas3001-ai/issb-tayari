@@ -320,6 +320,10 @@ export const notesPart3: Note[] = [
           'The final day: your personal interview with the Deputy President (usually 15-30 minutes), in formal dress. After all interviews, the conference: the psychologist, GTO, and Deputy President sit together and decide each candidate — Recommended or Not Recommended. Results are typically announced the same evening or next morning.',
           'Whatever the result: it is a decision about fit for this role, not a verdict on your worth. Repeaters who fix real weaknesses come back stronger — the form even has a section for previous attempts.',
         ],
+        image: {
+          src: '/images/issb-interview.png',
+          caption: 'Day 4 — the Deputy interview: formal dress, calm mind, honest answers. This is the final assessment before the conference.',
+        },
       },
       {
         heading: 'Day 5 — Dispersal (morning)',
@@ -381,6 +385,10 @@ export const notesPart3: Note[] = [
           'The group sits together and gets a topic — usually a current-affairs or social issue. You discuss it, typically in English, for 15-20 minutes. There is no chairman; the group manages itself. The GTO watches: who initiates, who builds on others\u2019 points, who listens, who dominates, who stays silent.',
           'Tactic: speak 3-4 times with solid, structured points. Agreeing and extending someone\u2019s point ("I agree with Ali, and to add...") scores as teamwork. Shouting others down scores against you.',
         ],
+        image: {
+          src: '/images/gto-scene.png',
+          caption: 'Group discussion: the group manages itself — initiate, build on others\u2019 points, listen, never dominate.',
+        },
         urduNote:
           'Group discussion me 3-4 dafa solid baat karo. Dusron ki baat kaatna nahi — unki baat aagay barhana teamwork hai.',
       },
@@ -390,6 +398,10 @@ export const notesPart3: Note[] = [
           'The group studies a model or map showing a situation — places, distances, a problem (e.g., an injured person, limited time, multiple tasks). Together you must make a practical plan: priorities, routes, who does what. Then each member may be asked to present the group\u2019s plan briefly.',
           'The GTO watches logical thinking and cooperation: do you listen to the map reader, do you suggest practical steps, can you summarize a plan clearly in 60 seconds?',
         ],
+        image: {
+          src: '/images/gto-group-planning.png',
+          caption: 'Group planning exercise: candidates study the map together and agree on a practical plan before presenting it.',
+        },
       },
       {
         heading: 'Task 3 — Progressive group task (outdoor, with picture)',
@@ -397,9 +409,9 @@ export const notesPart3: Note[] = [
           'The famous obstacle series: the group must cross 3-4 obstacles in sequence using helping materials (a wooden plank, a rope, a balli/pole). Each obstacle is harder than the last. There are strict rules — certain coloured areas are out of bounds, materials cannot touch forbidden zones, and the whole group must cross.',
         ],
         image: {
-          src: '/images/gto-group-task.png',
+          src: '/images/gto-progressive-task.png',
           caption:
-            'Progressive group task: candidates crossing an obstacle together using a plank and rope — teamwork, not individual speed, is being tested.',
+            'Progressive group task: the team crosses obstacles in sequence using a plank and rope — teamwork, not individual speed, is being tested.',
         },
         list: [
           'Listen to the GTO\u2019s briefing carefully — rules differ slightly each time',
@@ -415,6 +427,10 @@ export const notesPart3: Note[] = [
         paragraphs: [
           'Same idea as the progressive task, but with a smaller group and usually one obstacle. With fewer people, individual contribution becomes more visible — this is your chance to show practical thinking. Same rules apply: plan first, include everyone, no rule-breaking shortcuts.',
         ],
+        image: {
+          src: '/images/gto-half-group-task.png',
+          caption: 'Half group task: a smaller team on one obstacle — your individual contribution is clearly visible here.',
+        },
       },
       {
         heading: 'Task 5 — Individual obstacles (outdoor, with picture)',
@@ -437,6 +453,10 @@ export const notesPart3: Note[] = [
         paragraphs: [
           'You are made the leader and given 2-3 group members to lead across one obstacle. This is your direct leadership test. Quickly study the obstacle, make a simple plan, explain it in short clear sentences, assign roles, and execute. If the plan fails, stay calm and adjust — the GTO watches your reaction to failure more than the failure itself.',
         ],
+        image: {
+          src: '/images/gto-command-task.png',
+          caption: 'Command task: you are the leader — give clear short instructions, assign roles, and keep the team moving.',
+        },
         urduNote:
           'Command task me AAP leader ho. Plan simple rakho, short sentences me samjhao, sab ko include karo. Plan fail ho to ghabrao mat — calm reh kar adjust karo.',
       },
@@ -445,6 +465,10 @@ export const notesPart3: Note[] = [
         paragraphs: [
           'The whole group reunites for one last, tougher obstacle. By now the GTO has seen everyone — this task confirms impressions. Tired bodies, same rules: cooperate, communicate, finish together.',
         ],
+        image: {
+          src: '/images/gto-final-task.png',
+          caption: 'Final group task: the whole group together on one last obstacle — finish together, leave no one behind.',
+        },
       },
       {
         heading: 'What the GTO observes in EVERY task',

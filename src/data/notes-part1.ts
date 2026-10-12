@@ -178,6 +178,10 @@ export const notes: Note[] = [
           'If you clear the tests, physical, and medical, there is a short interview — often including a brief essay (candidates report writing a few lines in English and Urdu on a given topic). The interviewers check your communication, confidence, and general awareness. It is scored, and a poor interview can still stop you here.',
           'Prepare a short introduction about yourself, know basic current affairs, and speak clearly. This interview is shorter than the ISSB Deputy interview, but the same honesty rules apply.',
         ],
+        image: {
+          src: '/images/initial-interview.png',
+          caption: 'Initial interview at AS&RC: shorter than the ISSB interview, but scored — communicate clearly and stay honest.',
+        },
       },
     ],
     mistakes: [
