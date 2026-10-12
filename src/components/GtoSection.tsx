@@ -27,13 +27,18 @@ const practiceItems: PracticeItem[] = [
   },
 ];
 
+const driveImg = (id: string) =>
+  `https://drive.google.com/thumbnail?id=${id}&sz=w1200`;
+
 const gallery: { src: string; caption: string }[] = [
-  { src: '/images/gto-group-planning.png', caption: 'Group planning — map par plan banao' },
-  { src: '/images/gto-progressive-task.png', caption: 'Progressive task — plank aur rassi se paar' },
-  { src: '/images/gto-half-group-task.png', caption: 'Half group task — chhoti team, bara imtihan' },
-  { src: '/images/gto-command-task.png', caption: 'Command task — tum leader ho' },
-  { src: '/images/gto-final-task.png', caption: 'Final task — sab mil kar finish' },
-  { src: '/images/gto-obstacles.png', caption: 'Individual obstacles — himmat aur fitness' },
+  { src: driveImg('1Cv_IrpOdP3X2zkKWLwW36DycdIhpUfV8'), caption: 'Group discussion — circle me behas' },
+  { src: driveImg('19i5eDqDETIKsxJXgFNiBM5MKq_jhlgS3'), caption: 'Group planning — map par plan banao' },
+  { src: driveImg('1TFMtV_7zJS61AkLs-N1FnnU9h9MfGb22'), caption: 'Progressive task — plank aur rassi se paar' },
+  { src: driveImg('1a_ADbFZO9cSOtm80pg74Szx8147WYhGg'), caption: 'Half group task — chhoti team, bara imtihan' },
+  { src: driveImg('1pCRsvK6LKMMr3Du9Fc3lQQMCWtDX4Rfa'), caption: 'Command task — tum leader ho' },
+  { src: driveImg('1KLO4tm-thxmFBjC6J9EYjqvQGQrDwbfa'), caption: 'Individual obstacles — himmat aur fitness' },
+  { src: driveImg('1M7ogaPaKAuMHDg-UuvxKzZ61HK4xWl44'), caption: 'Final task — sab mil kar finish' },
+  { src: driveImg('1pCLX3JhNxtGcwT77bXwy0L06Nfeg5lDu'), caption: 'Lecturette — 3 minute ki speech' },
 ];
 
 export const GtoSection: React.FC<{ navigate: Navigate }> = ({ navigate }) => (
