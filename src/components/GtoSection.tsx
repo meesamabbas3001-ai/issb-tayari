@@ -1,0 +1,69 @@
+import React from 'react';
+import { Users, Mic, Brain } from 'lucide-react';
+import type { Navigate } from '../types';
+import { HubHero, HubNotes, HubPractice, type PracticeItem } from './SectionHub';
+
+const practiceItems: PracticeItem[] = [
+  {
+    icon: <Mic className="w-6 h-6" />,
+    name: 'Lecturette Practice',
+    desc: '3 minute ki speech — topic milte hi intro, 3 points, conclusion. Timer ke saath practice.',
+    route: { page: 'lecturette' },
+    tag: 'Jald aa raha hai',
+  },
+  {
+    icon: <Brain className="w-6 h-6" />,
+    name: 'Intelligence Quiz',
+    desc: '10 verbal sawal, 30 second har ek — GTO day se pehle dimagh garam karo.',
+    route: { page: 'quiz' },
+    tag: 'Live tool',
+  },
+];
+
+const gallery: { src: string; caption: string }[] = [
+  { src: '/images/gto-group-planning.png', caption: 'Group planning — map par plan banao' },
+  { src: '/images/gto-progressive-task.png', caption: 'Progressive task — plank aur rassi se paar' },
+  { src: '/images/gto-half-group-task.png', caption: 'Half group task — chhoti team, bara imtihan' },
+  { src: '/images/gto-command-task.png', caption: 'Command task — tum leader ho' },
+  { src: '/images/gto-final-task.png', caption: 'Final task — sab mil kar finish' },
+  { src: '/images/gto-obstacles.png', caption: 'Individual obstacles — himmat aur fitness' },
+];
+
+export const GtoSection: React.FC<{ navigate: Navigate }> = ({ navigate }) => (
+  <div>
+    <HubHero
+      image="https://drive.google.com/thumbnail?id=1SDaMJ2xvaCs9K2gdSqnxDDZx4m9frsAD&sz=w1200"
+      icon={<Users className="w-6 h-6" />}
+      title="GTO Day"
+      urdu="Teamwork ka din — bahar maidan me"
+      intro="GTO day outdoor hota hai: group discussion, group tasks, obstacles, command task aur lecturette. GTO dekhta hai — tum team me kaise kaam karte ho, leader ban sakte ho ya nahi. Neeche har task ki tasveer ke saath notes parho."
+    />
+    <HubNotes
+      slugs={['gto-tasks', 'gto-interview-tips', 'lecturette-guide', 'group-discussion']}
+      navigate={navigate}
+    />
+
+    {/* Task gallery */}
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <h2 className="font-serif font-black text-2xl text-army-950 mb-1">GTO Task Gallery</h2>
+      <p className="text-sm text-army-700 font-medium mb-6">
+        Har task dekho — tasveer me samjho, phir notes me detail parho
+      </p>
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+        {gallery.map((g) => (
+          <figure
+            key={g.src}
+            className="border-2 border-khaki-300 rounded-sm overflow-hidden bg-white"
+          >
+            <img src={g.src} alt={g.caption} className="w-full h-40 sm:h-48 object-cover" loading="lazy" />
+            <figcaption className="px-3 py-2 text-xs font-bold text-army-900 bg-khaki-100">
+              {g.caption}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+
+    <HubPractice items={practiceItems} navigate={navigate} />
+  </div>
+);

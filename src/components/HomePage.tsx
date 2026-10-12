@@ -76,7 +76,7 @@ export const HomePage: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
           </div>
           <div className="hidden lg:block">
             <figure className="border-2 border-gold-500/60 rounded-sm overflow-hidden shadow-2xl">
-              <img src="/images/hero-issb.png" alt="ISSB candidates walking toward the academy at dawn" className="w-full h-auto object-cover" loading="eager" />
+              <img src="https://drive.google.com/thumbnail?id=1SDaMJ2xvaCs9K2gdSqnxDDZx4m9frsAD&sz=w1200" alt="ISSB candidates walking toward the academy at dawn" className="w-full h-auto object-cover" loading="eager" />
             </figure>
             <p className="text-khaki-400 text-xs mt-2 italic">Subah ki tayari — har din ek qadam manzil ki taraf.</p>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Menu, X, Home, BookOpen, Dumbbell, CalendarDays, Newspaper, MonitorPlay } from 'lucide-react';
+import { Shield, Menu, X, Home, BookOpen, Dumbbell, CalendarDays, Newspaper, MonitorPlay, Brain, Users, Mic } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 
 interface NavbarProps {
@@ -9,8 +9,11 @@ interface NavbarProps {
 
 const links: { label: string; icon: React.ReactNode; route: Route; match: string }[] = [
   { label: 'Home', icon: <Home className="w-4 h-4" />, route: { page: 'home' }, match: 'home' },
+  { label: 'Psychology', icon: <Brain className="w-4 h-4" />, route: { page: 'psychology' }, match: 'psychology' },
+  { label: 'GTO', icon: <Users className="w-4 h-4" />, route: { page: 'gto' }, match: 'gto' },
+  { label: 'Interview', icon: <Mic className="w-4 h-4" />, route: { page: 'interview' }, match: 'interview' },
   { label: 'Notes', icon: <BookOpen className="w-4 h-4" />, route: { page: 'notes' }, match: 'notes' },
-  { label: 'Practice', icon: <Dumbbell className="w-4 h-4" />, route: { page: 'wat' }, match: 'practice' },
+  { label: 'Practice', icon: <Dumbbell className="w-4 h-4" />, route: { page: 'practice' }, match: 'practice' },
   { label: '30-Day Plan', icon: <CalendarDays className="w-4 h-4" />, route: { page: 'plan' }, match: 'plan' },
   { label: 'Current Affairs', icon: <Newspaper className="w-4 h-4" />, route: { page: 'current-affairs' }, match: 'current-affairs' },
   { label: 'Videos', icon: <MonitorPlay className="w-4 h-4" />, route: { page: 'videos' }, match: 'videos' },
@@ -22,15 +25,27 @@ export const Navbar: React.FC<NavbarProps> = ({ route, navigate }) => {
   const activeKey =
     route.page === 'home'
       ? 'home'
-      : route.page === 'notes' || route.page === 'note'
-        ? 'notes'
-        : route.page === 'wat' || route.page === 'quiz'
-          ? 'practice'
-          : route.page === 'current-affairs'
-            ? 'current-affairs'
-            : route.page === 'videos'
-              ? 'videos'
-              : 'plan';
+      : route.page === 'psychology'
+        ? 'psychology'
+        : route.page === 'gto'
+          ? 'gto'
+          : route.page === 'interview'
+            ? 'interview'
+            : route.page === 'notes' || route.page === 'note'
+              ? 'notes'
+              : route.page === 'wat' ||
+                  route.page === 'quiz' ||
+                  route.page === 'sentence-completion' ||
+                  route.page === 'picture-story' ||
+                  route.page === 'opi-practice' ||
+                  route.page === 'lecturette' ||
+                  route.page === 'interview-flashcards'
+                ? 'practice'
+                : route.page === 'current-affairs'
+                  ? 'current-affairs'
+                  : route.page === 'videos'
+                    ? 'videos'
+                    : 'plan';
 
   const go = (r: Route) => {
     setOpen(false);
@@ -56,12 +71,12 @@ export const Navbar: React.FC<NavbarProps> = ({ route, navigate }) => {
             </span>
           </button>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1">
             {links.map((l) => (
               <button
                 key={l.label}
                 onClick={() => go(l.route)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-sm text-sm font-semibold tracking-wide transition-colors ${
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-sm text-sm font-semibold tracking-wide transition-colors ${
                   activeKey === l.match
                     ? 'bg-army-800 text-gold-400'
                     : 'text-khaki-200 hover:text-white hover:bg-army-800'
@@ -74,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({ route, navigate }) => {
           </nav>
 
           <button
-            className="md:hidden p-2 text-khaki-200 hover:text-white"
+            className="lg:hidden p-2 text-khaki-200 hover:text-white"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -84,7 +99,7 @@ export const Navbar: React.FC<NavbarProps> = ({ route, navigate }) => {
       </div>
 
       {open && (
-        <nav className="md:hidden border-t border-army-700 bg-army-950 px-4 py-3 space-y-1">
+        <nav className="lg:hidden border-t border-army-700 bg-army-950 px-4 py-3 space-y-1">
           {links.map((l) => (
             <button
               key={l.label}

@@ -6,9 +6,18 @@ import { NotesIndex } from './components/NotesIndex';
 import { NotePage } from './components/NotePage';
 import { WatSimulator } from './components/WatSimulator';
 import { IntelligenceQuiz } from './components/IntelligenceQuiz';
+import { PracticeIndex } from './components/PracticeIndex';
+import { SentenceCompletion } from './components/SentenceCompletion';
+import { PictureStory } from './components/PictureStory';
+import { OpiPractice } from './components/OpiPractice';
+import { LecturettePractice } from './components/LecturettePractice';
+import { InterviewFlashcards } from './components/InterviewFlashcards';
 import { Chatbot } from './components/Chatbot';
 import { CurrentAffairs } from './components/CurrentAffairs';
 import { VideoLectures } from './components/VideoLectures';
+import { PsychologySection } from './components/PsychologySection';
+import { GtoSection } from './components/GtoSection';
+import { InterviewSection } from './components/InterviewSection';
 import type { Route, Navigate } from './types';
 
 export default function App() {
@@ -26,11 +35,20 @@ export default function App() {
         {route.page === 'home' && <HomePage navigate={navigate} />}
         {route.page === 'notes' && <NotesIndex navigate={navigate} />}
         {route.page === 'note' && <NotePage slug={route.slug} navigate={navigate} />}
+        {route.page === 'practice' && <PracticeIndex navigate={navigate} />}
         {route.page === 'wat' && <WatSimulator />}
         {route.page === 'quiz' && <IntelligenceQuiz />}
+        {route.page === 'sentence-completion' && <SentenceCompletion />}
+        {route.page === 'picture-story' && <PictureStory />}
+        {route.page === 'opi-practice' && <OpiPractice />}
+        {route.page === 'lecturette' && <LecturettePractice />}
+        {route.page === 'interview-flashcards' && <InterviewFlashcards />}
         {route.page === 'plan' && <NotePage slug="30-day-plan" navigate={navigate} />}
         {route.page === 'videos' && <VideoLectures navigate={navigate} />}
         {route.page === 'current-affairs' && <CurrentAffairs />}
+        {route.page === 'psychology' && <PsychologySection navigate={navigate} />}
+        {route.page === 'gto' && <GtoSection navigate={navigate} />}
+        {route.page === 'interview' && <InterviewSection navigate={navigate} />}
       </main>
       <Footer navigate={navigate} />
       <Chatbot navigate={navigate} />
