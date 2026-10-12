@@ -93,3 +93,21 @@ body {
 .anim-delay-4 { animation-delay: 0.46s; }
 .anim-float { animation: float-soft 5s ease-in-out infinite; }
 .anim-glow { animation: glow-pulse 2.6s ease-in-out infinite; }
+
+/* ---- Radar hero background (original CSS/SVG, no libraries) ---- */
+@keyframes radar-spin { to { transform: rotate(360deg); } }
+@keyframes radar-ping {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(3.2); opacity: 0; }
+}
+@keyframes radar-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@keyframes scan-drift {
+  0% { top: -4%; opacity: 0; }
+  12% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { top: 104%; opacity: 0; }
+}
+.radar-sweep { transform-origin: 200px 200px; animation: radar-spin 7s linear infinite; }
+.radar-ping { transform-box: fill-box; transform-origin: center; animation: radar-ping 3.2s ease-out infinite; }
+.radar-blip { animation: radar-blink 2.6s ease-in-out infinite; }
+.radar-scan { animation: scan-drift 9s linear infinite; }

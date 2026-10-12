@@ -22,6 +22,7 @@ import {
 import type { Navigate } from '../types';
 import { allNotes } from '../data';
 import { gkQuestions } from '../data/gkQuestions';
+import { RadarBackground } from './RadarBackground';
 
 const badges = [
   { icon: <BadgeCheck className="w-5 h-5" />, title: '100% Free Forever', text: 'No paywalls. No "premium notes".' },
@@ -46,6 +47,7 @@ export const HomePage: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
               'repeating-linear-gradient(45deg, transparent, transparent 12px, #C9B896 12px, #C9B896 13px)',
           }}
         />
+        <RadarBackground />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <p className="stamp inline-block text-gold-400 text-xs px-3 py-1.5 mb-5 border-gold-500 anim-fade-up">
