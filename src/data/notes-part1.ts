@@ -3,6 +3,12 @@ export interface NoteSection {
   paragraphs: string[];
   list?: string[];
   urduNote?: string;
+  image?: { src: string; caption: string };
+}
+
+export interface NoteFaq {
+  q: string;
+  a: string;
 }
 
 export interface Note {
@@ -16,6 +22,8 @@ export interface Note {
   sections: NoteSection[];
   mistakes: string[];
   tips: string[];
+  faqs?: NoteFaq[];
+  related?: string[];
 }
 
 export const notes: Note[] = [
@@ -100,6 +108,21 @@ export const notes: Note[] = [
       'Sleep well before Day 1; fatigue ruins timed tests.',
       'Verify all dates and procedures at issb.gov.pk — rules can change between courses.',
     ],
+    faqs: [
+      {
+        q: 'ISSB me select honay ke chances kitne hain?',
+        a: 'Koi official percentage publish nahi hoti — aur jo website exact numbers de, us par bharosa mat karo. Tayari par focus karo, statistics par nahi.',
+      },
+      {
+        q: 'Kya ladkiyan bhi ISSB de sakti hain?',
+        a: 'Haan — Lady Cadet Course (LCC) aur kuch specialized entries ke liye. Details aur dates ke liye joinpakarmy.gov.pk check karo.',
+      },
+      {
+        q: 'Initial test aur ISSB me kitna waqfa hota hai?',
+        a: 'Aam tor par 2-4 mahine. Is waqfe ka behtareen istemal karo — psychology aur GTO ki tayari ke liye.',
+      },
+    ],
+    related: ['issb-4-day-routine', 'initial-test-guide', 'issb-dates'],
   },
   {
     slug: 'initial-test-guide',
@@ -169,6 +192,21 @@ export const notes: Note[] = [
       'Revise one academic subject per day in rotation.',
       'Run 4-5 times a week; track your 1km time and watch it drop.',
     ],
+    faqs: [
+      {
+        q: 'Initial test me fail huay to dobara de sakte hain?',
+        a: 'Haan — aglay course me dobara apply kar sakte ho. Form me previous attempts declare karna mat bhoolna.',
+      },
+      {
+        q: 'Test ke liye kaunse documents chahiye?',
+        a: 'Original matric certificate (board-issued), CNIC/B-form, domicile, photographs. Sirf result card kaafi nahi hota.',
+      },
+      {
+        q: 'Interview me essay bhi likhna hota hai?',
+        a: 'Candidates report karte hain ke interview se pehle English aur Urdu me chhota essay likhwatay hain. Roz 10-line practice rakho.',
+      },
+    ],
+    related: ['what-is-issb', 'issb-dates', 'general-knowledge'],
   },
   {
     slug: 'wat-guide',
@@ -243,6 +281,21 @@ export const notes: Note[] = [
       'Legible handwriting matters — an unreadable sentence helps nobody.',
       'Practice daily for 15 minutes; the reflex builds in 2-3 weeks.',
     ],
+    faqs: [
+      {
+        q: 'Kuch words blank chhor dun to fail?',
+        a: 'Chand blanks normal hain — ghabrane ki baat nahi. Lekin bohat zyada blanks pressure me freeze hona zahir karte hain.',
+      },
+      {
+        q: 'Negative words (fear, death) par kya likhun?',
+        a: 'Unhe positive me badlo: "fear" par "I face my fears with courage". Yehi asal skill hai — practice se aati hai.',
+      },
+      {
+        q: 'Kya handwriting matter karti hai?',
+        a: 'Haan — na parhi ja sakne wali sentence ka koi faida nahi. Tez lekin saaf likhna seekho.',
+      },
+    ],
+    related: ['sentence-completion-guide', 'picture-story-guide', 'biodata-form-guide'],
   },
   {
     slug: 'sentence-completion-guide',
@@ -304,6 +357,17 @@ export const notes: Note[] = [
       'Read your completions back weekly and check: do I sound like ONE real person?',
       'Keep a small diary of real thoughts — it makes honest completions easier.',
     ],
+    faqs: [
+      {
+        q: 'English aur Urdu dono me alag personality dikhaun?',
+        a: 'Bilkul nahi — dono me EK jaisi asal shakhsiyat. Farq nazar aaya to cross-check me pakray jao ge.',
+      },
+      {
+        q: 'Kitne stems blank chhor sakte hain?',
+        a: 'Bohat kam. Har stem par kuch simple likh do — blank se kamzor response behtar hai.',
+      },
+    ],
+    related: ['wat-guide', 'picture-story-guide', 'interview-questions'],
   },
   {
     slug: 'picture-story-guide',
@@ -357,5 +421,16 @@ export const notes: Note[] = [
       'Endings first: decide the positive outcome, then write.',
       'Simple language, complete story — always.',
     ],
+    faqs: [
+      {
+        q: 'Story ka end tragic ho to fail?',
+        a: 'Ek tragic story se kuch nahi hota — lekin har story ka hero haar jaye ya bachaya jaye to negative pattern banta hai. Hero ko action me dikhao.',
+      },
+      {
+        q: 'Time khatam ho jaye aur story adhuri reh jaye?',
+        a: 'Ye sab se bara nuksan hai. Pehle ending decide karo, phir likho — mukammal chhoti story, adhuri lambi se behtar.',
+      },
+    ],
+    related: ['wat-guide', 'sentence-completion-guide', 'biodata-form-guide'],
   },
 ];

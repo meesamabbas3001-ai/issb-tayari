@@ -70,6 +70,19 @@ export const NotePage: React.FC<{ slug: string; navigate: Navigate }> = ({ slug,
               ))}
             </ul>
           )}
+          {s.image && (
+            <figure className="mt-5 mb-2 border border-khaki-300 bg-paper p-2 rounded-sm">
+              <img
+                src={s.image.src}
+                alt={s.image.caption}
+                className="w-full h-auto rounded-sm"
+                loading="lazy"
+              />
+              <figcaption className="text-xs text-khaki-600 font-medium text-center px-2 py-2.5 leading-relaxed">
+                {s.image.caption}
+              </figcaption>
+            </figure>
+          )}
           {s.urduNote && (
             <div className="mt-4 bg-khaki-100 border-r-4 border-gold-500 rounded-sm p-4">
               <p className="text-sm font-bold text-army-900 mb-1">Seedhi zubaan me:</p>
@@ -108,6 +121,57 @@ export const NotePage: React.FC<{ slug: string; navigate: Navigate }> = ({ slug,
           ))}
         </ul>
       </div>
+
+      {/* FAQs */}
+      {note.faqs && note.faqs.length > 0 && (
+        <div className="mb-10">
+          <h3 className="font-serif font-bold text-xl text-army-900 mb-5">
+            Aksar Poochay Janay Walay Sawal
+          </h3>
+          <div className="space-y-3">
+            {note.faqs.map((f, i) => (
+              <details
+                key={i}
+                className="border border-khaki-300 bg-paper rounded-sm px-4 py-3 group"
+              >
+                <summary className="font-bold text-sm text-army-900 cursor-pointer list-none flex items-center justify-between gap-3">
+                  <span>{f.q}</span>
+                  <span className="text-gold-600 font-black shrink-0 group-open:rotate-45 transition-transform">
+                    +
+                  </span>
+                </summary>
+                <p className="text-sm text-ink-soft leading-relaxed mt-2.5">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Related notes */}
+      {note.related && note.related.length > 0 && (
+        <div className="mb-10">
+          <h3 className="font-serif font-bold text-xl text-army-900 mb-4">Related Notes</h3>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {note.related
+              .map((slug) => allNotes.find((n) => n.slug === slug))
+              .filter((n): n is NonNullable<typeof n> => Boolean(n))
+              .map((n) => (
+                <button
+                  key={n.slug}
+                  onClick={() => navigate({ page: 'note', slug: n.slug })}
+                  className="text-left border border-khaki-300 bg-paper rounded-sm p-4 hover:border-army-800 transition-all"
+                >
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-gold-600 mb-1">
+                    {n.category}
+                  </p>
+                  <p className="font-serif font-bold text-army-950 text-sm leading-snug">
+                    {n.title}
+                  </p>
+                </button>
+              ))}
+          </div>
+        </div>
+      )}
 
       {/* Prev / Next */}
       <div className="rule-double mb-6" />

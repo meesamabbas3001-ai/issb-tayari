@@ -40,8 +40,8 @@ export const HomePage: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
               'repeating-linear-gradient(45deg, transparent, transparent 12px, #C9B896 12px, #C9B896 13px)',
           }}
         />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-          <div className="max-w-3xl">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 grid lg:grid-cols-2 gap-10 items-center">
+          <div>
             <p className="stamp inline-block text-gold-400 text-xs px-3 py-1.5 mb-5 border-gold-500">
               Free ISSB Preparation
             </p>
@@ -73,6 +73,12 @@ export const HomePage: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
                 Practice WAT
               </button>
             </div>
+          </div>
+          <div className="hidden lg:block">
+            <figure className="border-2 border-gold-500/60 rounded-sm overflow-hidden shadow-2xl">
+              <img src="/images/hero-issb.png" alt="ISSB candidates walking toward the academy at dawn" className="w-full h-auto object-cover" loading="eager" />
+            </figure>
+            <p className="text-khaki-400 text-xs mt-2 italic">Subah ki tayari — har din ek qadam manzil ki taraf.</p>
           </div>
         </div>
         <div className="border-b-2 border-gold-500" />

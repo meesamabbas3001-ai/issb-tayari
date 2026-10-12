@@ -58,6 +58,17 @@ export const notesPart2: Note[] = [
       'As leader: short clear orders, calm face, include everyone.',
       'Build stamina now — tired bodies make bad decisions.',
     ],
+    faqs: [
+      {
+        q: 'GTO day par sab se important task kaunsa hai?',
+        a: 'Koi ek nahi — har task alag quality dekhta hai. Lekin command task me tumhari leadership direct test hoti hai, is liye uski khaas tayari karo.',
+      },
+      {
+        q: 'Group me koi larka/larki cooperate na kare to?',
+        a: 'Argue mat karo — apna kaam jari rakho aur usay include karne ki koshish karo. GTO tumhara reaction dekh raha hai.',
+      },
+    ],
+    related: ['gto-tasks', 'gto-interview-tips', 'group-discussion', 'lecturette-guide'],
   },
   {
     slug: 'interview-guide',
@@ -123,6 +134,17 @@ export const notesPart2: Note[] = [
       'Follow current affairs daily for 30 days before ISSB.',
       'Dress well (see our dress code guide) — first impressions are real.',
     ],
+    faqs: [
+      {
+        q: 'Interview me sab se common sawal kaunsa hai?',
+        a: '"Why do you want to join?" — iska jawab "I love my country" se aagay hona chahiye: real inspiration + armed forces life ki samajh + tum kya offer karte ho.',
+      },
+      {
+        q: 'Agar jawab na aaye to kya karun?',
+        a: 'Calmly kaho "I am not sure, Sir" aur aagay barho. Bluff karna imaandari se hazar guna bura hai.',
+      },
+    ],
+    related: ['interview-questions', 'interview-dress', 'biodata-form-guide', 'general-knowledge'],
   },
   {
     slug: 'biodata-form-guide',
@@ -196,6 +218,17 @@ export const notesPart2: Note[] = [
       'Photograph your form (if permitted) to keep interview answers consistent.',
       'Fill it fresh-minded, not exhausted at midnight.',
     ],
+    faqs: [
+      {
+        q: 'Form me hobby jhooti likh di to?',
+        a: 'Interview me usi par sawal hoga — aur jhooti hobby pehle follow-up par pakri jati hai. Sirf wohi likho jo 2 minute discuss kar sako.',
+      },
+      {
+        q: 'Previous attempt chhupana kaisa rahega?',
+        a: 'Bohat bura — ISSB ke paas record hota hai. Chhupana = disqualify. Imaandari se declare karo aur improvement dikhao.',
+      },
+    ],
+    related: ['interview-questions', 'interview-guide', 'what-is-issb'],
   },
   {
     slug: 'dress-code-guide',
@@ -261,6 +294,13 @@ export const notesPart2: Note[] = [
       'Iron everything the night before.',
       'When in doubt: simpler is better.',
     ],
+    faqs: [
+      {
+        q: 'Kya ye note interview-dress wale note jaisa nahi?',
+        a: 'Ye general dress guide hai (tamam dinon ke liye). Interview wale din ki detailed visual guide ke liye "Interview Day Dress" note parho.',
+      },
+    ],
+    related: ['interview-dress', 'interview-guide', 'issb-4-day-routine'],
   },
   {
     slug: '30-day-plan',
@@ -353,5 +393,16 @@ export const notesPart2: Note[] = [
       'Protect sleep: 7 hours, especially in the final week.',
       'Tell your family the plan — their support matters.',
     ],
+    faqs: [
+      {
+        q: '30 din kaafi hain tayari ke liye?',
+        a: 'Haan — agar har din ka kaam ho. 3-4 focused hours roz, plan ke mutabiq. Aakhri 3 din me naya topic mat shuru karo.',
+      },
+      {
+        q: 'Ek din miss ho jaye to?',
+        a: 'Double cover karne ki koshish mat karo — bas wahin se continue karo jahan ruke thay. Consistency beats intensity.',
+      },
+    ],
+    related: ['initial-test-guide', 'wat-guide', 'issb-4-day-routine', 'general-knowledge'],
   },
 ];

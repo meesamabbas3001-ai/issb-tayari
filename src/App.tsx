@@ -6,6 +6,7 @@ import { NotesIndex } from './components/NotesIndex';
 import { NotePage } from './components/NotePage';
 import { WatSimulator } from './components/WatSimulator';
 import { IntelligenceQuiz } from './components/IntelligenceQuiz';
+import { Chatbot } from './components/Chatbot';
 import type { Route, Navigate } from './types';
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
         {route.page === 'plan' && <NotePage slug="30-day-plan" navigate={navigate} />}
       </main>
       <Footer navigate={navigate} />
+      <Chatbot navigate={navigate} />
     </div>
   );
 }

@@ -11,7 +11,7 @@ export const NotesIndex: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
       <div className="rule-double mb-6" />
       <h1 className="font-serif font-black text-3xl sm:text-4xl text-army-950 mb-3">All Notes</h1>
       <p className="text-ink-soft mb-10 max-w-2xl leading-relaxed">
-        10 original guides — har ek hum ne khud likha hai, aasaan English aur Roman Urdu me.
+        {allNotes.length} original guides — har ek hum ne khud likha hai, aasaan English aur Roman Urdu me.
         Koi copy-paste nahi, koi jhootay daway nahi.
       </p>
 
