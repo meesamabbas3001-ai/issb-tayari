@@ -4,6 +4,8 @@ export type Route =
   | { page: 'note'; slug: string }
   | { page: 'practice' }
   | { page: 'wat' }
+  | { page: 'srt' }
+  | { page: 'self-description' }
   | { page: 'quiz' }
   | { page: 'sentence-completion' }
   | { page: 'picture-story' }
@@ -33,6 +35,10 @@ export function routeToPath(route: Route): string {
       return '/practice';
     case 'wat':
       return '/practice/wat';
+    case 'srt':
+      return '/practice/srt';
+    case 'self-description':
+      return '/practice/self-description';
     case 'quiz':
       return '/practice/intelligence-quiz';
     case 'sentence-completion':
@@ -70,6 +76,8 @@ export function pathToRoute(path: string): Route {
   if (clean === '/notes') return { page: 'notes' };
   if (clean === '/practice') return { page: 'practice' };
   if (clean === '/practice/wat') return { page: 'wat' };
+  if (clean === '/practice/srt') return { page: 'srt' };
+  if (clean === '/practice/self-description') return { page: 'self-description' };
   if (clean === '/practice/intelligence-quiz') return { page: 'quiz' };
   if (clean === '/practice/sentence-completion') return { page: 'sentence-completion' };
   if (clean === '/practice/picture-story') return { page: 'picture-story' };

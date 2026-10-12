@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks } from 'lucide-react';
+import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks, Siren, UserRound } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 
 interface Tool {
@@ -37,6 +37,24 @@ const tools: Tool[] = [
     icon: <ImageIcon className="w-7 h-7" />,
     route: { page: 'picture-story' },
     meta: '3 pictures • timed',
+    badge: 'New',
+  },
+  {
+    title: 'SRT Practice',
+    urdu: 'Situation Reaction Test',
+    desc: '60 situations, 30 minute — har mushkil ka ek wazeh action likho. Full test ya practice mode.',
+    icon: <Siren className="w-7 h-7" />,
+    route: { page: 'srt' },
+    meta: '60 situations • 30 min',
+    badge: 'New',
+  },
+  {
+    title: 'Self Description',
+    urdu: 'Khud ko likhna seekho',
+    desc: '5 guided sections — walidain, teachers, dost, khubiyan, kamzoriyan. Sach likho, WAT se match karo.',
+    icon: <UserRound className="w-7 h-7" />,
+    route: { page: 'self-description' },
+    meta: '5 sections • auto-save',
     badge: 'New',
   },
   {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Zap, PenLine, Image as ImageIcon, MessageSquare } from 'lucide-react';
+import { Brain, Zap, PenLine, Image as ImageIcon, MessageSquare, Siren, UserRound } from 'lucide-react';
 import type { Navigate } from '../types';
 import { HubHero, HubNotes, HubPractice, type PracticeItem } from './SectionHub';
 
@@ -26,6 +26,20 @@ const practiceItems: PracticeItem[] = [
     tag: 'Jald aa raha hai',
   },
   {
+    icon: <Siren className="w-6 h-6" />,
+    name: 'SRT Practice',
+    desc: 'Situation Reaction Test — 60 situations, 30 minute. Har mushkil ka ek wazeh action likho.',
+    route: { page: 'srt' },
+    tag: 'Live tool',
+  },
+  {
+    icon: <UserRound className="w-6 h-6" />,
+    name: 'Self Description',
+    desc: 'Khud ko likhna seekho — 5 guided sections. Sach likho, WAT/TAT wali personality se match karo.',
+    route: { page: 'self-description' },
+    tag: 'Live tool',
+  },
+  {
     icon: <MessageSquare className="w-6 h-6" />,
     name: 'OPI Practice',
     desc: 'Opinion / Pointer items — apni raaye wazeh aur mukhtasar likhna seekho.',
@@ -41,7 +55,7 @@ export const PsychologySection: React.FC<{ navigate: Navigate }> = ({ navigate }
       icon={<Brain className="w-6 h-6" />}
       title="Psychology Day"
       urdu="Dimagh ka test — jaldi aur such me"
-      intro="Psychology day par tumhari soch ko parha jata hai: WAT, sentence completion, picture story aur OPI. Yahan koi sahi-ghalat nahi — tumhari asal personality nazar aani chahiye. Neeche notes parho, phir practice tools se haath saaf karo."
+      intro="Psychology day par tumhari soch ko parha jata hai: WAT, TAT (picture story), SRT aur Self Description — 4 tests. Yahan koi sahi-ghalat nahi — tumhari asal personality nazar aani chahiye. Neeche notes parho, phir practice tools se haath saaf karo."
     />
     <HubNotes slugs={['wat-guide', 'sentence-completion-guide', 'picture-story-guide']} navigate={navigate} />
     <HubPractice items={practiceItems} navigate={navigate} />

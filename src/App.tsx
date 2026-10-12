@@ -5,6 +5,8 @@ import { HomePage } from './components/HomePage';
 import { NotesIndex } from './components/NotesIndex';
 import { NotePage } from './components/NotePage';
 import { WatSimulator } from './components/WatSimulator';
+import { SrtSimulator } from './components/SrtSimulator';
+import { SelfDescription } from './components/SelfDescription';
 import { IntelligenceQuiz } from './components/IntelligenceQuiz';
 import { PracticeIndex } from './components/PracticeIndex';
 import { SentenceCompletion } from './components/SentenceCompletion';
@@ -39,6 +41,8 @@ export default function App() {
         {route.page === 'note' && <NotePage slug={route.slug} navigate={navigate} />}
         {route.page === 'practice' && <PracticeIndex navigate={navigate} />}
         {route.page === 'wat' && <WatSimulator />}
+        {route.page === 'srt' && <SrtSimulator />}
+        {route.page === 'self-description' && <SelfDescription />}
         {route.page === 'quiz' && <IntelligenceQuiz />}
         {route.page === 'sentence-completion' && <SentenceCompletion />}
         {route.page === 'picture-story' && <PictureStory />}
