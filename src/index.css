@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-army-950: #141d14;
+  --color-army-900: #1e2b1e;
+  --color-army-800: #2a3a2a;
+  --color-army-700: #3a4f3a;
+  --color-army-600: #4c654c;
+
+  --color-khaki-100: #f0e9d8;
+  --color-khaki-200: #e3d7bc;
+  --color-khaki-300: #d4c49e;
+  --color-khaki-400: #c9b896;
+  --color-khaki-500: #b3a17e;
+  --color-khaki-600: #94835f;
+
+  --color-gold-400: #d4af37;
+  --color-gold-500: #b8962e;
+  --color-gold-600: #97771f;
+
+  --color-paper: #faf7f0;
+  --color-paper-dark: #f3eee1;
+  --color-ink: #1c1a14;
+  --color-ink-soft: #4a463c;
+
+  --font-serif: "Merriweather", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin double-rule used as a newspaper-style divider */
+.rule-double {
+  border-top: 3px solid var(--color-army-900);
+  position: relative;
+}
+.rule-double::after {
+  content: "";
+  display: block;
+  border-top: 1px solid var(--color-gold-500);
+  margin-top: 2px;
+}
+
+/* Stamp-style badge */
+.stamp {
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.prose-note p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
