@@ -26,6 +26,13 @@ const practiceItems: PracticeItem[] = [
     tag: 'Jald aa raha hai',
   },
   {
+    icon: <MessageSquare className="w-6 h-6" />,
+    name: 'Pointer Story',
+    desc: 'Baghair tasveer — sirf pointer se 3 minute me kahani likho. TAT ki gehri practice.',
+    route: { page: 'pointer-story' },
+    tag: 'Live tool',
+  },
+  {
     icon: <Siren className="w-6 h-6" />,
     name: 'SRT Practice',
     desc: 'Situation Reaction Test — 60 situations, 30 minute. Har mushkil ka ek wazeh action likho.',

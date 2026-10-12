@@ -9,6 +9,8 @@ export type Route =
   | { page: 'quiz' }
   | { page: 'sentence-completion' }
   | { page: 'picture-story' }
+  | { page: 'pointer-story' }
+  | { page: 'mechanical-aptitude' }
   | { page: 'opi-practice' }
   | { page: 'lecturette' }
   | { page: 'interview-flashcards' }
@@ -45,6 +47,10 @@ export function routeToPath(route: Route): string {
       return '/practice/sentence-completion';
     case 'picture-story':
       return '/practice/picture-story';
+    case 'pointer-story':
+      return '/practice/pointer-story';
+    case 'mechanical-aptitude':
+      return '/practice/mechanical-aptitude';
     case 'opi-practice':
       return '/practice/opi-practice';
     case 'lecturette':
@@ -81,6 +87,8 @@ export function pathToRoute(path: string): Route {
   if (clean === '/practice/intelligence-quiz') return { page: 'quiz' };
   if (clean === '/practice/sentence-completion') return { page: 'sentence-completion' };
   if (clean === '/practice/picture-story') return { page: 'picture-story' };
+  if (clean === '/practice/pointer-story') return { page: 'pointer-story' };
+  if (clean === '/practice/mechanical-aptitude') return { page: 'mechanical-aptitude' };
   if (clean === '/practice/opi-practice') return { page: 'opi-practice' };
   if (clean === '/practice/lecturette') return { page: 'lecturette' };
   if (clean === '/practice/interview-flashcards') return { page: 'interview-flashcards' };

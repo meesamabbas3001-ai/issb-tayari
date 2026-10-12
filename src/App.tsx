@@ -11,6 +11,8 @@ import { IntelligenceQuiz } from './components/IntelligenceQuiz';
 import { PracticeIndex } from './components/PracticeIndex';
 import { SentenceCompletion } from './components/SentenceCompletion';
 import { PictureStory } from './components/PictureStory';
+import { PointerStory } from './components/PointerStory';
+import { MechanicalAptitude } from './components/MechanicalAptitude';
 import { OpiPractice } from './components/OpiPractice';
 import { LecturettePractice } from './components/LecturettePractice';
 import { InterviewFlashcards } from './components/InterviewFlashcards';
@@ -46,6 +48,8 @@ export default function App() {
         {route.page === 'quiz' && <IntelligenceQuiz />}
         {route.page === 'sentence-completion' && <SentenceCompletion />}
         {route.page === 'picture-story' && <PictureStory />}
+        {route.page === 'pointer-story' && <PointerStory />}
+        {route.page === 'mechanical-aptitude' && <MechanicalAptitude />}
         {route.page === 'opi-practice' && <OpiPractice />}
         {route.page === 'lecturette' && <LecturettePractice />}
         {route.page === 'interview-flashcards' && <InterviewFlashcards />}

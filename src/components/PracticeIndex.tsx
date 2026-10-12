@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks, Siren, UserRound } from 'lucide-react';
+import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks, Siren, UserRound, ScrollText, Cog } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 
 interface Tool {
@@ -37,6 +37,24 @@ const tools: Tool[] = [
     icon: <ImageIcon className="w-7 h-7" />,
     route: { page: 'picture-story' },
     meta: '3 pictures • timed',
+    badge: 'New',
+  },
+  {
+    title: 'Pointer Story',
+    urdu: 'Baghair tasveer kahani',
+    desc: 'Sirf 1-2 line ka pointer milta hai — 3 minute me poori kahani likho. TAT jaisi practice.',
+    icon: <ScrollText className="w-7 h-7" />,
+    route: { page: 'pointer-story' },
+    meta: '24 pointers • 3 min each',
+    badge: 'New',
+  },
+  {
+    title: 'Mechanical Aptitude',
+    urdu: 'Technical branches',
+    desc: 'Gears, pulley, lever, circuits, auzaar — 20 random MCQs, 30 second each, wazahat ke saath.',
+    icon: <Cog className="w-7 h-7" />,
+    route: { page: 'mechanical-aptitude' },
+    meta: '50 questions • timed',
     badge: 'New',
   },
   {
