@@ -12,6 +12,13 @@ const practiceItems: PracticeItem[] = [
     tag: 'Jald aa raha hai',
   },
   {
+    icon: <Users className="w-6 h-6" />,
+    name: 'Group Discussion Practice',
+    desc: '40 topics — behas me leader bano. Topic lo, 2 minute bolo, timer ke saath.',
+    route: { page: 'group-discussion' },
+    tag: 'New',
+  },
+  {
     icon: <Brain className="w-6 h-6" />,
     name: 'Intelligence Quiz',
     desc: '10 verbal sawal, 30 second har ek — GTO day se pehle dimagh garam karo.',

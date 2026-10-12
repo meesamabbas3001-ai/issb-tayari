@@ -15,6 +15,7 @@ import { PointerStory } from './components/PointerStory';
 import { MechanicalAptitude } from './components/MechanicalAptitude';
 import { OpiPractice } from './components/OpiPractice';
 import { LecturettePractice } from './components/LecturettePractice';
+import { GroupDiscussion } from './components/GroupDiscussion';
 import { InterviewFlashcards } from './components/InterviewFlashcards';
 import { NonVerbal } from './components/NonVerbal';
 import { Chatbot } from './components/Chatbot';
@@ -52,6 +53,7 @@ export default function App() {
         {route.page === 'mechanical-aptitude' && <MechanicalAptitude />}
         {route.page === 'opi-practice' && <OpiPractice />}
         {route.page === 'lecturette' && <LecturettePractice />}
+        {route.page === 'group-discussion' && <GroupDiscussion />}
         {route.page === 'interview-flashcards' && <InterviewFlashcards />}
         {route.page === 'non-verbal' && <NonVerbal navigate={navigate} />}
         {route.page === 'plan' && <NotePage slug="30-day-plan" navigate={navigate} />}

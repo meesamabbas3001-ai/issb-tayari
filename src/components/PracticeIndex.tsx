@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks, Siren, UserRound, ScrollText, Cog } from 'lucide-react';
+import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks, Siren, UserRound, ScrollText, Cog, Users } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 
 interface Tool {
@@ -36,7 +36,7 @@ const tools: Tool[] = [
     desc: 'Tasveer 30 second dekho, 3.5 minute me kahani likho, khud check karo.',
     icon: <ImageIcon className="w-7 h-7" />,
     route: { page: 'picture-story' },
-    meta: '3 pictures • timed',
+    meta: '12 pictures • timed',
     badge: 'New',
   },
   {
@@ -108,6 +108,15 @@ const tools: Tool[] = [
     icon: <Mic className="w-7 h-7" />,
     route: { page: 'lecturette' },
     meta: '15 topics • timed',
+    badge: 'New',
+  },
+  {
+    title: 'Group Discussion',
+    urdu: 'Behas Practice',
+    desc: '40 topics — current affairs, social issues, technology. Topic lo, 2 minute zor se bolo, timer ke saath.',
+    icon: <Users className="w-7 h-7" />,
+    route: { page: 'group-discussion' },
+    meta: '40 topics • 2 min timer',
     badge: 'New',
   },
   {

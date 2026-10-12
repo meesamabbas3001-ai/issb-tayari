@@ -13,6 +13,7 @@ export type Route =
   | { page: 'mechanical-aptitude' }
   | { page: 'opi-practice' }
   | { page: 'lecturette' }
+  | { page: 'group-discussion' }
   | { page: 'interview-flashcards' }
   | { page: 'non-verbal' }
   | { page: 'plan' }
@@ -55,6 +56,8 @@ export function routeToPath(route: Route): string {
       return '/practice/opi-practice';
     case 'lecturette':
       return '/practice/lecturette';
+    case 'group-discussion':
+      return '/practice/group-discussion';
     case 'interview-flashcards':
       return '/practice/interview-flashcards';
     case 'non-verbal':
@@ -91,6 +94,7 @@ export function pathToRoute(path: string): Route {
   if (clean === '/practice/mechanical-aptitude') return { page: 'mechanical-aptitude' };
   if (clean === '/practice/opi-practice') return { page: 'opi-practice' };
   if (clean === '/practice/lecturette') return { page: 'lecturette' };
+  if (clean === '/practice/group-discussion') return { page: 'group-discussion' };
   if (clean === '/practice/interview-flashcards') return { page: 'interview-flashcards' };
   if (clean === '/practice/non-verbal') return { page: 'non-verbal' };
   if (clean === '/plan') return { page: 'plan' };
