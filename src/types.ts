@@ -10,12 +10,14 @@ export type Route =
   | { page: 'opi-practice' }
   | { page: 'lecturette' }
   | { page: 'interview-flashcards' }
+  | { page: 'non-verbal' }
   | { page: 'plan' }
   | { page: 'videos' }
   | { page: 'current-affairs' }
   | { page: 'psychology' }
   | { page: 'gto' }
-  | { page: 'interview' };
+  | { page: 'interview' }
+  | { page: 'initial-mcqs' };
 
 export type Navigate = (route: Route) => void;
 
@@ -43,6 +45,8 @@ export function routeToPath(route: Route): string {
       return '/practice/lecturette';
     case 'interview-flashcards':
       return '/practice/interview-flashcards';
+    case 'non-verbal':
+      return '/practice/non-verbal';
     case 'plan':
       return '/plan';
     case 'videos':
@@ -55,6 +59,8 @@ export function routeToPath(route: Route): string {
       return '/gto';
     case 'interview':
       return '/interview';
+    case 'initial-mcqs':
+      return '/practice/initial-mcqs';
   }
 }
 
@@ -70,12 +76,14 @@ export function pathToRoute(path: string): Route {
   if (clean === '/practice/opi-practice') return { page: 'opi-practice' };
   if (clean === '/practice/lecturette') return { page: 'lecturette' };
   if (clean === '/practice/interview-flashcards') return { page: 'interview-flashcards' };
+  if (clean === '/practice/non-verbal') return { page: 'non-verbal' };
   if (clean === '/plan') return { page: 'plan' };
   if (clean === '/videos') return { page: 'videos' };
   if (clean === '/current-affairs') return { page: 'current-affairs' };
   if (clean === '/psychology') return { page: 'psychology' };
   if (clean === '/gto') return { page: 'gto' };
   if (clean === '/interview') return { page: 'interview' };
+  if (clean === '/practice/initial-mcqs') return { page: 'initial-mcqs' };
   const noteMatch = clean.match(/^\/notes\/([a-z0-9-]+)$/);
   if (noteMatch) return { page: 'note', slug: noteMatch[1] };
   return { page: 'home' };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain } from 'lucide-react';
+import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 
 interface Tool {
@@ -57,6 +57,15 @@ const tools: Tool[] = [
     meta: '10 questions • 30s each',
   },
   {
+    title: 'Initial Test MCQs',
+    urdu: 'Math • Verbal • GK • Islamiat • English',
+    desc: 'PMA initial test pattern par practice MCQs — subject choose karo, timer ke saath test do.',
+    icon: <ListChecks className="w-7 h-7" />,
+    route: { page: 'initial-mcqs' },
+    meta: '20 questions • 45s each',
+    badge: 'New',
+  },
+  {
     title: 'Lecturette Practice',
     urdu: 'Stage Practice',
     desc: '2 minute tayyari, 3 minute zor se taqreer. Stage ka dar khatam.',
@@ -72,6 +81,15 @@ const tools: Tool[] = [
     icon: <Layers className="w-7 h-7" />,
     route: { page: 'interview-flashcards' },
     meta: '30 cards • shuffle',
+    badge: 'New',
+  },
+  {
+    title: 'Non-Verbal Test',
+    urdu: 'Shapes Wala Test',
+    desc: 'Odd one out, series, aur ginti — tasveer dekho, pattern pehchano.',
+    icon: <Shapes className="w-7 h-7" />,
+    route: { page: 'non-verbal' },
+    meta: '16 questions • 30s each',
     badge: 'New',
   },
 ];

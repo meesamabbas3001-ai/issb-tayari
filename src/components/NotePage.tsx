@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ArrowRight, Clock, AlertTriangle, Lightbulb, CheckCircle2, PlayCircle, Youtube } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, AlertTriangle, Lightbulb, CheckCircle2, PlayCircle, Youtube, ListChecks } from 'lucide-react';
 import type { Navigate } from '../types';
 import { allNotes, getNote } from '../data';
 import { noteVideoMap, getVideoById, thumbnailUrl } from '../data/videos';
@@ -193,6 +193,23 @@ export const NotePage: React.FC<{ slug: string; navigate: Navigate }> = ({ slug,
         </div>
       )}
 
+      {/* Practice MCQs link card for the initial test guide */}
+      {note.slug === 'initial-test-guide' && (
+        <div className="mb-10 bg-army-900 rounded-sm p-5 sm:p-6 border-2 border-gold-500">
+          <h3 className="flex items-center gap-2 font-serif font-bold text-xl text-white mb-1">
+            <ListChecks className="w-6 h-6 text-gold-400" /> Practice Initial Test MCQs
+          </h3>
+          <p className="text-xs text-khaki-300 mb-4">
+            Math, Verbal Intelligence, GK, Islamiat, English — timed practice questions, PMA initial test pattern par.
+          </p>
+          <button
+            onClick={() => navigate({ page: 'initial-mcqs' })}
+            className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-army-950 font-bold px-6 py-3 rounded-sm transition-colors"
+          >
+            <PlayCircle className="w-5 h-5" /> Start Practice Test
+          </button>
+        </div>
+      )}
       {/* Related notes */}
       {note.related && note.related.length > 0 && (
         <div className="mb-10">

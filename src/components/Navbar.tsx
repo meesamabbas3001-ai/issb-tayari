@@ -39,7 +39,8 @@ export const Navbar: React.FC<NavbarProps> = ({ route, navigate }) => {
                   route.page === 'picture-story' ||
                   route.page === 'opi-practice' ||
                   route.page === 'lecturette' ||
-                  route.page === 'interview-flashcards'
+                  route.page === 'interview-flashcards' ||
+                  route.page === 'non-verbal'
                 ? 'practice'
                 : route.page === 'current-affairs'
                   ? 'current-affairs'
@@ -54,6 +55,18 @@ export const Navbar: React.FC<NavbarProps> = ({ route, navigate }) => {
 
   return (
     <header className="sticky top-0 z-50 bg-army-900 text-khaki-100 shadow-md">
+      {/* Top announcement bar */}
+      <div className="bg-gold-500 text-army-950">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-1.5 flex items-center justify-center gap-4 sm:gap-8 text-[11px] sm:text-xs font-bold">
+          <button onClick={() => go({ page: 'current-affairs' })} className="inline-flex items-center gap-1.5 hover:underline">
+            <Newspaper className="w-3.5 h-3.5" /> News Daily
+          </button>
+          <span className="opacity-40">|</span>
+          <button onClick={() => go({ page: 'practice' })} className="inline-flex items-center gap-1.5 hover:underline">
+            <Dumbbell className="w-3.5 h-3.5" /> Free Practice All Tests
+          </button>
+        </div>
+      </div>
       <div className="border-b-2 border-gold-500" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">

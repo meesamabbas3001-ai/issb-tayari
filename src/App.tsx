@@ -12,12 +12,14 @@ import { PictureStory } from './components/PictureStory';
 import { OpiPractice } from './components/OpiPractice';
 import { LecturettePractice } from './components/LecturettePractice';
 import { InterviewFlashcards } from './components/InterviewFlashcards';
+import { NonVerbal } from './components/NonVerbal';
 import { Chatbot } from './components/Chatbot';
 import { CurrentAffairs } from './components/CurrentAffairs';
 import { VideoLectures } from './components/VideoLectures';
 import { PsychologySection } from './components/PsychologySection';
 import { GtoSection } from './components/GtoSection';
 import { InterviewSection } from './components/InterviewSection';
+import InitialMcqs from './components/InitialMcqs';
 import type { Route, Navigate } from './types';
 
 export default function App() {
@@ -43,12 +45,14 @@ export default function App() {
         {route.page === 'opi-practice' && <OpiPractice />}
         {route.page === 'lecturette' && <LecturettePractice />}
         {route.page === 'interview-flashcards' && <InterviewFlashcards />}
+        {route.page === 'non-verbal' && <NonVerbal navigate={navigate} />}
         {route.page === 'plan' && <NotePage slug="30-day-plan" navigate={navigate} />}
         {route.page === 'videos' && <VideoLectures navigate={navigate} />}
         {route.page === 'current-affairs' && <CurrentAffairs />}
         {route.page === 'psychology' && <PsychologySection navigate={navigate} />}
         {route.page === 'gto' && <GtoSection navigate={navigate} />}
         {route.page === 'interview' && <InterviewSection navigate={navigate} />}
+        {route.page === 'initial-mcqs' && <InitialMcqs />}
       </main>
       <Footer navigate={navigate} />
       <Chatbot navigate={navigate} />
