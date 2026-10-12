@@ -112,7 +112,7 @@ export const notesPart3: Note[] = [
           'Do NOT memorize answers. For each question below: (1) understand what the interviewer is really checking, (2) think of YOUR real-life material for it, (3) say it aloud once or twice so it flows naturally. A memorized speech collapses at the first follow-up question — a real story does not.',
         ],
         image: {
-          src: '/images/interview-room.png',
+          src: 'https://drive.google.com/thumbnail?id=1wlcBoLJYs3j9PS2hgCa3vOb_RNLBZJV9&sz=w1200',
           caption: 'The interview room: calm, formal, and honest — just like your answers should be.',
         },
         urduNote:
@@ -321,7 +321,7 @@ export const notesPart3: Note[] = [
           'Whatever the result: it is a decision about fit for this role, not a verdict on your worth. Repeaters who fix real weaknesses come back stronger — the form even has a section for previous attempts.',
         ],
         image: {
-          src: '/images/issb-interview.png',
+          src: 'https://drive.google.com/thumbnail?id=12qb0uW5pHfdSPO9mRTYw7PL2hh1p36zI&sz=w1200',
           caption: 'Day 4 — the Deputy interview: formal dress, calm mind, honest answers. This is the final assessment before the conference.',
         },
       },
