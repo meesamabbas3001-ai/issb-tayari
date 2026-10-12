@@ -1,5 +1,7 @@
-// TAT practice pictures — real photographs (Pexels license: free to use,
-// hotlink-friendly CDN). Practice images only, not from any real test.
+// TAT practice pictures — pencil-sketch style (converted from Pexels photos,
+// Pexels license: free to use), hosted on Drive in "ISSB Website Images".
+// Styled like real ISSB picture-story cards. Practice images only,
+// not from any real test.
 export interface TatPicture {
   id: string;
   title: string;
@@ -7,80 +9,80 @@ export interface TatPicture {
   url: string;
 }
 
-const px = (id: number) =>
-  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=1200`;
+const drive = (id: string) =>
+  `https://drive.google.com/thumbnail?id=${id}&sz=w1200`;
 
 export const tatPictures: TatPicture[] = [
   {
     id: 'sunset-road',
     title: 'Sunsaan Sarak (The Lonely Road)',
     hint: 'Sunset, a lone man walking on an empty road — kahan ja raha hai? Kya soch raha hai? Kahani likho.',
-    url: px(24531542),
+    url: drive('1em57rLk0KVv4hxpqNHiO3oOvDoUCQyxc'),
   },
   {
     id: 'mountain-girl',
     title: 'Paharon Mein (Among the Mountains)',
     hint: 'Sunrise, a girl sitting alone on mountain rocks — wo yahan kyun aayi? Aaj uska kya plan hai?',
-    url: px(24994450),
+    url: drive('1wPV4OTB7hedLTi2ltmB-LfHrDMVac5_9'),
   },
   {
     id: 'serious-talk',
     title: 'Ahem Guftagu (The Serious Talk)',
     hint: 'Two men in a deep discussion — kis baat par behas ho rahi hai? Kya faisla hoga?',
-    url: px(8349339),
+    url: drive('13IF8BSB8zy0ZI3lPaitqIiAvrWjc65fo'),
   },
   {
     id: 'tree-study',
     title: 'Darakht Ke Neeche (Under the Tree)',
     hint: 'A girl reading books under a tree — wo kya parh rahi hai? Uska maqsad kya hai?',
-    url: px(35774740),
+    url: drive('1NMkKAHUNPjAM4ftzRhbhg8X1SjYwj8SV'),
   },
   {
     id: 'campfire',
     title: 'Aag Ke Gird (Around the Fire)',
     hint: 'Night, friends sitting around a campfire — ye log kaun hain? Kya baatein ho rahi hain?',
-    url: px(36729444),
+    url: drive('14gpMbBfOvnib2HICndtHID6Zzx9lZhqX'),
   },
   {
     id: 'night-bus',
     title: 'Raat Ki Bus (The Night Bus)',
     hint: 'A man alone on a night bus — kahan ja raha hai? Uske zehan mein kya chal raha hai?',
-    url: px(17720891),
+    url: drive('1EZnDRhKOvDsJuZ-ToH26l5CrSfVwPn7N'),
   },
   {
     id: 'schoolmates',
     title: 'Hum Jamaat (The Classmates)',
     hint: 'School children studying together — ye kya kar rahe hain? Inka mustaqbil kya hoga?',
-    url: px(9090818),
+    url: drive('1EU-uAiuBcd7PeD2yYCKc_ohkNAtQuja5'),
   },
   {
     id: 'morning-run',
     title: 'Subah Ki Daur (The Morning Run)',
     hint: 'A young man running on a tree-lined road at dawn — wo kyun daur raha hai? Uska maqsad kya hai?',
-    url: px(37046061),
+    url: drive('1ivKe0-1ELiOx8C8pdHB-G_3W6Q-S3gDx'),
   },
   {
     id: 'water-carrier',
     title: 'Paani Wali (The Water Carrier)',
     hint: 'A woman carrying water in a village — uski zindagi kaisi hai? Wo kya sochti hai?',
-    url: px(30370979),
+    url: drive('1M5xKGQXpUBN5GQG_ukzGwGJVlAPc3aEn'),
   },
   {
     id: 'bus-stop',
     title: 'Aakhri Bus (The Last Bus)',
     hint: 'Night, a man alone at a bus stop — kis ka intezar kar raha hai? Aage kya hoga?',
-    url: px(11344370),
+    url: drive('1Fgoc2I0JMn9Lg430Z5l4nCYLjTAJeKwY'),
   },
   {
     id: 'old-man',
     title: 'Buzurg (The Old Man)',
     hint: 'An old man on a night street — wo yahan kyun hai? Uski kahani kya hai?',
-    url: px(15161086),
+    url: drive('185RVfQ5AHuGeVGRqBK-4Piqlp9ukqs9L'),
   },
   {
     id: 'campus-friends',
     title: 'Dost (The Friends)',
     hint: 'Three students talking on campus — kis baat par guftagu ho rahi hai? Kya hoga aage?',
-    url: px(7683740),
+    url: drive('183wRB_5kUHNDEp3hnJkEt95OvdG1EUtk'),
   },
 ];
