@@ -7,6 +7,8 @@ import { NotePage } from './components/NotePage';
 import { WatSimulator } from './components/WatSimulator';
 import { IntelligenceQuiz } from './components/IntelligenceQuiz';
 import { Chatbot } from './components/Chatbot';
+import { CurrentAffairs } from './components/CurrentAffairs';
+import { VideoLectures } from './components/VideoLectures';
 import type { Route, Navigate } from './types';
 
 export default function App() {
@@ -27,6 +29,8 @@ export default function App() {
         {route.page === 'wat' && <WatSimulator />}
         {route.page === 'quiz' && <IntelligenceQuiz />}
         {route.page === 'plan' && <NotePage slug="30-day-plan" navigate={navigate} />}
+        {route.page === 'videos' && <VideoLectures navigate={navigate} />}
+        {route.page === 'current-affairs' && <CurrentAffairs />}
       </main>
       <Footer navigate={navigate} />
       <Chatbot navigate={navigate} />

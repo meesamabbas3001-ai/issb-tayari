@@ -1,7 +1,8 @@
 import React from 'react';
-import { ArrowLeft, ArrowRight, Clock, AlertTriangle, Lightbulb, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, AlertTriangle, Lightbulb, CheckCircle2, PlayCircle, Youtube } from 'lucide-react';
 import type { Navigate } from '../types';
 import { allNotes, getNote } from '../data';
+import { noteVideoMap, getVideoById, thumbnailUrl } from '../data/videos';
 
 export const NotePage: React.FC<{ slug: string; navigate: Navigate }> = ({ slug, navigate }) => {
   const note = getNote(slug);
@@ -143,6 +144,51 @@ export const NotePage: React.FC<{ slug: string; navigate: Navigate }> = ({ slug,
                 <p className="text-sm text-ink-soft leading-relaxed mt-2.5">{f.a}</p>
               </details>
             ))}
+          </div>
+        </div>
+      )}
+
+      {/* Video lectures for this note */}
+      {noteVideoMap[note.slug] && noteVideoMap[note.slug].length > 0 && (
+        <div className="mb-10 bg-army-950 rounded-sm p-5 sm:p-6 border-2 border-gold-500">
+          <h3 className="flex items-center gap-2 font-serif font-bold text-xl text-white mb-1">
+            <PlayCircle className="w-6 h-6 text-gold-400" /> Video Lectures — Is Topic Par
+          </h3>
+          <p className="text-xs text-khaki-300 mb-4 flex items-start gap-1.5">
+            <Youtube className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+            <span>Haroon Forces Academy (YouTube) — credit ke saath embedded.</span>
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {noteVideoMap[note.slug]
+              .map((id) => getVideoById(id))
+              .filter((v): v is NonNullable<typeof v> => Boolean(v))
+              .map((v) => (
+                <button
+                  key={v.id}
+                  onClick={() => navigate({ page: 'videos' })}
+                  className="flex items-center gap-3 text-left bg-army-900 hover:bg-army-800 rounded-sm p-2.5 transition-colors"
+                >
+                  <span className="relative shrink-0 w-28 aspect-video rounded-sm overflow-hidden bg-black">
+                    <img
+                      src={thumbnailUrl(v.id)}
+                      alt={v.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                    <span className="absolute inset-0 flex items-center justify-center">
+                      <PlayCircle className="w-7 h-7 text-white drop-shadow" />
+                    </span>
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-[10px] font-bold uppercase tracking-[0.15em] text-gold-400 mb-0.5">
+                      {v.topic}
+                    </span>
+                    <span className="block text-sm font-bold text-white leading-snug line-clamp-2">
+                      {v.title}
+                    </span>
+                  </span>
+                </button>
+              ))}
           </div>
         </div>
       )}

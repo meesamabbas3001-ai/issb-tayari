@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Menu, X, Home, BookOpen, Dumbbell, CalendarDays } from 'lucide-react';
+import { Shield, Menu, X, Home, BookOpen, Dumbbell, CalendarDays, Newspaper, MonitorPlay } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 
 interface NavbarProps {
@@ -12,6 +12,8 @@ const links: { label: string; icon: React.ReactNode; route: Route; match: string
   { label: 'Notes', icon: <BookOpen className="w-4 h-4" />, route: { page: 'notes' }, match: 'notes' },
   { label: 'Practice', icon: <Dumbbell className="w-4 h-4" />, route: { page: 'wat' }, match: 'practice' },
   { label: '30-Day Plan', icon: <CalendarDays className="w-4 h-4" />, route: { page: 'plan' }, match: 'plan' },
+  { label: 'Current Affairs', icon: <Newspaper className="w-4 h-4" />, route: { page: 'current-affairs' }, match: 'current-affairs' },
+  { label: 'Videos', icon: <MonitorPlay className="w-4 h-4" />, route: { page: 'videos' }, match: 'videos' },
 ];
 
 export const Navbar: React.FC<NavbarProps> = ({ route, navigate }) => {
@@ -24,7 +26,11 @@ export const Navbar: React.FC<NavbarProps> = ({ route, navigate }) => {
         ? 'notes'
         : route.page === 'wat' || route.page === 'quiz'
           ? 'practice'
-          : 'plan';
+          : route.page === 'current-affairs'
+            ? 'current-affairs'
+            : route.page === 'videos'
+              ? 'videos'
+              : 'plan';
 
   const go = (r: Route) => {
     setOpen(false);
