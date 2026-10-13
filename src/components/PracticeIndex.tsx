@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks, Siren, UserRound, ScrollText, Cog, Users } from 'lucide-react';
+import { Zap, Timer, PenLine, Image as ImageIcon, MessageSquareText, Mic, Layers, ArrowRight, Dumbbell, Brain, Shapes, ListChecks, Siren, UserRound, ScrollText, Cog, Users, FileText } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 
 interface Tool {
@@ -13,6 +13,15 @@ interface Tool {
 }
 
 const tools: Tool[] = [
+  {
+    title: 'Practice Papers',
+    urdu: '10 Papers + 100 Sawal',
+    desc: 'Paper chuno, jawab likho, key se check karo aur score dekho. Sath revision notes bhi parho.',
+    icon: <FileText className="w-7 h-7" />,
+    route: { page: 'practice-papers' },
+    meta: 'Written • self-score • 350+ sawal',
+    badge: 'New',
+  },
   {
     title: 'WAT Simulator',
     urdu: 'Word Association Test',

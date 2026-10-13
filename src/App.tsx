@@ -27,6 +27,7 @@ import { InterviewSection } from './components/InterviewSection';
 import InitialMcqs from './components/InitialMcqs';
 import { VoiceInterview } from './components/VoiceInterview';
 import { InterviewExperiences } from './components/InterviewExperiences';
+import { PracticePapers } from './components/PracticePapers';
 import type { Route, Navigate } from './types';
 
 export default function App() {
@@ -67,6 +68,7 @@ export default function App() {
         {route.page === 'initial-mcqs' && <InitialMcqs />}
         {route.page === 'voice-interview' && <VoiceInterview />}
         {route.page === 'interview-experiences' && <InterviewExperiences />}
+        {route.page === 'practice-papers' && <PracticePapers navigate={navigate} />}
       </main>
       <Footer navigate={navigate} />
       <Chatbot navigate={navigate} />
