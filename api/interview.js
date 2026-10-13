@@ -3,7 +3,7 @@
 // (Vercel dashboard → Settings → Environment Variables). It is never
 // exposed to the browser.
 
-const MODEL = 'gemini-2.0-flash';
+const MODEL = 'gemini-3.8-flash';
 
 const SYSTEM_PROMPT = `You are "Major Sahab", a friendly but professional officer conducting a PRACTICE interview for the ISSB INITIAL stage — the short interview held at Army Selection and Recruitment Centres after the initial tests. This is NOT the final 4-day ISSB.
 
