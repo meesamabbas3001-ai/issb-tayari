@@ -84,6 +84,16 @@ export const Chatbot: React.FC<ChatbotProps> = ({ navigate }) => {
 
   return (
     <>
+      {/* Floating voice-interview button — bot ke saath, foran click */}
+      <button
+        onClick={() => goRoute({ page: 'voice-interview' })}
+        aria-label="AI Voice Interview kholein"
+        title="AI Voice Interview"
+        className="fixed bottom-5 right-[5.75rem] z-[60] w-14 h-14 rounded-full bg-army-900 hover:bg-army-800 text-gold-400 shadow-lg shadow-black/20 flex items-center justify-center transition-transform hover:scale-105 active:scale-95"
+      >
+        <Mic className="w-6 h-6" strokeWidth={2.5} />
+      </button>
+
       {/* Floating button */}
       <button
         onClick={() => setOpen(!open)}

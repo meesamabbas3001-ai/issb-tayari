@@ -86,6 +86,28 @@ export const VoiceInterview: React.FC = () => {
     setListening(false);
   }
 
+  function pickMaleVoice(): SpeechSynthesisVoice | null {
+    if (!('speechSynthesis' in window)) return null;
+    const voices = window.speechSynthesis.getVoices();
+    const en = voices.filter((x) => /^en/i.test(x.lang));
+    if (en.length === 0) return null;
+    // 1. Naam me "male" likha ho
+    let v = en.find((x) => /male/i.test(x.name) && !/female/i.test(x.name));
+    // 2. Mashhoor mardana voice naam (Google/Microsoft/Apple)
+    if (!v)
+      v = en.find(
+        (x) =>
+          /david|daniel|mark|alex|fred|george|james|john|mike|michael|paul|peter|robert|thomas|william/i.test(
+            x.name
+          ) && !/female|woman|girl|samantha|zira|aria|jenny/i.test(x.name)
+      );
+    // 3. "Google US English" aksar zanana lagti hai — koi aur English voice lein
+    if (!v) v = en.find((x) => !/google us english/i.test(x.name));
+    // 4. Aakhri hal: pehli English voice
+    if (!v) v = en[0];
+    return v || null;
+  }
+
   function speak(text: string, onDone?: () => void) {
     if (!('speechSynthesis' in window) || !speechOnRef.current) {
       onDone?.();
@@ -94,13 +116,9 @@ export const VoiceInterview: React.FC = () => {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'en-US';
-    u.rate = 0.9;
-    u.pitch = 0.82;
-    const voices = window.speechSynthesis.getVoices();
-    const v =
-      voices.find((x) => /^en/i.test(x.lang) && /male/i.test(x.name)) ||
-      voices.find((x) => /en[-_]US/i.test(x.lang) && /google/i.test(x.name)) ||
-      voices.find((x) => /^en/i.test(x.lang));
+    u.rate = 0.92;
+    u.pitch = 0.8;
+    const v = pickMaleVoice();
     if (v) u.voice = v;
     u.onend = () => onDone?.();
     u.onerror = () => onDone?.();
