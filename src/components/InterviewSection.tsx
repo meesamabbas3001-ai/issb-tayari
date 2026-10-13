@@ -1,9 +1,16 @@
 import React from 'react';
-import { Mic, Layers, Shirt } from 'lucide-react';
+import { Mic, Layers, Shirt, MessagesSquare } from 'lucide-react';
 import type { Navigate } from '../types';
 import { HubHero, HubNotes, HubPractice, type PracticeItem } from './SectionHub';
 
 const practiceItems: PracticeItem[] = [
+  {
+    icon: <MessagesSquare className="w-6 h-6" />,
+    name: 'Real Interview Experiences',
+    desc: '8 asal candidates ke initial interview ke tajarbaat — sawal, jawab aur naseehatain.',
+    route: { page: 'interview-experiences' },
+    tag: 'New',
+  },
   {
     icon: <Layers className="w-6 h-6" />,
     name: 'Interview Flashcards',

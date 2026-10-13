@@ -26,6 +26,7 @@ import { GtoSection } from './components/GtoSection';
 import { InterviewSection } from './components/InterviewSection';
 import InitialMcqs from './components/InitialMcqs';
 import { VoiceInterview } from './components/VoiceInterview';
+import { InterviewExperiences } from './components/InterviewExperiences';
 import type { Route, Navigate } from './types';
 
 export default function App() {
@@ -65,6 +66,7 @@ export default function App() {
         {route.page === 'interview' && <InterviewSection navigate={navigate} />}
         {route.page === 'initial-mcqs' && <InitialMcqs />}
         {route.page === 'voice-interview' && <VoiceInterview />}
+        {route.page === 'interview-experiences' && <InterviewExperiences />}
       </main>
       <Footer navigate={navigate} />
       <Chatbot navigate={navigate} />
