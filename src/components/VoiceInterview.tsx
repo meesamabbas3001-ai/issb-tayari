@@ -145,6 +145,10 @@ export const VoiceInterview: React.FC = () => {
           setError(
             'AI model abhi busy hai (zyada load). Ghabrayein nahi — neeche "Dobara Koshish Karein" dabayein, aksar dusri baar me jawab a jata hai.'
           );
+        } else if (d.error === 'quota_exceeded') {
+          setError(
+            'AI ki free limit khatam ho gayi hai (daily quota). Thodi der baad ya kal dobara try karein — abhi retry ka faida nahi hoga.'
+          );
         } else {
           const detail = d.detail ? ` Wajah: ${d.detail}` : '';
           setError(

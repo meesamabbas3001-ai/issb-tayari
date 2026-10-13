@@ -106,6 +106,7 @@ export default async function handler(req, res) {
       if (r.ok) break;
       lastMsg =
         data && data.error && data.error.message ? String(data.error.message) : '';
+      if (/quota|billing|exceeded your current quota/i.test(lastMsg)) break; // quota khatam — retry bekar
       const retryable =
         r.status === 429 ||
         r.status === 503 ||
@@ -119,6 +120,10 @@ export default async function handler(req, res) {
       if (busy) {
         // Friendly code — the app shows a Roman Urdu message + retry button.
         return res.status(503).json({ error: 'model_busy' });
+      }
+      if (/quota|billing/i.test(lastMsg)) {
+        // Free quota khatam — retry ka faida nahi, seedha saaf code.
+        return res.status(429).json({ error: 'quota_exceeded' });
       }
       const detail = (lastMsg || 'HTTP ' + lastStatus).slice(0, 200);
       return res.status(502).json({ error: 'gemini_error', detail });
