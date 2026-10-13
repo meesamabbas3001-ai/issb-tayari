@@ -120,12 +120,18 @@ export const VoiceInterview: React.FC = () => {
       window.clearTimeout(timer);
       const d = await r.json();
       if (!r.ok) {
-        const detail = d.detail ? ` Wajah: ${d.detail}` : '';
-        setError(
-          d.error === 'not_configured'
-            ? 'AI key nahi lagi — neeche setup steps dekhein.'
-            : `AI se jawab nahi aya.${detail} Ye message mujhe bhejo taake theek kar sakun.`
-        );
+        if (d.error === 'not_configured') {
+          setError('AI key nahi lagi — neeche setup steps dekhein.');
+        } else if (d.error === 'model_busy') {
+          setError(
+            'AI model abhi busy hai (zyada load). Ghabrayein nahi — neeche "Dobara Koshish Karein" dabayein, aksar dusri baar me jawab a jata hai.'
+          );
+        } else {
+          const detail = d.detail ? ` Wajah: ${d.detail}` : '';
+          setError(
+            `AI se jawab nahi aya.${detail} Ye message mujhe bhejo taake theek kar sakun.`
+          );
+        }
         return null;
       }
       return d.reply as string;
@@ -249,6 +255,24 @@ export const VoiceInterview: React.FC = () => {
     setStatus('');
   }
 
+  // Dobara koshish: last user message ko dobara bhejein baghair duplicate kiye.
+  async function retryAI() {
+    if (phaseRef.current !== 'live' || historyRef.current.length === 0) return;
+    setError(null);
+    setStatus('Dobara koshish ho rahi hai…');
+    const reply = await sendToAI(historyRef.current);
+    if (reply === null || phaseRef.current !== 'live') {
+      setStatus('');
+      return;
+    }
+    const next2: Message[] = [...historyRef.current, { role: 'assistant', text: reply }];
+    historyRef.current = next2;
+    setMessages(next2);
+    speak(reply, () => {
+      if (phaseRef.current === 'live') listen();
+    });
+  }
+
   function restart() {
     stopAll();
     setMessages([]);
@@ -273,6 +297,18 @@ export const VoiceInterview: React.FC = () => {
           <p className="text-army-700 font-medium max-w-2xl mx-auto">
             Ye <strong>initial interview</strong> ki practice hai — mic par English me jawab
             dein, AI officer agla sawal poochega. Bilkul free, jitni baar chahen.
+          </p>
+        </div>
+
+        <div className="mb-8 rounded-sm overflow-hidden border-2 border-army-900">
+          <img
+            src="https://drive.google.com/thumbnail?id=1cArX-RPAmJ9AtJdNMMx4moX5dZVCK5U3&sz=w1200"
+            alt="Asal interview room — officer candidate se sawal pooch raha hai"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+          <p className="bg-army-900 text-gold-400 text-xs font-bold text-center px-4 py-2">
+            Asal interview aisa hota hai — officer samne, aap jawab dein. Yahan practice karein!
           </p>
         </div>
 
@@ -393,8 +429,16 @@ export const VoiceInterview: React.FC = () => {
       )}
 
       {error && (
-        <div className="my-4 bg-red-50 border border-red-300 rounded-sm p-4 flex gap-2 text-sm text-red-900">
-          <TriangleAlert className="w-5 h-5 shrink-0" /> {error}
+        <div className="my-4 bg-red-50 border border-red-300 rounded-sm p-4">
+          <div className="flex gap-2 text-sm text-red-900">
+            <TriangleAlert className="w-5 h-5 shrink-0" /> {error}
+          </div>
+          <button
+            onClick={retryAI}
+            className="mt-3 inline-flex items-center gap-2 bg-army-900 hover:bg-army-800 text-gold-400 text-sm font-bold px-5 py-2 rounded-sm transition-colors"
+          >
+            <RotateCcw className="w-4 h-4" /> Dobara Koshish Karein
+          </button>
         </div>
       )}
 

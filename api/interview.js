@@ -46,6 +46,10 @@ QUESTION BANK:
 
 Begin now with a warm one-line greeting and your first question.`;
 
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
 export default async function handler(req, res) {
   if (req.method === 'GET') {
     return res.status(200).json({ configured: !!process.env.GEMINI_API_KEY });
@@ -69,27 +73,68 @@ export default async function handler(req, res) {
       contents.push({ role: 'user', parts: [{ text: 'Start the interview.' }] });
     }
 
-    const r = await fetch(
-      'https://generativelanguage.googleapis.com/v1beta/models/' + MODEL + ':generateContent?key=' + apiKey,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-          contents,
-          generationConfig: { temperature: 0.7, maxOutputTokens: 250 },
-        }),
-      }
-    );
+    const url =
+      'https://generativelanguage.googleapis.com/v1beta/models/' +
+      MODEL +
+      ':generateContent?key=' +
+      apiKey;
+    const payload = JSON.stringify({
+      systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+      contents,
+      generationConfig: { temperature: 0.7, maxOutputTokens: 250 },
+    });
 
-    const data = await r.json().catch(() => null);
-    if (!r.ok) {
-      const gmsg = data && data.error && data.error.message ? String(data.error.message) : '';
-      const detail = (gmsg || ('HTTP ' + r.status)).slice(0, 200);
+    // Retry up to 3 times on rate-limit / overloaded errors with backoff.
+    let r = null;
+    let data = null;
+    let lastStatus = 0;
+    let lastMsg = '';
+    for (let attempt = 0; attempt < 3; attempt++) {
+      if (attempt > 0) await sleep(1200 * attempt); // 1.2s, then 2.4s
+      try {
+        r = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: payload,
+        });
+      } catch (e) {
+        lastMsg = 'network';
+        continue; // network blip — retry
+      }
+      lastStatus = r.status;
+      data = await r.json().catch(() => null);
+      if (r.ok) break;
+      lastMsg =
+        data && data.error && data.error.message ? String(data.error.message) : '';
+      const retryable =
+        r.status === 429 ||
+        r.status === 503 ||
+        /overloaded|high demand|try again later/i.test(lastMsg);
+      if (!retryable) break;
+    }
+
+    if (!r || !r.ok) {
+      const busy =
+        /overloaded|high demand|try again later/i.test(lastMsg) || lastStatus === 503;
+      if (busy) {
+        // Friendly code — the app shows a Roman Urdu message + retry button.
+        return res.status(503).json({ error: 'model_busy' });
+      }
+      const detail = (lastMsg || 'HTTP ' + lastStatus).slice(0, 200);
       return res.status(502).json({ error: 'gemini_error', detail });
     }
-    const parts = data && data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts;
-    const text = Array.isArray(parts) ? parts.map((p) => p.text || '').join('').trim() : '';
+    const parts =
+      data &&
+      data.candidates &&
+      data.candidates[0] &&
+      data.candidates[0].content &&
+      data.candidates[0].content.parts;
+    const text = Array.isArray(parts)
+      ? parts
+          .map((p) => p.text || '')
+          .join('')
+          .trim()
+      : '';
     if (!text) {
       return res.status(502).json({ error: 'empty_response' });
     }
