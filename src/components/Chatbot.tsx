@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, BookOpen } from 'lucide-react';
+import { MessageCircle, X, Send, BookOpen, Mic } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 import { findAnswer, SUGGESTED_QUESTIONS, FALLBACK_SUGGESTIONS, type FaqLink } from '../data/chatbotFaq';
 
@@ -101,6 +101,15 @@ export const Chatbot: React.FC<ChatbotProps> = ({ navigate }) => {
             <p className="font-serif font-bold text-base text-white leading-tight">ISSB Dost</p>
             <p className="text-[11px] uppercase tracking-[0.18em] text-khaki-400">Tumhara tayari helper</p>
           </div>
+
+          {/* AI Voice Interview promo */}
+          <button
+            onClick={() => goRoute({ page: 'voice-interview' })}
+            className="shrink-0 mx-3 mt-3 flex items-center justify-center gap-2 bg-army-900 hover:bg-army-800 text-gold-400 text-sm font-bold px-3 py-2.5 rounded-sm transition-colors"
+          >
+            <Mic className="w-4 h-4" />
+            AI Voice Interview — mic par practice karein
+          </button>
 
           {/* Messages */}
           <div ref={scrollRef} className="flex-1 overflow-y-auto px-3 py-3 space-y-3 bg-paper">
