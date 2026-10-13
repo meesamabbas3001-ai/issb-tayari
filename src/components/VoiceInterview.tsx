@@ -108,12 +108,16 @@ export const VoiceInterview: React.FC = () => {
   }
 
   async function sendToAI(history: Message[]): Promise<string | null> {
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => controller.abort(), 25000);
     try {
       const r = await fetch('/api/interview', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ history }),
+        signal: controller.signal,
       });
+      window.clearTimeout(timer);
       const d = await r.json();
       if (!r.ok) {
         const detail = d.detail ? ` Wajah: ${d.detail}` : '';
@@ -125,8 +129,13 @@ export const VoiceInterview: React.FC = () => {
         return null;
       }
       return d.reply as string;
-    } catch {
-      setError('Internet ya server ka masla — dobara koshish karein.');
+    } catch (e: any) {
+      window.clearTimeout(timer);
+      setError(
+        e && e.name === 'AbortError'
+          ? 'AI ne zyada der laga di — dobara koshish karein.'
+          : 'Internet ya server ka masla — dobara koshish karein.'
+      );
       return null;
     }
   }
