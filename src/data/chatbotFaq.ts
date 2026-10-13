@@ -183,7 +183,6 @@ export const FAQ: FaqEntry[] = [
     question: 'Initial interview kaisa hota hai?',
     answer:
       'AS&RC me chhota sa interview: tumhara taaruf, taleem, family, aur "fauj me kyun ana chahte ho". Pur-sukoon raho, seedhe jawab do — ye confidence ka test hai.',
-    link: { label: 'AI Voice Interview try karo', route: { page: 'voice-interview' } },
   },
 
   // ---------- ISSB days / screening ----------
