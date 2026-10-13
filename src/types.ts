@@ -22,7 +22,8 @@ export type Route =
   | { page: 'psychology' }
   | { page: 'gto' }
   | { page: 'interview' }
-  | { page: 'initial-mcqs' };
+  | { page: 'initial-mcqs' }
+  | { page: 'voice-interview' };
 
 export type Navigate = (route: Route) => void;
 
@@ -76,6 +77,8 @@ export function routeToPath(route: Route): string {
       return '/interview';
     case 'initial-mcqs':
       return '/practice/initial-mcqs';
+    case 'voice-interview':
+      return '/practice/voice-interview';
   }
 }
 
@@ -104,6 +107,7 @@ export function pathToRoute(path: string): Route {
   if (clean === '/gto') return { page: 'gto' };
   if (clean === '/interview') return { page: 'interview' };
   if (clean === '/practice/initial-mcqs') return { page: 'initial-mcqs' };
+  if (clean === '/practice/voice-interview') return { page: 'voice-interview' };
   const noteMatch = clean.match(/^\/notes\/([a-z0-9-]+)$/);
   if (noteMatch) return { page: 'note', slug: noteMatch[1] };
   return { page: 'home' };
