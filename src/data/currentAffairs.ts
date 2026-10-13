@@ -8,11 +8,13 @@ export interface CurrentAffair {
   summary: string;
   whyItMatters: string;
   source: string;
+  sourceUrl?: string;
 }
 
 // Verified October 2026 current affairs for ISSB interview/GK prep.
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
+// sourceUrl is the direct article link; the UI renders the source as a clickable link.
 export const lastUpdated = '12 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
@@ -213,5 +215,43 @@ export const currentAffairs: CurrentAffair[] = [
     whyItMatters:
       'A Pakistan win to balance the Asian Games loss — shows you follow current series, not just headlines.',
     source: 'Khel Now, Saptashwa TV',
+  },
+  {
+    id: 'ca-19',
+    date: '11 October 2026',
+    category: 'Defense',
+    headline: 'Security forces foil infiltration bid in Kurram; soldier martyred',
+    summary:
+      'Security forces detected a group attempting to cross into Pakistan from Afghanistan near Kurram on 10 October and engaged them. According to ISPR, 12 khwarij and Afghan Taliban personnel were killed while Naib Subedar Hidayat Aman, 40, embraced shahadat during the exchange of fire. The military said Afghan Taliban posts opened fire to support the infiltration attempt, and a sanitisation operation is under way in the area.',
+    whyItMatters:
+      'Border-security questions are common — know what ISPR said and why the Pakistan-Afghanistan border stays tense.',
+    source: 'The News',
+    sourceUrl:
+      'https://www.thenews.pk/story/1442395-security-forces-kill-12-terrorists-afghan-taliban-personnel-in-foiled-kurram-infiltration-bid',
+  },
+  {
+    id: 'ca-20',
+    date: '11 October 2026',
+    category: 'International',
+    headline: 'Pakistan condemns Houthi attack on Riyadh airport',
+    summary:
+      'Pakistan strongly condemned the Houthi attack on the passenger terminal at King Khalid International Airport in Riyadh on 10 October, calling the targeting of a civilian airport a violation of international law. Deputy Prime Minister and Foreign Minister Ishaq Dar said Pakistan remains firmly committed to Saudi Arabia’s sovereignty and security under the Makkah Joint Defence Agreement.',
+    whyItMatters:
+      'Shows Pakistan’s defence diplomacy in action — link it to the Makkah Joint Defence Agreement of 7 August 2026.',
+    source: 'WE News',
+    sourceUrl: 'https://wenewsenglish.com/pakistan-concerned-over-houthi-attack/',
+  },
+  {
+    id: 'ca-21',
+    date: '12 October 2026',
+    category: 'Economy',
+    headline: 'Petrol price cut by Rs2.93, diesel up 61 paisas from 13 October',
+    summary:
+      'The federal government reduced petrol by Rs2.93 per litre to Rs395.37 and raised high-speed diesel by Rs0.61 to Rs396.85 per litre, effective 13 October 2026. The Petroleum Division said the revision reflects movements in international oil prices and related costs.',
+    whyItMatters:
+      'Everyday-economy awareness — interviewers check whether you follow prices that affect ordinary citizens.',
+    source: 'Mettis Link News',
+    sourceUrl:
+      'https://mettisglobal.news/Petrol-price-cut-by-Rs293-diesel-rises-by-Rs061-64147',
   },
 ];

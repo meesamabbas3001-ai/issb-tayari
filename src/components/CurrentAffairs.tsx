@@ -107,10 +107,22 @@ export const CurrentAffairs: React.FC = () => {
                   </span>
                 </p>
               </div>
-              <p className="inline-flex items-center gap-1.5 text-xs text-khaki-600 font-semibold">
-                <Building2 className="w-3.5 h-3.5" />
-                Source: {a.source}
-              </p>
+              {a.sourceUrl ? (
+                <a
+                  href={a.sourceUrl}
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-flex items-center gap-1.5 text-xs text-khaki-600 font-semibold underline hover:text-army-800"
+                >
+                  <Building2 className="w-3.5 h-3.5" />
+                  Source: {a.source}
+                </a>
+              ) : (
+                <p className="inline-flex items-center gap-1.5 text-xs text-khaki-600 font-semibold">
+                  <Building2 className="w-3.5 h-3.5" />
+                  Source: {a.source}
+                </p>
+              )}
             </div>
           </article>
         ))}
