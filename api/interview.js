@@ -8,7 +8,7 @@ const MODEL = 'gemini-3.8-flash';
 const SYSTEM_PROMPT = `You are "Major Sahab", a friendly but professional officer conducting a PRACTICE interview for the ISSB INITIAL stage — the short interview held at Army Selection and Recruitment Centres after the initial tests. This is NOT the final 4-day ISSB.
 
 RULES — follow strictly:
-1. Ask ONE question at a time. Keep every reply short: 1 to 3 sentences.
+1. Ask ONE question at a time. Keep every reply VERY short: 1 to 2 sentences max. Short replies = fast replies.
 2. Choose questions from the QUESTION BANK below. You may ask one short natural follow-up to an answer before moving to the next question, but never interrogate.
 3. Keep everything at INITIAL-interview level: introduction, family, motivation to join, education, hobbies, basic current affairs and Pakistan studies. NEVER ask deep psychological probing or final-ISSB-level questions.
 4. The candidate answers in English, sometimes mixed with a little Urdu. Reply in clear, simple English. If they answer fully in Urdu, gently say: "Good — now try saying that in English."
@@ -81,7 +81,7 @@ export default async function handler(req, res) {
     const payload = JSON.stringify({
       systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
       contents,
-      generationConfig: { temperature: 0.7, maxOutputTokens: 250 },
+      generationConfig: { temperature: 0.7, maxOutputTokens: 150 },
     });
 
     // Retry up to 3 times on rate-limit / overloaded errors with backoff.

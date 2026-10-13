@@ -94,10 +94,11 @@ export const VoiceInterview: React.FC = () => {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'en-US';
-    u.rate = 0.95;
-    u.pitch = 1;
+    u.rate = 0.9;
+    u.pitch = 0.82;
     const voices = window.speechSynthesis.getVoices();
     const v =
+      voices.find((x) => /^en/i.test(x.lang) && /male/i.test(x.name)) ||
       voices.find((x) => /en[-_]US/i.test(x.lang) && /google/i.test(x.name)) ||
       voices.find((x) => /^en/i.test(x.lang));
     if (v) u.voice = v;
@@ -407,7 +408,7 @@ export const VoiceInterview: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">
       <div className="rule-double mb-6" />
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-4">
         <h1 className="font-serif font-black text-2xl text-army-950">
           AI Interview <span className="text-gold-600">— Live</span>
         </h1>
@@ -417,6 +418,15 @@ export const VoiceInterview: React.FC = () => {
         >
           <Volume2 className="w-4 h-4" /> Awaz: {speechOn ? 'On' : 'Off'}
         </button>
+      </div>
+
+      <div className="mb-4 rounded-sm overflow-hidden border-2 border-army-900">
+        <img
+          src="https://drive.google.com/thumbnail?id=1cArX-RPAmJ9AtJdNMMx4moX5dZVCK5U3&sz=w800"
+          alt="Asal interview room — officer candidate ka interview le raha hai"
+          className="w-full h-32 sm:h-44 object-cover"
+          loading="lazy"
+        />
       </div>
 
       <Transcript messages={messages} />

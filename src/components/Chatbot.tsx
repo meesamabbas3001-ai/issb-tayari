@@ -105,10 +105,14 @@ export const Chatbot: React.FC<ChatbotProps> = ({ navigate }) => {
           {/* AI Voice Interview promo */}
           <button
             onClick={() => goRoute({ page: 'voice-interview' })}
-            className="shrink-0 mx-3 mt-3 flex items-center justify-center gap-2 bg-army-900 hover:bg-army-800 text-gold-400 text-sm font-bold px-3 py-2.5 rounded-sm transition-colors"
+            className="shrink-0 mx-3 mt-3 flex items-center justify-center gap-2 bg-army-900 hover:bg-army-800 text-gold-400 text-sm font-black px-3 py-3 rounded-sm transition-colors shadow-md"
           >
-            <Mic className="w-4 h-4" />
-            AI Voice Interview — mic par practice karein
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-gold-400"></span>
+            </span>
+            <Mic className="w-5 h-5" />
+            AI Voice Interview — Mic Par Practice
           </button>
 
           {/* Messages */}
