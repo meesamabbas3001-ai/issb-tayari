@@ -82,7 +82,12 @@ export default async function handler(req, res) {
       }
     );
 
-    const data = await r.json();
+    const data = await r.json().catch(() => null);
+    if (!r.ok) {
+      const gmsg = data && data.error && data.error.message ? String(data.error.message) : '';
+      const detail = (gmsg || ('HTTP ' + r.status)).slice(0, 200);
+      return res.status(502).json({ error: 'gemini_error', detail });
+    }
     const parts = data && data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts;
     const text = Array.isArray(parts) ? parts.map((p) => p.text || '').join('').trim() : '';
     if (!text) {

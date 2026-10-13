@@ -116,10 +116,11 @@ export const VoiceInterview: React.FC = () => {
       });
       const d = await r.json();
       if (!r.ok) {
+        const detail = d.detail ? ` Wajah: ${d.detail}` : '';
         setError(
           d.error === 'not_configured'
             ? 'AI key nahi lagi — neeche setup steps dekhein.'
-            : 'AI se jawab nahi aya. Thori der baad dobara koshish karein.'
+            : `AI se jawab nahi aya.${detail} Ye message mujhe bhejo taake theek kar sakun.`
         );
         return null;
       }
