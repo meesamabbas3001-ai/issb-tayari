@@ -14,15 +14,6 @@ interface Tool {
 
 const tools: Tool[] = [
   {
-    title: 'AI Voice Interview',
-    urdu: 'Initial Interview Practice',
-    desc: 'AI officer se bolo — mic par English me jawab do, wo agla sawal poochega. Initial interview ki asli practice, bilkul free.',
-    icon: <Mic className="w-7 h-7" />,
-    route: { page: 'voice-interview' },
-    meta: 'Voice • AI officer • 8-10 sawal',
-    badge: 'New',
-  },
-  {
     title: 'WAT Simulator',
     urdu: 'Word Association Test',
     desc: 'Lafz dekho, 10 second me positive jumla likho. Speed + soch ki practice.',

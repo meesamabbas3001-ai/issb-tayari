@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, BookOpen, Mic } from 'lucide-react';
+import { MessageCircle, X, Send, BookOpen } from 'lucide-react';
 import type { Navigate, Route } from '../types';
 import { findAnswer, SUGGESTED_QUESTIONS, FALLBACK_SUGGESTIONS, type FaqLink } from '../data/chatbotFaq';
 
@@ -84,16 +84,6 @@ export const Chatbot: React.FC<ChatbotProps> = ({ navigate }) => {
 
   return (
     <>
-      {/* Floating voice-interview button — bot ke saath, foran click */}
-      <button
-        onClick={() => goRoute({ page: 'voice-interview' })}
-        aria-label="AI Voice Interview kholein"
-        title="AI Voice Interview"
-        className="fixed bottom-5 right-[5.75rem] z-[60] w-14 h-14 rounded-full bg-army-900 hover:bg-army-800 text-gold-400 shadow-lg shadow-black/20 flex items-center justify-center transition-transform hover:scale-105 active:scale-95"
-      >
-        <Mic className="w-6 h-6" strokeWidth={2.5} />
-      </button>
-
       {/* Floating button */}
       <button
         onClick={() => setOpen(!open)}
@@ -111,19 +101,6 @@ export const Chatbot: React.FC<ChatbotProps> = ({ navigate }) => {
             <p className="font-serif font-bold text-base text-white leading-tight">ISSB Dost</p>
             <p className="text-[11px] uppercase tracking-[0.18em] text-khaki-400">Tumhara tayari helper</p>
           </div>
-
-          {/* AI Voice Interview promo */}
-          <button
-            onClick={() => goRoute({ page: 'voice-interview' })}
-            className="shrink-0 mx-3 mt-3 flex items-center justify-center gap-2 bg-army-900 hover:bg-army-800 text-gold-400 text-sm font-black px-3 py-3 rounded-sm transition-colors shadow-md"
-          >
-            <span className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-gold-400"></span>
-            </span>
-            <Mic className="w-5 h-5" />
-            AI Voice Interview — Mic Par Practice
-          </button>
 
           {/* Messages */}
           <div ref={scrollRef} className="flex-1 overflow-y-auto px-3 py-3 space-y-3 bg-paper">
