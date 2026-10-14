@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '12 October 2026';
+export const lastUpdated = '13 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -253,5 +253,70 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'Mettis Link News',
     sourceUrl:
       'https://mettisglobal.news/Petrol-price-cut-by-Rs293-diesel-rises-by-Rs061-64147',
+  },
+  {
+    id: 'ca-22',
+    date: '13 October 2026',
+    category: 'Defense',
+    headline: 'Pakistan Army test-fires Fatah-2 Extended Range hypersonic ballistic missile',
+    summary:
+      'The Pakistan Army successfully test-fired the extended-range version of the Fatah-2 hypersonic ballistic missile on 13 October, ISPR announced. The system carries advanced navigation and modern avionics, hits targets with high precision, and is designed to defeat enemy missile defence systems through its unique trajectory and manoeuvrability. The launch was witnessed by the Commander of the Army Rocket Force Command, and the President, Prime Minister, COAS & CDF and Services Chiefs congratulated the scientists and engineers.',
+    whyItMatters:
+      'Missile-program GK: know the Fatah-2 ER, the Army Rocket Force Command, and why a manoeuvrable trajectory matters against missile defences.',
+    source: 'Sabah News',
+    sourceUrl:
+      'https://sabahnews.net/english/news/pakistan-army-conducts-successful-test-launch-of-hypersonic-ballistic-missile-fatah2-extended-range-er-ispr/',
+  },
+  {
+    id: 'ca-23',
+    date: '13 October 2026',
+    category: 'International',
+    headline: 'First Makkah Alliance Secretary General calls on President Zardari',
+    summary:
+      'Lieutenant General (retired) Nauman Mahmood, the first Secretary General of the Makkah Alliance for Defence, called on President Asif Ali Zardari at Aiwan-i-Sadr. He will lead the Alliance’s General Secretariat being set up in Riyadh. President Zardari said the Makkah Joint Defence Agreement, signed by Pakistan, Saudi Arabia and Turkiye on 7 August 2026, is purely defensive in nature, is not directed against any country, and does not amount to a new bloc.',
+    whyItMatters:
+      'Key foreign-policy fact: the Makkah pact’s three members, the 7 August 2026 signing date, and its purely defensive character.',
+    source: 'WE News',
+    sourceUrl:
+      'https://wenewsenglish.com/pakistan-reaffirms-commitment-to-regional-peace-defensive-cooperation-under-makkah-defence-agreement/',
+  },
+  {
+    id: 'ca-24',
+    date: '13 October 2026',
+    category: 'International',
+    headline: 'Oman Foreign Minister arrives for 8th Pakistan-Oman Joint Ministerial Commission',
+    summary:
+      'Oman’s Foreign Minister Sayyid Badr bin Hamad bin Hamood Albusaidi arrived in Islamabad on a two-day official visit (13–14 October) to lead Oman’s delegation at the 8th Pakistan-Oman Joint Ministerial Commission. The JMC, co-chaired by the two foreign ministers, covers trade, defence, energy, maritime security, labour and other fields, and the Omani minister will also meet Deputy Prime Minister Ishaq Dar and call on Prime Minister Shehbaz Sharif.',
+    whyItMatters:
+      'Classic “Pakistan’s relations with Gulf states” material — know what the JMC covers and why Oman matters for maritime security.',
+    source: 'WE News',
+    sourceUrl:
+      'https://wenewsenglish.com/oman-foreign-minister-arrives-in-pakistan-on-official-visit/',
+  },
+  {
+    id: 'ca-25',
+    date: '12 October 2026',
+    category: 'International',
+    headline: 'Asim Iftikhar Ahmad takes charge as Pakistan’s 34th Foreign Secretary',
+    summary:
+      'Ambassador Asim Iftikhar Ahmad formally assumed charge as Pakistan’s 34th Foreign Secretary and called on Deputy Prime Minister and Foreign Minister Ishaq Dar at the Foreign Office. He previously served as Pakistan’s Permanent Representative to the United Nations in New York. He succeeds Ambassador Amna Baloch, who retired from government service after leading the Foreign Office since September 2024.',
+    whyItMatters:
+      '“Who is Pakistan’s Foreign Secretary?” is a classic interview GK question — keep this name current.',
+    source: 'Ghanamma News',
+    sourceUrl:
+      'https://www.ghanamma.com/2026/10/13/asim-iftikhar-assumes-charge-as-foreign-secretary-calls-on-ishaq-dar/',
+  },
+  {
+    id: 'ca-26',
+    date: '9–13 October 2026',
+    category: 'Sports',
+    headline: 'Pakistan win T20I series 2–1 against Sri Lanka at Rawalpindi',
+    summary:
+      'Pakistan won the three-match T20I series against Sri Lanka 2–1 at Rawalpindi Cricket Stadium. Pakistan took the first T20I by 4 wickets and the second by 82 runs on 11 October (Maaz Sadaqat 96 off 51, Sahibzada Farhan 73 off 44), while Sri Lanka won the final T20I by 8 wickets on 13 October through Kusal Mendis’s unbeaten 87. Captain Sahibzada Farhan, in his first series in charge, scored 89, 73 and 76 and was named Player of the Series.',
+    whyItMatters:
+      'A Pakistan home series win to balance the Asian Games final loss — know the series result and standout performers.',
+    source: 'Cricket Daily',
+    sourceUrl:
+      'https://cricketdaily.net/article/t20/pakistan-vs-sri-lanka-3rd-t20i-2026-kusal-mendis-87-consolation-win',
   },
 ];
