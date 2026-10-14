@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './components/HomePage';
@@ -29,13 +29,22 @@ import { VoiceInterview } from './components/VoiceInterview';
 import { InterviewExperiences } from './components/InterviewExperiences';
 import { PracticePapers } from './components/PracticePapers';
 import type { Route, Navigate } from './types';
+import { pathToRoute, routeToPath } from './types';
 
 export default function App() {
-  const [route, setRoute] = useState<Route>({ page: 'home' });
+  const [route, setRoute] = useState<Route>(() => pathToRoute(window.location.pathname));
 
   const navigate: Navigate = useCallback((r: Route) => {
     setRoute(r);
+    const p = routeToPath(r);
+    if (window.location.pathname !== p) window.history.pushState({}, '', p);
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+  }, []);
+
+  useEffect(() => {
+    const onPop = () => setRoute(pathToRoute(window.location.pathname));
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
   }, []);
 
   return (

@@ -62,7 +62,7 @@ export const HomePage: React.FC<{ navigate: Navigate }> = ({ navigate }) => {
               100% Free &bull; Urdu + English &bull; Real Guidance
             </p>
             <p className="text-khaki-300 mb-8 max-w-2xl leading-relaxed anim-fade-up anim-delay-3">
-              29 original notes, 7 timed practice tools, video lectures, and a 30-day plan —
+              {allNotes.length} original notes, 14 timed practice tools, video lectures, and a 30-day plan —
               written honestly for Pakistani students. No copied material, no fake promises.
             </p>
             <div className="flex flex-wrap gap-3 anim-fade-up anim-delay-4">
