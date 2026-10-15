@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '13 October 2026';
+export const lastUpdated = '14 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -318,5 +318,57 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'Cricket Daily',
     sourceUrl:
       'https://cricketdaily.net/article/t20/pakistan-vs-sri-lanka-3rd-t20i-2026-kusal-mendis-87-consolation-win',
+  },
+  {
+    id: 'ca-27',
+    date: '14 October 2026',
+    category: 'Defense',
+    headline: 'PM Shehbaz reaffirms full defence support for Saudi Arabia under Makkah pact',
+    summary:
+      'Prime Minister Shehbaz Sharif met Lieutenant General (retired) Nauman Mahmood, the first Secretary General of the Makkah Defence Alliance, in Islamabad on 14 October. According to the Prime Minister’s Office, he pledged that Pakistan stands shoulder to shoulder with Saudi Arabia and will defend its sovereignty and territorial integrity, backing the Kingdom’s right to self-defence. Mahmood briefed the Prime Minister on plans to deepen defence and strategic cooperation under the Makkah Joint Defence Agreement signed on 7 August 2026.',
+    whyItMatters:
+      'A follow-up to yesterday’s item on the Alliance’s Secretary General — interviewers often ask for the latest step in Pakistan–Saudi defence ties.',
+    source: 'WE News',
+    sourceUrl:
+      'https://wenewsenglish.com/pm-shehbaz-reaffirms-pakistans-support-for-saudi-arabia/',
+  },
+  {
+    id: 'ca-28',
+    date: '14 October 2026',
+    category: 'International',
+    headline: 'Houthi missile strikes batter Saudi Arabia; one Pakistani resident killed in Riyadh',
+    summary:
+      'A weekend series of Houthi missile and drone strikes heavily disrupted Saudi Arabia. King Khalid International Airport in Riyadh was hit on Saturday, killing 13 people and suspending civil aviation, and was struck again on Sunday, killing one Pakistani resident and wounding 11 other nationals. The attacks continued into late Tuesday, with a strike on a Saudi Aramco administrative building in Dhahran causing a limited fire and intercepted-missile debris wounding four people in Riyadh.',
+    whyItMatters:
+      'Shows why the Makkah defence pact matters — and the safety of Pakistanis working in the Gulf is a classic interview topic.',
+    source: 'Pakistan TV',
+    sourceUrl:
+      'https://pakistantv.com/article/pakistan-pledges-full-support-for-saudi-arabia-under-makkah-defense-pact',
+  },
+  {
+    id: 'ca-29',
+    date: '14 October 2026',
+    category: 'International',
+    headline: 'Russian Interior Minister visits Pakistan; MoU on combating organised crime signed',
+    summary:
+      'Russian Interior Minister Vladimir Kolokoltsev, on an official visit to Pakistan on 14 October, met Prime Minister Shehbaz Sharif, Deputy Prime Minister Ishaq Dar and Chief of Defence Forces Field Marshal Asim Munir at GHQ Rawalpindi. Both sides agreed to deepen cooperation in trade, investment, energy, culture and tourism, and a memorandum of understanding on strengthening cooperation in combating organised crime was signed. The Russian minister acknowledged the professionalism and sacrifices of Pakistan’s armed forces in the fight against terrorism.',
+    whyItMatters:
+      'Pakistan–Russia security ties keep growing — a good example for “Pakistan’s defence relations” questions.',
+    source: 'Sabah News, WE News',
+    sourceUrl:
+      'https://sabahnews.net/english/news/pm-shehbaz-reaffirms-pakistans-commitment-to-further-deepening-its-friendly-relations-with-the-russian-federation/',
+  },
+  {
+    id: 'ca-30',
+    date: '14 October 2026',
+    category: 'National',
+    headline: 'PTI challenges KP emergency rule in Peshawar High Court',
+    summary:
+      'The PTI on Wednesday challenged the governor’s rule in Khyber Pakhtunkhwa at the Peshawar High Court, days after President Asif Ali Zardari suspended the PTI-led provincial government on the federal cabinet’s recommendation, citing failure to tackle militancy. The court challenge keeps the constitutional dispute over the province’s administration in play.',
+    whyItMatters:
+      'A continuing constitutional story — if asked, stick to the facts and stay neutral, as yesterday’s interview tip advised.',
+    source: 'Sowetan (South Africa)',
+    sourceUrl:
+      'https://www.sowetan.co.za/news/world/2026-10-14-imran-khans-woes-compound-as-pakistan-suspends-his-provincial-government/',
   },
 ];
