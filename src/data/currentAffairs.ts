@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '14 October 2026';
+export const lastUpdated = '15 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -370,5 +370,57 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'Sowetan (South Africa)',
     sourceUrl:
       'https://www.sowetan.co.za/news/world/2026-10-14-imran-khans-woes-compound-as-pakistan-suspends-his-provincial-government/',
+  },
+  {
+    id: 'ca-31',
+    date: '15 October 2026',
+    category: 'Defense',
+    headline: 'Security forces kill five Fitna al-Hindustan terrorists in Washuk IBO',
+    summary:
+      'Security forces killed five terrorists affiliated with the Indian proxy Fitna al-Hindustan during an intelligence-based operation in Balochistan’s Washuk district on the night of 12-13 October. According to ISPR, a terrorist hideout was busted in swift action and a huge cache of weapons, ammunition and explosives was recovered. Sanitisation operations are continuing in the area under the vision of Azm-e-Istehkam.',
+    whyItMatters:
+      'Know the state’s terminology — Fitna al-Hindustan for India-backed proxies — and Azm-e-Istehkam, the counter-terrorism vision driving such operations.',
+    source: 'Islamabad Post',
+    sourceUrl:
+      'https://islamabadpost.com.pk/security-forces-kill-five-india-backed-terrorists-in-balochistan-ibo-ispr/',
+  },
+  {
+    id: 'ca-32',
+    date: '14 October 2026',
+    category: 'International',
+    headline: 'Pakistan and Oman sign six agreements at 8th Joint Ministerial Commission',
+    summary:
+      'Pakistan and Oman signed six agreements and MoUs at the 8th session of the Pakistan-Oman Joint Ministerial Commission in Islamabad, co-chaired by Deputy Prime Minister Ishaq Dar and Omani Foreign Minister Sayyid Badr Al Busaidi. The documents cover diplomatic coordination, visa exemption for diplomatic and official passport holders, IT and telecommunications, media cooperation, and archives. Prime Minister Shehbaz Sharif witnessed the signing and called Oman a brotherly maritime neighbour.',
+    whyItMatters:
+      'A good example of bilateral diplomacy for “Pakistan’s relations with Gulf countries” — note the JMC is the key mechanism, and the visa exemption applies only to diplomatic and official passports.',
+    source: 'The Diplomatic Insight',
+    sourceUrl:
+      'https://thediplomaticinsight.com/pakistan-oman-sign-six-agreements-expand-cooperation/',
+  },
+  {
+    id: 'ca-33',
+    date: '15 October 2026',
+    category: 'International',
+    headline: 'Dar speaks to Turkish and Egyptian foreign ministers on regional developments',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar held separate phone conversations with the foreign ministers of Turkiye and Egypt to discuss regional and international developments. The calls covered the situation in Gaza and Palestine, and the agenda of the OIC Council of Ministers meeting scheduled for 17-18 October in Iraq. All sides agreed to stay closely engaged on dialogue and de-escalation.',
+    whyItMatters:
+      'Shows Pakistan’s active Middle East diplomacy — the OIC Council of Ministers meeting in Iraq (17-18 October) is a date worth remembering.',
+    source: 'WE News English',
+    sourceUrl:
+      'https://wenewsenglish.com/pakistan-deputy-pm-discusses-regional-developments-with-turkish-egyptian-foreign-ministers/',
+  },
+  {
+    id: 'ca-34',
+    date: '12 October 2026',
+    category: 'Economy',
+    headline: 'Pakistan assumes chair of Borrowers’ Platform Governing Council',
+    summary:
+      'Finance Minister Muhammad Aurangzeb accepted the chairmanship of the Governing Council of the Borrowers’ Platform on behalf of Pakistan during the IMF-World Bank Annual Meetings in Bangkok. The UN-supported platform helps developing countries share expertise on debt management and development financing — it is meant for cooperation, not collective bargaining against creditors. Pakistan set a 2026-27 work plan focused on stronger debt-management practices and innovative financing instruments.',
+    whyItMatters:
+      'A landmark economic-diplomacy moment: Pakistan moves from borrower to chair of a debtor-country forum — and know its stated purpose is cooperation, not bargaining.',
+    source: 'The Pakistan Today',
+    sourceUrl:
+      'https://pakistanstoday.com.pk/today-news/pakistan-takes-lead-role-in-global-borrowers-platform/',
   },
 ];
