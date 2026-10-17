@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '15 October 2026';
+export const lastUpdated = '17 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -422,5 +422,56 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'The Pakistan Today',
     sourceUrl:
       'https://pakistanstoday.com.pk/today-news/pakistan-takes-lead-role-in-global-borrowers-platform/',
+  },
+  {
+    id: 'ca-35',
+    date: '14 October 2026',
+    category: 'National',
+    headline: 'Parliament endorses KP emergency and governor’s rule',
+    summary:
+      'Both houses of Parliament adopted resolutions endorsing President Asif Ali Zardari’s October 11 proclamation of emergency under Article 232 and governor’s rule under Article 234 in Khyber Pakhtunkhwa. The National Assembly approved the emergency resolution by majority vote after a debate opened by Law Minister Azam Nazeer Tarar, and the Senate followed; opposition PTI members walked out in protest.',
+    whyItMatters:
+      'Know Articles 232 and 234 and the sequence — presidential proclamation, then parliamentary approval within ten days — a classic constitutional current-affairs question.',
+    source: 'WE News English',
+    sourceUrl:
+      'https://wenewsenglish.com/pakistans-parliament-endorses-imposition-of-emergency-in-khyber-pakhtunkhwa/',
+  },
+  {
+    id: 'ca-36',
+    date: '16 October 2026',
+    category: 'Defense',
+    headline: 'FO warns India of “forceful response” to any aggression',
+    summary:
+      'At the weekly media briefing, Foreign Office spokesperson Sajjad Haider Khan condemned recent remarks by India’s Defence Minister Rajnath Singh as provocative, warned that any aggression would be met with a forceful response, and said Pakistan’s restraint should not be mistaken for weakness. He pointed to the May 2025 military confrontation as proof of Pakistan’s capability and resolve to defend its sovereignty.',
+    whyItMatters:
+      'The May 2025 conflict is now a standard interview reference — know how Pakistan’s Foreign Office frames its deterrence posture.',
+    source: 'WE News English',
+    sourceUrl:
+      'https://wenewsenglish.com/pakistan-warns-india-of-forceful-response-to-any-military-aggression/',
+  },
+  {
+    id: 'ca-37',
+    date: '17 October 2026',
+    category: 'International',
+    headline: 'FO stays neutral on Saudi-Iran Houthi blame while backing Makkah pact',
+    summary:
+      'At the weekly press briefing, the Foreign Office spokesperson declined to endorse Saudi Arabia’s accusation that Iran arms Yemen’s Houthis, saying disputes can only be settled through negotiation and peaceful means. At the same time, Pakistan reaffirmed its commitment to Saudi Arabia’s security under the Makkah Joint Defence Agreement, said one Pakistani was killed and six injured in the recent attacks on the Kingdom, and gave no timeline for any operational move under the pact.',
+    whyItMatters:
+      'A textbook example of Pakistan balancing ties with two regional powers — exactly the kind of foreign-policy question ISSB discussion rounds probe.',
+    source: 'Khabarwire (citing Express Tribune, Geo News)',
+    sourceUrl: 'https://khabarwire.com/blog/fo-saudi-iran-balancing-act-2026-10-17/',
+  },
+  {
+    id: 'ca-38',
+    date: '16 October 2026',
+    category: 'Economy',
+    headline: 'Aurangzeb: economy back on growth path; 3.7% GDP in FY26, near 4% in FY27',
+    summary:
+      'Finance Minister Muhammad Aurangzeb told the Atlantic Council in Bangkok that Pakistan’s economy is back on a growth path, with GDP expanding 3.7% in FY26 and around 4% expected in FY27 as industry and agriculture recover. He said tax collection has risen 40% in two years, lifting the tax-to-GDP ratio to about 10.3%, while the government pushes ahead with privatising power distribution companies, outsourcing airport operations, and a new Panda Bond issue.',
+    whyItMatters:
+      'Growth rate, tax-to-GDP ratio and the privatisation list are staple economic current-affairs questions for ISSB interviews.',
+    source: 'Mettis Global News',
+    sourceUrl:
+      'https://mettisglobal.news/Senator-Aurangzeb-Atlantic-Council-discuss-Pakistans-path-to-sustainable-growth-64246',
   },
 ];
