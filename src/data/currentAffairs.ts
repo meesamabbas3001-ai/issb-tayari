@@ -474,4 +474,55 @@ export const currentAffairs: CurrentAffair[] = [
     sourceUrl:
       'https://mettisglobal.news/Senator-Aurangzeb-Atlantic-Council-discuss-Pakistans-path-to-sustainable-growth-64246',
   },
+  {
+    id: 'ca-39',
+    date: '17 October 2026',
+    category: 'Defense',
+    headline: 'Pakistani forces clash with Afghan Taliban at northwestern border',
+    summary:
+      'Pakistani forces and Afghan Taliban personnel exchanged fire at several locations along Pakistan\u2019s northwestern border on Saturday, the Associated Press reported. Pakistani security officials said troops backed by artillery destroyed Taliban posts and killed an unspecified number of Pakistani Taliban militants trying to cross into Pakistan from eastern Afghanistan.',
+    whyItMatters:
+      'Border security with Afghanistan keeps coming up \u2014 know the difference between the Afghan Taliban and the Pakistani Taliban (TTP), and why infiltration attempts keep sparking clashes.',
+    source: 'Associated Press',
+    sourceUrl:
+      'https://www.ottumwacourier.com/news/national_news/pakistani-forces-afghan-taliban-exchange-fire-after-militants-attempt-to-infiltrate-pakistan/article_4b352992-4707-5957-9b1a-1493ebb896bb.html',
+  },
+  {
+    id: 'ca-40',
+    date: '16 October 2026',
+    category: 'International',
+    headline: 'Pakistan says talks with Afghanistan cannot be unconditional',
+    summary:
+      'Foreign Office spokesperson Sajjad Haider Khan said at the weekly briefing that Pakistan is ready for state-level talks with Afghanistan, but any dialogue must be tied to verifiable action against terrorist groups operating from Afghan soil. He named the Tehreek-i-Taliban Pakistan and the Balochistan Liberation Army as Pakistan\u2019s main concerns, and said Islamabad would welcome sincere mediation by friendly countries while noting no formal Russian mediation proposal is currently on the table.',
+    whyItMatters:
+      'Foreign-policy questions often test whether you know Pakistan\u2019s exact position \u2014 the key phrases here are \u201cverifiable action\u201d and the TTP and BLA.',
+    source: 'The Diplomatic Insight',
+    sourceUrl: 'https://thediplomaticinsight.com/pakistan-says-talks-with-afghanistan-cannot-be-unconditional/',
+  },
+  {
+    id: 'ca-41',
+    date: '17 October 2026',
+    category: 'Economy',
+    headline: 'Pakistan IT exports hit $435 million in September \u2014 second-highest ever',
+    summary:
+      'Pakistan\u2019s IT and technology exports rose 18% year-on-year to $435 million in September, the second-highest monthly figure on record, Adviser to the Finance Minister Khurram Schehzad announced. The figure sits just $2 million below the all-time high of $437 million set in December 2025, while first-quarter FY27 IT exports reached $1.25 billion, up about 18% from last year.',
+    whyItMatters:
+      'The IT sector is Pakistan\u2019s fastest-growing export engine \u2014 know the numbers and why they matter for earning foreign exchange without borrowing.',
+    source: 'TechJuice',
+    sourceUrl: 'https://www.techjuice.pk/pakistans-ict-exports-reach-435-million-in-september-2026/',
+  },
+  {
+    id: 'ca-42',
+    date: '16 October 2026',
+    category: 'Economy',
+    headline: 'July\u2013September exports rise 11.13% to $8.445 billion, but gains uneven',
+    summary:
+      'Pakistan\u2019s merchandise exports grew 11.13% to $8.445 billion in July\u2013September 2026, with September alone rising to $2.961 billion, the Pakistan Bureau of Statistics reported. Analysts noted the gains were concentrated in a few sectors \u2014 textiles grew while fruit, vegetable and pharmaceutical exports declined \u2014 and warned the recovery needs sector-specific government action.',
+    whyItMatters:
+      'Shows honest economic awareness: a headline number can hide weak sectors \u2014 interviewers respect candidates who see the whole picture.',
+    source: 'Energy Update',
+    sourceUrl:
+      'https://www.energyupdate.com.pk/pakistans-exports-rise-11-13-to-8-445-billion-decline-in-fruit-vegetable-and-pharmaceutical-sectoral-based-government-action-needed-internationally-accredited-testing-laboratories/',
+  },
 ];
+
