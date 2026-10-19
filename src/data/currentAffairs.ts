@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '17 October 2026';
+export const lastUpdated = '18 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -524,5 +524,69 @@ export const currentAffairs: CurrentAffair[] = [
     sourceUrl:
       'https://www.energyupdate.com.pk/pakistans-exports-rise-11-13-to-8-445-billion-decline-in-fruit-vegetable-and-pharmaceutical-sectoral-based-government-action-needed-internationally-accredited-testing-laboratories/',
   },
+  {
+    id: 'ca-43',
+    date: '18 October 2026',
+    category: 'Defense',
+    headline: 'Four Fitna al-Hindustan terrorists killed in Kalat IBO; Major Wajahat Waheed martyred in Gwadar',
+    summary:
+      'Security forces killed four members of the Indian-backed Fitna al-Hindustan during an intelligence-based operation in Jhatakabad, Kalat, and recovered a large cache of weapons and ammunition, ISPR said. During a clearance operation in Shadi Kaur, Gwadar, Major Wajahat Waheed, 34, of Lahore embraced martyrdom when an IED hit the detachment he was leading.',
+    whyItMatters:
+      'Martyrdom of officers and the Fitna al-Hindustan terminology are frequent interview topics — know the facts and show respectful awareness.',
+    source: 'ISPR (via Khyber Chronicles)',
+    sourceUrl:
+      'https://khyberchronicles.pk/balochistan-4-fitna-al-hindustan-operatives-killed-in-kalat-pakistan-army-major-martyred-in-gwadar-ied-blast-ispr/',
+  },
+  {
+    id: 'ca-44',
+    date: '18 October 2026',
+    category: 'International',
+    headline: 'Maldives President Muizzu to make state visit to Pakistan, 20–22 October',
+    summary:
+      'President Dr Mohamed Muizzu will undertake a state visit to Pakistan from 20 to 22 October at the invitation of Prime Minister Shehbaz Sharif, accompanied by the First Lady and cabinet ministers. It is the first state visit by a Maldivian president in 11 years and coincides with 60 years of diplomatic relations between the two countries, established in 1966. Several MoUs and a Pakistan–Maldives Business Forum are expected during the visit.',
+    whyItMatters:
+      'State visits are classic interview GK — know the guest, the dates, the 11-year gap and the 60th anniversary of diplomatic relations.',
+    source: 'Sabah News',
+    sourceUrl:
+      'https://sabahnews.net/english/news/president-of-maldives-to-undertake-a-state-visit-to-pakistan/',
+  },
+  {
+    id: 'ca-45',
+    date: '18 October 2026',
+    category: 'International',
+    headline: 'Dar speaks to Iranian FM Araghchi; Pakistan urges diplomacy on US-Iran tensions',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar called Iranian Foreign Minister Abbas Araghchi to discuss rising regional tensions, including the US-Iran standoff and renewed hostilities in Yemen. Dar stressed that dialogue and diplomacy remain the only way forward, and both sides agreed to stay in close contact ahead of the OIC foreign ministers’ meeting in Baghdad. Dar also discussed the Houthi attacks with his Egyptian counterpart.',
+    whyItMatters:
+      'Shows Pakistan’s balancing diplomacy in a volatile region — interviewers probe how Pakistan manages ties with the US, Iran and Saudi Arabia at once.',
+    source: 'ADN News English',
+    sourceUrl:
+      'https://english.adnnews.tv/pakistan-urges-diplomacy-as-iran-dismisses-us-threats-amid-regional-tensions/',
+  },
+  {
+    id: 'ca-46',
+    date: '18 October 2026',
+    category: 'Sports',
+    headline: 'Pakistan beat Sri Lanka by 37 runs in ODI tri-series clash',
+    summary:
+      'Pakistan posted 305, anchored by Salman Ali Agha’s 107 off 90 balls, and bowled Sri Lanka out for 268 in an ODI tri-series match. Babar Azam’s 45 took him past 16,000 international runs — only the fifth Pakistani to reach that mark — and a Faheem Ashraf relay catch completed a spill by debutant keeper Saad Baig for the fielding highlight.',
+    whyItMatters:
+      'Know the result, the standout innings and Babar’s 16,000-run milestone — Pak-SL results and batting records are common interview questions.',
+    source: 'Sports Now',
+    sourceUrl:
+      'https://www.sports-now.com/cricket/pakistan-beat-sri-lanka-odi-tri-series-highlights-article-156363173',
+  },
+  {
+    id: 'ca-47',
+    date: '17 October 2026',
+    category: 'Sports',
+    headline: 'Pakistan hosts first international women’s W15 tennis tournament in Islamabad',
+    summary:
+      'Thirty female players from 17 countries competed in the Junaid Family Foundation Women’s W15 Futures tournament in Islamabad — the first women’s tournament at this level ever held in Pakistan. US Chargé d’Affaires Natalie Baker called it a milestone for women’s sports and sports diplomacy at the closing ceremony on 17 October.',
+    whyItMatters:
+      'A first for Pakistan in women’s sport — landmarks like this are easy, impressive interview facts.',
+    source: 'Islamabad Post',
+    sourceUrl:
+      'https://islamabadpost.com.pk/us-charge-daffaires-commends-jff-for-organizing-historic-womens-tennis-tournament-in-pakistan/',
+  },
 ];
-
