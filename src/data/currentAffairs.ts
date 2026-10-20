@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '18 October 2026';
+export const lastUpdated = '19 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -588,5 +588,70 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'Islamabad Post',
     sourceUrl:
       'https://islamabadpost.com.pk/us-charge-daffaires-commends-jff-for-organizing-historic-womens-tennis-tournament-in-pakistan/',
+  },
+  {
+    id: 'ca-48',
+    date: '19 October 2026',
+    category: 'Defense',
+    headline: 'DG ISPR: Pakistan may review Yemen request for military help; warns of Makkah pact collective deterrence',
+    summary:
+      'ISPR Director General Lt Gen Ahmed Sharif Chaudhry told Independent Arabia that Pakistan was not aware of any formal Yemeni request for military support, but any such request would be evaluated by the government. He warned that if Middle East negotiations fail and military confrontation follows, the Makkah Joint Defence Agreement’s collective deterrence between Pakistan, Saudi Arabia and Turkiye could come into play, calling the defence of Saudi Arabia and the holy sites a foremost priority.',
+    whyItMatters:
+      'Know what the MJDA (Makkah Joint Defence Agreement) is and who the DG ISPR is — interviewers ask about Pakistan’s defence pacts and the military’s media role.',
+    source: 'DNA News Agency',
+    sourceUrl:
+      'https://dnanews.com.pk/pakistan-may-review-military-help-to-yemen-if-requested-says-ispr-chief-amid-houthi-attacks-on-saudi-arabia/',
+  },
+  {
+    id: 'ca-49',
+    date: '19 October 2026',
+    category: 'Defense',
+    headline: 'Field Marshal Asim Munir meets new Saudi envoy; reviews defence pact progress',
+    summary:
+      'Chief of Defence Staff and Chief of Army Staff Field Marshal Syed Asim Munir met Saudi Arabia’s newly appointed ambassador Rajeh Al-Buqami at GHQ Rawalpindi. According to the ISPR, both sides expressed satisfaction over progress under the Pakistan-Saudi joint defence agreement and discussed strengthening defence cooperation, institutional ties and the regional security situation.',
+    whyItMatters:
+      'The COAS title (COAS & CDS) and the Pak-Saudi defence agreement are interview staples — know who met whom and what pact was reviewed.',
+    source: 'Bloom Pakistan',
+    sourceUrl:
+      'https://bloompakistan.com/asim-munir-saudi-envoy-defence-pact/',
+  },
+  {
+    id: 'ca-50',
+    date: '19 October 2026',
+    category: 'International',
+    headline: 'Ishaq Dar in Dushanbe; Pakistan, Tajikistan vow stronger ties at SCO meeting',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar met Tajikistan’s Prime Minister Qohir Rasulzoda in Dushanbe, where he leads Pakistan’s delegation to the SCO Council of Heads of Government meeting on 19–20 October. Both sides agreed to strengthen cooperation in trade, investment, energy, connectivity, defence and culture, and Tajikistan’s prime minister appreciated Pakistan’s mediation efforts in the US-Iran tensions.',
+    whyItMatters:
+      'Know what the SCO is and Pakistan’s role in it — regional organisations and Pakistan’s diplomacy are classic interview topics.',
+    source: 'Pakistan TV',
+    sourceUrl:
+      'https://pakistantv.com/article/pakistan-s-fm-dar-to-attend-sco-council-of-heads-of-government-meeting-in-dushanbe',
+  },
+  {
+    id: 'ca-51',
+    date: '19 October 2026',
+    category: 'International',
+    headline: 'Pakistan, Egypt FMs condemn Houthi attacks on Saudi Arabia; seek early quadrilateral meeting',
+    summary:
+      'Ishaq Dar and Egypt’s Foreign Minister Badr Abdelatty condemned Houthi attacks on Saudi Arabia in a phone call, affirming full solidarity with Saudi Arabia’s sovereignty, security and territorial integrity. They discussed strengthening cooperation in the quadrilateral group of Saudi Arabia, Pakistan, Egypt and Turkiye and hoped its next meeting would be held as soon as possible.',
+    whyItMatters:
+      'Shows how Pakistan coordinates with the Muslim world on regional crises — useful for questions on Pakistan’s foreign policy priorities.',
+    source: 'Twasl News',
+    sourceUrl:
+      'https://twaslnews1.twaslnews.com/6201619/',
+  },
+  {
+    id: 'ca-52',
+    date: '19 October 2026',
+    category: 'Economy',
+    headline: 'National Accounts Committee trims FY26 GDP growth to 3.65%; Q4 slows to 2%',
+    summary:
+      'The National Accounts Committee approved revised national accounts showing Pakistan’s economy grew 3.65% in FY26, slightly below the earlier 3.70% estimate, with fourth-quarter growth slowing to 2%. The economy’s size was put at Rs126.4 trillion ($450.4 billion), with per capita income at Rs531,897 ($1,896); the committee also revised FY25 growth down to 3.11%.',
+    whyItMatters:
+      'Economic awareness matters in interviews — know the current GDP figure, per capita income and who approves national accounts (NAC at Pakistan Bureau of Statistics).',
+    source: 'Mettis Global News',
+    sourceUrl:
+      'https://mettisglobal.news/Pakistans-economy-grows-2-in-Q4-FY26-64312',
   },
 ];
