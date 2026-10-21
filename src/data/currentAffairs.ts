@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '19 October 2026';
+export const lastUpdated = '20 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -653,5 +653,44 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'Mettis Global News',
     sourceUrl:
       'https://mettisglobal.news/Pakistans-economy-grows-2-in-Q4-FY26-64312',
+  },
+  {
+    id: 'ca-53',
+    date: '20 October 2026',
+    category: 'International',
+    headline: 'Türkiye sends Mecca defence pact to parliament for ratification',
+    summary:
+      'Türkiye has submitted the Mecca Joint Defence Agreement with Pakistan and Saudi Arabia to parliament for ratification, Reuters reported, citing three parliamentary sources. Signed in August, the pact treats an armed attack on any one member as an attack on all; the parliamentary foreign affairs commission could debate it as early as Friday.',
+    whyItMatters:
+      "Know how defence alliances actually get made — ratification, NATO-style Article 5 clauses, and Pakistan's place in a new collective-deterrence bloc are classic interview material.",
+    source: 'Reuters',
+    sourceUrl:
+      'https://965wtou.com/2026/10/20/turkey-submits-saudi-pakistan-defence-pact-to-parliament-for-ratification-sources-say/',
+  },
+  {
+    id: 'ca-54',
+    date: '19 October 2026',
+    category: 'International',
+    headline: 'Army chief Asim Munir in Tehran as Pakistan mediates between US and Iran',
+    summary:
+      "Field Marshal Asim Munir was due to visit Tehran, according to a Pakistani official and Iranian media, in the latest sign of Pakistan's mediating role between the United States and Iran this year. The visit follows summer talks focused on preventing further escalation, reopening the Strait of Hormuz and ending the conflict quickly.",
+    whyItMatters:
+      "Pakistan's mediator role in a major international crisis is a strong foreign-policy point — know the Strait of Hormuz angle and the name and rank of Pakistan's army chief.",
+    source: 'Reuters',
+    sourceUrl:
+      'https://www.mix929.com/2026/10/19/pakistan-army-chief-asim-munir-to-visit-tehran-on-tuesday/',
+  },
+  {
+    id: 'ca-55',
+    date: '20 October 2026',
+    category: 'Sports',
+    headline: 'Pakistan thrash England by 87 runs to make it two from two in ODI tri-series',
+    summary:
+      "All-rounder Arafat Minhas starred with bat and ball as Pakistan beat England by 87 runs in Rawalpindi, their second straight win in the ODI tri-series. After Hasan Nawaz's 79 and Minhas's 59 lifted Pakistan to 302 for 9, Minhas took a career-best 6 for 40 to bowl England out for 215 in 38.4 overs.",
+    whyItMatters:
+      'Sports achievements are common GK questions in interviews — know the player of the match, the score and what a tri-series means.',
+    source: 'The News',
+    sourceUrl:
+      'https://www.thenews.pk/story/1444076-pakistan-outclass-england-to-claim-second-odi-tri-series-win',
   },
 ];
