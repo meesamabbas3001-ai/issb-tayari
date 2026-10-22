@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '20 October 2026';
+export const lastUpdated = '21 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -692,5 +692,57 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'The News',
     sourceUrl:
       'https://www.thenews.pk/story/1444076-pakistan-outclass-england-to-claim-second-odi-tri-series-win',
+  },
+  {
+    id: 'ca-56',
+    date: '21 October 2026',
+    category: 'International',
+    headline: 'Dar confirms Pakistan relaying messages in indirect US-Iran talks; Washington shared 15 points',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar has confirmed that indirect talks between the United States and Iran are underway through messages relayed by Pakistan, aimed at de-escalating the Middle East conflict. He said Washington has shared a set of 15 points that are now under consideration by Tehran, with Turkiye and Egypt supporting the effort. Prime Minister Shehbaz Sharif has separately offered to host direct US-Iran talks subject to mutual agreement.',
+    whyItMatters:
+      'Pakistan acting as the official channel between two major powers is a classic foreign-policy question - know the 15-points detail and the regional support angle.',
+    source: 'The South Asia Times',
+    sourceUrl:
+      'https://thesouthasiatimes.com/story/Pakistan-IshaqDar-March26',
+  },
+  {
+    id: 'ca-57',
+    date: '21 October 2026',
+    category: 'International',
+    headline: 'Pakistan, Maldives sign 20 MoUs; agree to raise two-way trade to $200m',
+    summary:
+      'Pakistan and the Maldives signed 20 memorandums of understanding covering defence, IT, education, health and fisheries during the three-day state visit of President Mohamed Muizzu to Pakistan. The two sides agreed to raise bilateral trade from $13.9 million to $200 million within two years. Deputy Prime Minister Ishaq Dar and Field Marshal Asim Munir held separate meetings with the visiting president.',
+    whyItMatters:
+      'State visits and bilateral agreements are standard GK - remember the country, the 20 MoUs and the $200m trade target.',
+    source: 'KhabarWire',
+    sourceUrl:
+      'https://khabarwire.com/blog/pakistan-maldives-mou-signing-trade-200m-2026-10-21/',
+  },
+  {
+    id: 'ca-58',
+    date: '21 October 2026',
+    category: 'Economy',
+    headline: 'IMF director Jihad Azour calls for fairer tax system at Islamabad reform workshop',
+    summary:
+      'IMF Middle East and Central Asia director Jihad Azour said Pakistan must turn its stabilisation gains into durable growth through a simpler and fairer tax system, addressing a two-day tax reform workshop in Islamabad organised with the Finance Ministry. He called for broadening the tax base, cutting concessions and protecting public spending. The Express Tribune reported that the tax system has grown more unequal under the IMF programme, with salaried workers bearing a rising burden while retail, agriculture and real estate contribute little.',
+    whyItMatters:
+      'IMF-related questions are frequent in interviews - know who Azour is, what he asked for, and how tax fairness links to the EFF and RSF review debate.',
+    source: 'KhabarWire',
+    sourceUrl:
+      'https://khabarwire.com/blog/imf-tax-reform-workshop-pakistan-2026-10-21/',
+  },
+  {
+    id: 'ca-59',
+    date: '21 October 2026',
+    category: 'International',
+    headline: 'Pakistan urges UN to strengthen safeguards for human rights defenders',
+    summary:
+      'Pakistan called on the United Nations to strengthen national protection mechanisms for human rights defenders during an interactive dialogue with the Special Rapporteur. Acting Permanent Representative Usman Jadoon said particular attention should go to women defenders and those working in remote or conflict-affected settings. The statement also highlighted the urgency of protection in situations of foreign occupation.',
+    whyItMatters:
+      'Pakistani positions at the UN are fair game in interviews - know the forum, the envoy name and the foreign-occupation framing used by Islamabad.',
+    source: 'The News',
+    sourceUrl:
+      'https://www.thenews.pk/print/1444437-pakistan-urges-un-to-strengthen-safeguards-for-hr-defenders',
   },
 ];
