@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '21 October 2026';
+export const lastUpdated = '22 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -744,5 +744,67 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'The News',
     sourceUrl:
       'https://www.thenews.pk/print/1444437-pakistan-urges-un-to-strengthen-safeguards-for-hr-defenders',
+  },
+  {
+    id: 'ca-60',
+    date: '21 October 2026',
+    category: 'Defense',
+    headline: 'Pakistan, Türkiye, Qatar and Indonesia sign Badr defence-industry MoU in Doha',
+    summary:
+      'On 21 October 2026 in Doha, Pakistan, Türkiye, Qatar and Indonesia signed the Badr Memorandum of Understanding on defence industry cooperation. The framework covers joint military production, defence research and development, technology sharing and technical training, with an Executive Board to propose projects and a Strategic Board to approve them. It follows the Makkah Joint Defence Agreement of August 2026 and is open to other friendly countries joining later.',
+    whyItMatters:
+      'A four-country defence-industry pact — know the member states, the signing place and date, and what Badr covers (production, R&D, training) versus the Makkah pact’s collective-defence role.',
+    source: 'Asia Daily',
+    sourceUrl: 'https://asiadaily.org/news/16107/',
+  },
+  {
+    id: 'ca-61',
+    date: '22 October 2026',
+    category: 'Sports',
+    headline: 'Harry Brook’s 202 sets record for highest ODI score on Pakistani soil',
+    summary:
+      'England captain Harry Brook smashed 202 off 116 balls against Sri Lanka in the ODI tri-series at Rawalpindi on 22 October, as England posted 429/4. It was the first ODI double century by an England batter, the fastest ODI double hundred ever (200 in 114 balls), and the highest individual ODI score made in Pakistan, passing Gary Kirsten’s 188 at Rawalpindi in 1996 and Ben Stokes’ 182 as England’s record.',
+    whyItMatters:
+      'A landmark sporting record made on Pakistani soil — interviewers ask about famous sports moments and records linked to Pakistan.',
+    source: 'Islamabad Post',
+    sourceUrl:
+      'https://islamabadpost.com.pk/harry-brooks-202-sets-new-record-for-highest-odi-score-in-pakistan/',
+  },
+  {
+    id: 'ca-62',
+    date: '22 October 2026',
+    category: 'International',
+    headline: 'Pakistan and EU agree to deepen counterterrorism cooperation at 10th dialogue',
+    summary:
+      'Pakistan and the European Union held the 10th round of their bilateral counterterrorism dialogue in Islamabad on 22 October, led by Dr Fareha Bugti for Pakistan and EEAS Special Envoy Anna Strzaska for the EU. Both sides agreed to strengthen cooperation at multilateral forums including the UN, covering violent extremism, terrorist financing and misuse of cyberspace, and expressed concern over the security implications of the situation in Afghanistan. The EU condemned recent terrorist attacks in Pakistan and expressed solidarity with the victims.',
+    whyItMatters:
+      'Shows Pakistan’s counterterrorism diplomacy with Europe — link it to the Afghanistan situation, a classic foreign-policy discussion topic.',
+    source: 'The News',
+    sourceUrl:
+      'https://www.thenews.pk/print/1444612-pakistan-eu-to-strengthen-counterterror-cooperation',
+  },
+  {
+    id: 'ca-63',
+    date: '22 October 2026',
+    category: 'International',
+    headline: 'President Zardari on official visit to Germany, 22–24 October',
+    summary:
+      'President Asif Ali Zardari began an official visit to Germany on 22 October, running through 24 October, focused on expanding bilateral trade, investment and economic cooperation. He is scheduled to meet the German President, senior government leadership and business leaders, as the two countries mark 75 years of diplomatic relations in 2026.',
+    whyItMatters:
+      'A high-level foreign-policy event — know the purpose (trade and investment) and the 75-year diplomatic anniversary angle.',
+    source: 'Daily Islamabad Today',
+    sourceUrl: 'https://islamabadtoday.news/archives/25115',
+  },
+  {
+    id: 'ca-64',
+    date: '20 October 2026',
+    category: 'Economy',
+    headline: 'Pakistan, US report substantial progress on reciprocal trade agreement',
+    summary:
+      'Pakistan and the United States reported substantial progress on a proposed bilateral reciprocal trade agreement at a meeting in Islamabad on 20 October between Commerce Minister Jam Kamal Khan and US Chargé d’Affaires Natalie A. Baker. Officials said only a few technical issues remain to be settled with the US Trade Representative. The talks also covered market access for Pakistani mangoes and dates, and US cotton and soybean imports.',
+    whyItMatters:
+      'The biggest pending Pakistan-US economic file — know what a reciprocal trade agreement means and which products are on the table.',
+    source: 'Sub News English',
+    sourceUrl: 'https://subnewsenglish.com/news/46076',
   },
 ];
