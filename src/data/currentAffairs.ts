@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '22 October 2026';
+export const lastUpdated = '23 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -806,5 +806,65 @@ export const currentAffairs: CurrentAffair[] = [
       'The biggest pending Pakistan-US economic file — know what a reciprocal trade agreement means and which products are on the table.',
     source: 'Sub News English',
     sourceUrl: 'https://subnewsenglish.com/news/46076',
+  },
+  {
+    id: 'ca-65',
+    date: '23 October 2026',
+    category: 'Defense',
+    headline: 'CDF Munir pledges “total defeat” of terrorists on Peshawar visit',
+    summary:
+      'Field Marshal Syed Asim Munir, Chief of Army Staff and Chief of Defence Forces, visited the Corps Headquarters in Peshawar, where he was briefed on the security situation in Khyber Pakhtunkhwa, ongoing counterterrorism operations, border management and the operational readiness of troops in the province. He pledged that the campaign against what the ISPR describes as Indian-sponsored terrorist outfits would continue and that they would be hit hard wherever they were, praising the morale and professionalism of the troops and paying tribute to the sacrifices of the people of Pakistan and its security forces.',
+    whyItMatters:
+      'A live counterterrorism posture from the very top — expect interview questions on the CDF role, Azm-e-Istehkam and the state’s stance on terrorist proxies.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1444817-total-defeat-to-be-inflicted-on-terrorists-cdf',
+  },
+  {
+    id: 'ca-66',
+    date: '22 October 2026',
+    category: 'Defense',
+    headline: 'Ten militants killed after three attacks in Gwadar, says ISPR',
+    summary:
+      'Security forces killed 10 militants, including a woman, in engagements that followed attacks at the Gabd border crossing and in Gwadar city on 22 October, according to an ISPR statement. The military said one civilian was killed and several vehicles damaged with no losses to security personnel, adding that the attacks aimed to harm the people of Balochistan and obstruct the province’s development.',
+    whyItMatters:
+      'Know how Balochistan’s security situation links to CPEC and Gwadar — a classic group-discussion topic on internal security.',
+    source: 'Terror Monitor',
+    sourceUrl: 'https://terrormonitor.com/post/10-militants-including-a-suicide-bomber-killed-after-three-attacks-in-pakistans-gwadar',
+  },
+  {
+    id: 'ca-67',
+    date: '23 October 2026',
+    category: 'International',
+    headline: 'Dar joins first joint R-4 and E-3 foreign ministers’ meeting in Istanbul',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar travelled to Istanbul for the first joint meeting of the R-4 group (Pakistan, Türkiye, Saudi Arabia and Egypt) and the E-3 group (the UK, France and Germany), where the seven foreign ministers are set to discuss US-Iran tensions, support for Saudi Arabia against Houthi threats, Red Sea security and stopping regional conflicts from spilling across borders. Dar was also scheduled to call on Turkish President Recep Tayyip Erdogan and hold bilateral talks with his Turkish counterpart.',
+    whyItMatters:
+      'A landmark multilateral diplomatic event — know the R-4 and E-3 compositions and what de-escalation means for regional security.',
+    source: 'The Diplomatic Insight',
+    sourceUrl: 'https://thediplomaticinsight.com/pakistan-first-r4-e3-fms-meeting-istanbul/',
+  },
+  {
+    id: 'ca-68',
+    date: '20 October 2026',
+    category: 'Economy',
+    headline: 'NAC revises FY26 GDP growth down to 3.65% on import-data correction',
+    summary:
+      'The National Accounts Committee approved revised national accounts on 19 October, putting FY26 GDP growth at 3.65%, slightly below the 3.70% estimated in May, with fourth-quarter growth at just 2% as industry contracted. The committee also revised five years of import data upward by a cumulative $14.8 billion after gaps emerged between the statistics bureau and the Pakistan Single Window system, putting the size of the economy at $450.4 billion and per capita income at $1,896.',
+    whyItMatters:
+      'Economic literacy matters in interviews — know the GDP figure, what a base effect is and why import data changes GDP.',
+    source: 'KhabarWire',
+    sourceUrl: 'https://khabarwire.com/blog/pakistan-fy26-gdp-growth-q4-revision-2026-10-20/',
+  },
+  {
+    id: 'ca-69',
+    date: '23 October 2026',
+    category: 'Economy',
+    headline: 'Privatisation Commission proposes opening retail electricity market to competition',
+    summary:
+      'Pakistan’s Privatisation Commission has proposed separating electricity distribution networks from supply and opening retail supply to licensed competitive suppliers ahead of the planned privatisation of the state-owned distribution companies in early 2027, a step required under the country’s IMF programme. Under the plan, the networks would be run by regulated monopoly operators under NEPRA, while competitive suppliers take over legacy contracts from the Central Power Purchasing Agency, with a supplier-of-last-resort safeguard in every region.',
+    whyItMatters:
+      'Power-sector reform is a favourite economy topic — know DISCO privatisation, circular debt and what unbundling means.',
+    source: 'Enerdata (via Business Recorder)',
+    sourceUrl: 'https://www.enerdata.net/publications/daily-energy-news/pakistan-proposes-open-retail-electricity-market-competition.html',
   },
 ];
