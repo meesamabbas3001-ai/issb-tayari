@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '23 October 2026';
+export const lastUpdated = '27 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -866,5 +866,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Power-sector reform is a favourite economy topic — know DISCO privatisation, circular debt and what unbundling means.',
     source: 'Enerdata (via Business Recorder)',
     sourceUrl: 'https://www.enerdata.net/publications/daily-energy-news/pakistan-proposes-open-retail-electricity-market-competition.html',
+  },
+  {
+    id: 'ca-70',
+    date: '24 October 2026',
+    category: 'Defense',
+    headline: 'Six terrorists killed, two soldiers martyred in Dera Ismail Khan operation',
+    summary:
+      'Security forces conducted an intelligence-based operation in the Zarkani area of Dera Ismail Khan on 24 October after reports of militants linked to the Indian proxy Fitna al-Khwarij being present there. Six militants were killed and a large cache of weapons and ammunition was recovered, while Naik Ghulam Murtaza and Sepoy Taseer Ahmed embraced martyrdom in the exchange of fire. A sanitisation operation followed to clear the area of any remaining militants under the Azm-e-Istehkam campaign.',
+    whyItMatters:
+      'A current example of intelligence-based operations in KP — know what an IBO is and why Azm-e-Istehkam keeps coming up in security questions.',
+    source: 'The Standard',
+    sourceUrl: 'https://thestandard.com.pk/six-terrorists-slain-two-soldiers-martyred-in-d-i-khan-ibo-ispr/',
+  },
+  {
+    id: 'ca-71',
+    date: '26 October 2026',
+    category: 'International',
+    headline: 'Pakistan, Iran, Saudi Arabia and Turkiye hold four-way security talks in Tehran',
+    summary:
+      'Senior security officials from Iran, Pakistan, Saudi Arabia and Turkiye met in Tehran on 26 October for a four-way meeting on regional security, proposed by Pakistan and hosted by Iran. Pakistan was represented by Field Marshal Asim Munir, alongside Saudi Defence Minister Prince Khalid bin Salman and Turkish intelligence chief Ibrahim Kalin, with Iranian officials including Foreign Minister Abbas Araghchi also attending. The delegations discussed regional security, support for the Palestinians and Lebanese, and agreed to keep the dialogue going.',
+    whyItMatters:
+      'Shows Pakistan acting as a regional bridge-builder — a strong example for questions on Pakistan’s foreign policy and defence diplomacy.',
+    source: 'Press TV',
+    sourceUrl: 'https://www.presstv.co.uk/Detail/2026/10/26/779241/iran-pakistan-turkey-saudi-arabia-hold-security-meeting-in-tehran',
+  },
+  {
+    id: 'ca-72',
+    date: '26 October 2026',
+    category: 'Economy',
+    headline: 'State Bank raises policy rate to 12% in first hike since April',
+    summary:
+      'The State Bank of Pakistan raised its benchmark policy rate by 50 basis points to 12% at its Monetary Policy Committee meeting on 26 October, the first increase since April, with the new rate taking effect on 27 October. The central bank pointed to rising inflation risks from higher global energy prices and Middle East tensions, with headline inflation at 10.3% in September against its 5–7% medium-term target range. Nine of the committee’s ten members voted for the increase.',
+    whyItMatters:
+      'The policy rate is a classic economy question — know the new rate, why it moved, and how it links to inflation and the common man.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1445230-businesses-divided-over-sbp-s-50bps-rate-hike',
+  },
+  {
+    id: 'ca-73',
+    date: '24 October 2026',
+    category: 'Economy',
+    headline: 'Pakistan and Qatar agree to deepen trade and investment cooperation',
+    summary:
+      'Pakistan and Qatar held the second meeting of their Joint Task Force on Trade and Investment in Doha on 24 October, co-chaired by Commerce Minister Jam Kamal Khan and Qatar’s Minister of State for Foreign Trade Affairs Dr Ahmad bin Mohammed Al-Sayed. The two sides reviewed progress in economic cooperation and explored new business opportunities, including agricultural exports and industrial development. Pakistan also raised restrictions on its bone-in meat exports to Qatar and asked for an early resolution.',
+    whyItMatters:
+      'Trade diplomacy with Gulf states is a recurring interview theme — know what Pakistan sells to Qatar and why export markets matter.',
+    source: 'Pakistani News',
+    sourceUrl: 'https://pakistaninews.net/pakistan-and-qatar-agree-to-strengthen-trade-and-investment/',
+  },
+  {
+    id: 'ca-74',
+    date: '26 October 2026',
+    category: 'International',
+    headline: 'Pakistan rejects Afghan Taliban claims on civilian casualties',
+    summary:
+      'Pakistan’s Foreign Office on 26 October rejected claims by Afghanistan’s Taliban government that Pakistani military operations caused civilian casualties, calling them unfounded and unverified. The ministry said Pakistan has the right to defend itself against terrorist attacks launched from Afghan soil and urged the international community to hold the Taliban government to its responsibility to prevent Afghan territory being used for cross-border terrorism. It said such attacks had caused more than 3,500 casualties in Pakistan during 2026.',
+    whyItMatters:
+      'A live example of Pak-Afghan tensions for group discussion — practise stating Pakistan’s official position factually and calmly.',
+    source: 'NAM News',
+    sourceUrl: 'https://namnews.tv/2026/10/26/pakistan-dismisses-afghan-taliban-allegations-of-civilian-casualties/',
   },
 ];
