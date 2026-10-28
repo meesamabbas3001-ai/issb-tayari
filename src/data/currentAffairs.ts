@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '27 October 2026';
+export const lastUpdated = '28 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -926,5 +926,53 @@ export const currentAffairs: CurrentAffair[] = [
       'A live example of Pak-Afghan tensions for group discussion — practise stating Pakistan’s official position factually and calmly.',
     source: 'NAM News',
     sourceUrl: 'https://namnews.tv/2026/10/26/pakistan-dismisses-afghan-taliban-allegations-of-civilian-casualties/',
+  },
+  {
+    id: 'ca-75',
+    date: '26 October 2026',
+    category: 'Defense',
+    headline: 'Former army chief Gen (retd) Abdul Waheed Kakar passes away',
+    summary:
+      'Former Chief of Army Staff General (retd) Abdul Waheed Kakar passed away in Rawalpindi on 26 October, the ISPR announced. Field Marshal Syed Asim Munir, Chief of Army Staff and Chief of Defence Forces, along with all ranks of the Pakistan Army, expressed deep sorrow and paid tribute to his distinguished military career, leadership and services to the Army. President Asif Ali Zardari and Prime Minister Shehbaz Sharif also expressed grief and offered condolences to his family.',
+    whyItMatters:
+      'Know the former chiefs of the Pakistan Army — interviewers may ask about past COAS names and their place in military history.',
+    source: 'The Public Purview',
+    sourceUrl: 'https://thepublicpurview.com/field-marshal-asim-munir-tribute-general-abdul-waheed-kakar/',
+  },
+  {
+    id: 'ca-76',
+    date: '27 October 2026',
+    category: 'National',
+    headline: 'PM reaffirms support for Kashmiris on Jammu and Kashmir Black Day',
+    summary:
+      'Prime Minister Shehbaz Sharif, in his message on Jammu and Kashmir Black Day observed on 27 October, reaffirmed Pakistan’s solidarity with the people of Indian Illegally Occupied Jammu and Kashmir. He said lasting peace in South Asia is not possible without a just resolution of the dispute in line with UN Security Council resolutions, and pledged continued moral, diplomatic and political support for the Kashmiri people’s right to self-determination.',
+    whyItMatters:
+      'Kashmir Black Day (27 October 1947) is a fixed-date question — know the date, why it is observed, and Pakistan’s stated position.',
+    source: 'The Europe Today',
+    sourceUrl: 'https://theeuropetoday.com/2026/10/27/pm-shehbaz-reaffirms-pakistans-unwavering-support-for-kashmiris-on-black-day/',
+  },
+  {
+    id: 'ca-77',
+    date: '28 October 2026',
+    category: 'Economy',
+    headline: 'Petrol price cut by Rs3.19, diesel up Rs2.25 from 28 October',
+    summary:
+      'The government revised fuel prices from 28 October, cutting petrol by Rs3.19 per litre to Rs376.06 while raising high-speed diesel by Rs2.25 to Rs398.07. The change reverses the previous day’s petrol increase and takes diesel closer to Rs400 per litre, which matters for transport and goods prices. Fuel prices are now revised daily by OGRA under the government’s pricing mechanism.',
+    whyItMatters:
+      'Fuel prices link the economy to daily life — a good example when asked how inflation and transport costs affect the common man.',
+    source: 'PakWheels',
+    sourceUrl: 'https://www.pakwheels.com/blog/petrol-price-drops-diesel-moves-closer-to-rs-400-mark/',
+  },
+  {
+    id: 'ca-78',
+    date: '28 October 2026',
+    category: 'International',
+    headline: 'Pakistan urges restraint and diplomacy on Iran at UN Security Council',
+    summary:
+      'At a UN Security Council session on Iran and nuclear non-proliferation, Pakistan’s Acting Permanent Representative Ambassador Usman Jadoon urged all sides to avoid escalating actions and to seek a peaceful resolution through dialogue. Pakistan said technical issues around Iran’s nuclear programme should be handled by the International Atomic Energy Agency, and thanked partners including Qatar, Saudi Arabia, Turkiye, Egypt and China for supporting de-escalation efforts.',
+    whyItMatters:
+      'Pakistan’s UN diplomacy is a strong interview topic — know its stance on dialogue over conflict and the IAEA’s role.',
+    source: 'Dawn (via Beflaz)',
+    sourceUrl: 'https://beflaz.com/news/2026-10-28-pakistan-warns-against-escalation-in-iran-crisis-urges-diplo-065ad8.html',
   },
 ];
