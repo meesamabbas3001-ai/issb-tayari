@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '28 October 2026';
+export const lastUpdated = '29 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -974,5 +974,53 @@ export const currentAffairs: CurrentAffair[] = [
       'Pakistan’s UN diplomacy is a strong interview topic — know its stance on dialogue over conflict and the IAEA’s role.',
     source: 'Dawn (via Beflaz)',
     sourceUrl: 'https://beflaz.com/news/2026-10-28-pakistan-warns-against-escalation-in-iran-crisis-urges-diplo-065ad8.html',
+  },
+  {
+    id: 'ca-79',
+    date: '28 October 2026',
+    category: 'Defense',
+    headline: 'Nine terrorists killed in Balochistan IBOs in Kachhi and Wadh',
+    summary:
+      'Security forces killed nine terrorists in two intelligence-based operations in Balochistan’s Kachhi and Wadh districts on 26 October, the ISPR said. Seven terrorists were killed when a hideout in Kachhi was busted after an exchange of fire, and two more were killed in Wadh after their movement was intercepted. Weapons and ammunition were recovered, and sanitisation operations are under way under the Azm-e-Istehkam campaign.',
+    whyItMatters:
+      'Another current IBO example for security questions — know what an IBO is, the name Fitna al-Hindustan, and the Azm-e-Istehkam campaign.',
+    source: 'Centreline (ISPR statement)',
+    sourceUrl: 'https://centreline.com.pk/2026/10/28/security-forces-kill-nine-india-sponsored-terrorists-in-balochistan-ibos-ispr/',
+  },
+  {
+    id: 'ca-80',
+    date: '28 October 2026',
+    category: 'Defense',
+    headline: 'Afghan firing kills one civilian in South Waziristan border area',
+    summary:
+      'One person was killed and five injured after firing from the Afghan side hit civilian houses and a market in the Angoor Adda area of South Waziristan on 27 October, a Pakistani regional official said. Pakistani forces responded heavily to what officials called unprovoked firing, while the Afghan defence ministry claimed Pakistan had carried out drone attacks in Paktika province. Reuters reported it could not verify the claims of either side.',
+    whyItMatters:
+      'A live Pak-Afghan border example for group discussion — practise stating the facts and both claims neutrally, without taking a partisan line.',
+    source: 'Reuters',
+    sourceUrl: 'https://katcountry989.com/2026/10/28/pakistan-says-afghan-firing-kills-one-in-border-district/',
+  },
+  {
+    id: 'ca-81',
+    date: '28 October 2026',
+    category: 'International',
+    headline: 'Pakistan bars Taiwanese airlines from its airspace in One-China move',
+    summary:
+      'Pakistan has barred Taiwanese airlines from using its airspace in support of Beijing’s One-China policy, Bloomberg reported, with Defence Minister Khawaja Asif saying only mainland Chinese airlines are permitted to fly over Pakistan. China Airlines and Eva Air stopped using Pakistani airspace from the morning of 25 October and have rerouted Asia–Europe flights over Russia. Pakistan severed official relations with Taiwan in 1951 in favour of closer ties with China.',
+    whyItMatters:
+      'A clear example of Pakistan–China ties in action — know what the One-China policy means and why airspace decisions are a foreign-policy signal.',
+    source: 'Bloomberg (via Centreline)',
+    sourceUrl: 'https://centreline.com.pk/2026/10/28/pak-bars-taiwan-airlines/',
+  },
+  {
+    id: 'ca-82',
+    date: '27 October 2026',
+    category: 'Defense',
+    headline: 'Kuwait naval chief holds strategic talks at Naval Headquarters',
+    summary:
+      'Commander of the Kuwait Naval Force, Major General (Navy) Saif Abdulhadi Alhamlan, met Chief of the Naval Staff Admiral Naveed Ashraf at Naval Headquarters in Islamabad on 27 October. The two sides discussed regional maritime security, professional training and deeper institutional cooperation, and the visiting commander was presented a Guard of Honour by a Pakistan Navy contingent.',
+    whyItMatters:
+      'Naval diplomacy is a good interview example — know the naval chief’s name and how Pakistan builds defence ties with Gulf states.',
+    source: 'Commerce News',
+    sourceUrl: 'https://commercenews.pk/commander-kuwait-naval-force-islamabad/',
   },
 ];
