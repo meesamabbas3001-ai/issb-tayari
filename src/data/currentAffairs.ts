@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '29 October 2026';
+export const lastUpdated = '30 October 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1022,5 +1022,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Naval diplomacy is a good interview example — know the naval chief’s name and how Pakistan builds defence ties with Gulf states.',
     source: 'Commerce News',
     sourceUrl: 'https://commercenews.pk/commander-kuwait-naval-force-islamabad/',
+  },
+  {
+    id: 'ca-83',
+    date: '30 October 2026',
+    category: 'Defense',
+    headline: 'DG ISPR: anti-terror operations in KP to continue until terrorism eliminated',
+    summary:
+      'ISPR Director General Lt Gen Ahmed Sharif Chaudhry told students and faculty in Khyber Pakhtunkhwa that intelligence-based operations in the province will continue until terrorism is completely eliminated. He stressed national unity, the rule of law and the role of young people in national security during the interactive session on Pakistan’s security situation.',
+    whyItMatters:
+      'A current example of the army’s stated counterterrorism line — know what an intelligence-based operation is and why KP remains the focus.',
+    source: 'Terror Monitor',
+    sourceUrl: 'https://terrormonitor.com/post/pakistan-army-vows-to-continue-anti-terror-operations-in-kp',
+  },
+  {
+    id: 'ca-84',
+    date: '30 October 2026',
+    category: 'International',
+    headline: 'Singapore foreign minister visits Islamabad on 60 years of diplomatic ties',
+    summary:
+      'Singapore’s Foreign Minister Dr Vivian Balakrishnan visited Islamabad on 30 October at the invitation of Deputy Prime Minister and Foreign Minister Ishaq Dar. The two sides held talks covering the full range of bilateral relations, and a disaster-management cooperation agreement between Pakistan’s NDMA and Singapore’s Civil Defence Force was to be exchanged. The visit marks 60 years of diplomatic relations and comes ahead of Singapore chairing ASEAN in 2027.',
+    whyItMatters:
+      'Good for foreign-affairs questions — know what ASEAN is, why Singapore matters, and what disaster-management cooperation covers.',
+    source: 'Sub News (Foreign Office)',
+    sourceUrl: 'https://subnewsenglish.com/news/46828',
+  },
+  {
+    id: 'ca-85',
+    date: '29 October 2026',
+    category: 'National',
+    headline: 'PM inaugurates Pak-China Friendship Hospital; treatment to be fully government-funded',
+    summary:
+      'Prime Minister Shehbaz Sharif inaugurated the revived 182-bed Pakistan-China Friendship Hospital in Islamabad, directing that the government bear 100 per cent of patients’ treatment costs so no one is denied care for financial reasons. The Indus Hospital and Health Network will manage the facility under a public-private arrangement, with a third-party performance audit ordered. The hospital was built with Chinese assistance during COVID-19 but had stayed non-operational for years.',
+    whyItMatters:
+      'A Pak-China cooperation example beyond defence — know CPEC’s second phase and how public-private health partnerships work.',
+    source: 'Daily The Destination',
+    sourceUrl: 'https://dailythedestination.com/no-patient-to-be-denied-treatment-due-to-financial-constraints-pm-directs/',
+  },
+  {
+    id: 'ca-86',
+    date: '28 October 2026',
+    category: 'International',
+    headline: 'India to examine Maldives-Pakistan defence pact; Muizzu says no foreign troops stationed',
+    summary:
+      'India said it will examine closely the defence agreement Pakistan and the Maldives signed in Islamabad on 21 October, as part of 20 agreements from President Mohamed Muizzu’s visit, and act as its security requires. Muizzu said on 28 October that Maldivian defence cooperation with Pakistan aims to strengthen Maldivian capabilities, that the Maldives will not interfere in disputes between other countries, and that no foreign troops are stationed in the country. The text of the defence agreement has not been made public.',
+    whyItMatters:
+      'A live regional-diplomacy case — practise explaining a defence pact neutrally, including what is confirmed and what is still unpublished.',
+    source: 'The Eastern Strategist (via Atoll Times)',
+    sourceUrl: 'https://theeasternstrategist.com/maldives-pakistan-defence-agreement-india/',
+  },
+  {
+    id: 'ca-87',
+    date: '29 October 2026',
+    category: 'International',
+    headline: 'PM Shehbaz: Pakistan and Turkiye to champion dialogue while bolstering defences',
+    summary:
+      'Prime Minister Shehbaz Sharif said Pakistan and Turkiye will keep promoting dialogue and diplomacy while strengthening their military capabilities under the Makkah Defence Agreement, signed on 7 August with Saudi Arabia. Speaking in Islamabad at an event marking Turkiye’s 103rd national day, he praised Turkiye’s diplomatic support during last May’s Marka-i-Haq conflict and said economic cooperation still needs to grow to match the political partnership.',
+    whyItMatters:
+      'Links the Makkah pact to diplomacy and trade — a strong answer if asked how defence ties and foreign policy fit together.',
+    source: 'Dawn (via Beflaz)',
+    sourceUrl: 'https://beflaz.com/news/2026-10-29-pakistan-turkiye-shall-continue-to-champion-dialogue-diploma-7bc617.html',
   },
 ];
