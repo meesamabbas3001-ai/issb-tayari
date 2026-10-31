@@ -480,9 +480,9 @@ export const currentAffairs: CurrentAffair[] = [
     category: 'Defense',
     headline: 'Pakistani forces clash with Afghan Taliban at northwestern border',
     summary:
-      'Pakistani forces and Afghan Taliban personnel exchanged fire at several locations along Pakistan\u2019s northwestern border on Saturday, the Associated Press reported. Pakistani security officials said troops backed by artillery destroyed Taliban posts and killed an unspecified number of Pakistani Taliban militants trying to cross into Pakistan from eastern Afghanistan.',
+      'Pakistani forces and Afghan Taliban personnel exchanged fire at several locations along Pakistan’s northwestern border on Saturday, the Associated Press reported. Pakistani security officials said troops backed by artillery destroyed Taliban posts and killed an unspecified number of Pakistani Taliban militants trying to cross into Pakistan from eastern Afghanistan.',
     whyItMatters:
-      'Border security with Afghanistan keeps coming up \u2014 know the difference between the Afghan Taliban and the Pakistani Taliban (TTP), and why infiltration attempts keep sparking clashes.',
+      'Border security with Afghanistan keeps coming up — know the difference between the Afghan Taliban and the Pakistani Taliban (TTP), and why infiltration attempts keep sparking clashes.',
     source: 'Associated Press',
     sourceUrl:
       'https://www.ottumwacourier.com/news/national_news/pakistani-forces-afghan-taliban-exchange-fire-after-militants-attempt-to-infiltrate-pakistan/article_4b352992-4707-5957-9b1a-1493ebb896bb.html',
@@ -493,9 +493,9 @@ export const currentAffairs: CurrentAffair[] = [
     category: 'International',
     headline: 'Pakistan says talks with Afghanistan cannot be unconditional',
     summary:
-      'Foreign Office spokesperson Sajjad Haider Khan said at the weekly briefing that Pakistan is ready for state-level talks with Afghanistan, but any dialogue must be tied to verifiable action against terrorist groups operating from Afghan soil. He named the Tehreek-i-Taliban Pakistan and the Balochistan Liberation Army as Pakistan\u2019s main concerns, and said Islamabad would welcome sincere mediation by friendly countries while noting no formal Russian mediation proposal is currently on the table.',
+      'Foreign Office spokesperson Sajjad Haider Khan said at the weekly briefing that Pakistan is ready for state-level talks with Afghanistan, but any dialogue must be tied to verifiable action against terrorist groups operating from Afghan soil. He named the Tehreek-i-Taliban Pakistan and the Balochistan Liberation Army as Pakistan’s main concerns, and said Islamabad would welcome sincere mediation by friendly countries while noting no formal Russian mediation proposal is currently on the table.',
     whyItMatters:
-      'Foreign-policy questions often test whether you know Pakistan\u2019s exact position \u2014 the key phrases here are \u201cverifiable action\u201d and the TTP and BLA.',
+      'Foreign-policy questions often test whether you know Pakistan’s exact position — the key phrases here are “verifiable action” and the TTP and BLA.',
     source: 'The Diplomatic Insight',
     sourceUrl: 'https://thediplomaticinsight.com/pakistan-says-talks-with-afghanistan-cannot-be-unconditional/',
   },
@@ -503,11 +503,11 @@ export const currentAffairs: CurrentAffair[] = [
     id: 'ca-41',
     date: '17 October 2026',
     category: 'Economy',
-    headline: 'Pakistan IT exports hit $435 million in September \u2014 second-highest ever',
+    headline: 'Pakistan IT exports hit $435 million in September — second-highest ever',
     summary:
-      'Pakistan\u2019s IT and technology exports rose 18% year-on-year to $435 million in September, the second-highest monthly figure on record, Adviser to the Finance Minister Khurram Schehzad announced. The figure sits just $2 million below the all-time high of $437 million set in December 2025, while first-quarter FY27 IT exports reached $1.25 billion, up about 18% from last year.',
+      'Pakistan’s IT and technology exports rose 18% year-on-year to $435 million in September, the second-highest monthly figure on record, Adviser to the Finance Minister Khurram Schehzad announced. The figure sits just $2 million below the all-time high of $437 million set in December 2025, while first-quarter FY27 IT exports reached $1.25 billion, up about 18% from last year.',
     whyItMatters:
-      'The IT sector is Pakistan\u2019s fastest-growing export engine \u2014 know the numbers and why they matter for earning foreign exchange without borrowing.',
+      'The IT sector is Pakistan’s fastest-growing export engine — know the numbers and why they matter for earning foreign exchange without borrowing.',
     source: 'TechJuice',
     sourceUrl: 'https://www.techjuice.pk/pakistans-ict-exports-reach-435-million-in-september-2026/',
   },
@@ -515,11 +515,11 @@ export const currentAffairs: CurrentAffair[] = [
     id: 'ca-42',
     date: '16 October 2026',
     category: 'Economy',
-    headline: 'July\u2013September exports rise 11.13% to $8.445 billion, but gains uneven',
+    headline: 'July–September exports rise 11.13% to $8.445 billion, but gains uneven',
     summary:
-      'Pakistan\u2019s merchandise exports grew 11.13% to $8.445 billion in July\u2013September 2026, with September alone rising to $2.961 billion, the Pakistan Bureau of Statistics reported. Analysts noted the gains were concentrated in a few sectors \u2014 textiles grew while fruit, vegetable and pharmaceutical exports declined \u2014 and warned the recovery needs sector-specific government action.',
+      'Pakistan’s merchandise exports grew 11.13% to $8.445 billion in July–September 2026, with September alone rising to $2.961 billion, the Pakistan Bureau of Statistics reported. Analysts noted the gains were concentrated in a few sectors — textiles grew while fruit, vegetable and pharmaceutical exports declined — and warned the recovery needs sector-specific government action.',
     whyItMatters:
-      'Shows honest economic awareness: a headline number can hide weak sectors \u2014 interviewers respect candidates who see the whole picture.',
+      'Shows honest economic awareness: a headline number can hide weak sectors — interviewers respect candidates who see the whole picture.',
     source: 'Energy Update',
     sourceUrl:
       'https://www.energyupdate.com.pk/pakistans-exports-rise-11-13-to-8-445-billion-decline-in-fruit-vegetable-and-pharmaceutical-sectoral-based-government-action-needed-internationally-accredited-testing-laboratories/',
@@ -1082,5 +1082,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Links the Makkah pact to diplomacy and trade — a strong answer if asked how defence ties and foreign policy fit together.',
     source: 'Dawn (via Beflaz)',
     sourceUrl: 'https://beflaz.com/news/2026-10-29-pakistan-turkiye-shall-continue-to-champion-dialogue-diploma-7bc617.html',
+  },
+  {
+    id: 'ca-88',
+    date: '30 October 2026',
+    category: 'International',
+    headline: 'DG ISPR “cautiously optimistic” on Pakistan mediation between Iran and US',
+    summary:
+      'In a Reuters interview in Rawalpindi on 30 October, ISPR Director General Lt Gen Ahmed Sharif Chaudhry said Pakistan was “cautiously optimistic” about its mediation between Iran and the United States. He pointed to Field Marshal Asim Munir’s two visits to Tehran this month, the latest on Monday with Saudi and Turkish officials, as a positive sign. He also warned that unnamed “powerful spoilers” still believed conflict served their interests, and said the talks aimed to revive negotiations after an April ceasefire stalled.',
+    whyItMatters:
+      'Know Pakistan’s mediation role and the exact phrase “cautiously optimistic” — interviewers may ask what Pakistan is doing to prevent a wider regional war.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1445927-ispr-dg-signals-positivity-in-pakistans-efforts-to-mediate-iran-us-war',
+  },
+  {
+    id: 'ca-89',
+    date: '30 October 2026',
+    category: 'Defense',
+    headline: 'Security forces shoot down five drones aimed at Kharan checkpost',
+    summary:
+      'Security forces shot down five drones before they could reach a security checkpost in the Albat area of Kharan district, Balochistan, security sources said on Friday. The sources linked the attempt to Fitna al-Hindustan, the state’s term for Balochistan-based militant groups it describes as Indian-backed. No loss of life or property was reported, according to the sources, who said similar drones entering from Afghanistan had been shot down last month.',
+    whyItMatters:
+      'Drone attacks are a new security challenge — know how forces counter them and the term Fitna al-Hindustan for interview questions on Balochistan.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1445900-security-forces-foil-drone-attack-by-india-backed-militants-in-balochistan-sources',
+  },
+  {
+    id: 'ca-90',
+    date: '30 October 2026',
+    category: 'National',
+    headline: 'National Assembly approves 30-member electoral reforms committee',
+    summary:
+      'The National Assembly has approved a 30-member parliamentary committee on electoral reforms, made up of 20 members of the National Assembly and 10 senators, with seats shared among parties in proportion to their strength. Parliamentary Affairs Minister Tariq Fazal Chaudhry said the Speaker would soon issue the formal notification once members’ names were finalised. A PPP delegation met opposition leaders on 30 October to invite them to join the committee, and the opposition said it would decide after consultations.',
+    whyItMatters:
+      'Electoral reform is a classic group-discussion topic — know the committee’s size and makeup, and that it cannot start work until members are notified.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1445924-opposition-hints-at-joining-electoral-reforms-committee-after-meeting-ppp-delegation',
+  },
+  {
+    id: 'ca-91',
+    date: '29 October 2026',
+    category: 'Economy',
+    headline: 'Finance Division sees inflation at 9.5–10.5% in October; remittances up 14%',
+    summary:
+      'The Finance Division’s Monthly Economic Update and Outlook for October 2026 projected headline inflation of 9.5 to 10.5 per cent for October, after inflation eased to 10.3 per cent in September from 11.1 per cent in August. Workers’ remittances rose 14 per cent to $10.9 billion in July–September, while goods imports grew 14.3 per cent to $17.8 billion against exports of $8.5 billion, widening the current account deficit to $874 million. The report listed geopolitical tensions, volatile oil prices and food supplies as the main risks to the outlook.',
+    whyItMatters:
+      'Know the latest inflation, remittance and trade figures together — interviewers often ask how Pakistan pays for imports and what drives inflation.',
+    source: 'Mettis Global News',
+    sourceUrl: 'https://mettisglobal.news/Inflation-projected-at-105-in-October-FY27-64653',
+  },
+  {
+    id: 'ca-92',
+    date: '30 October 2026',
+    category: 'Sports',
+    headline: 'Pakistan beat India by four wickets at Hong Kong Sixes',
+    summary:
+      'Pakistan beat India by four wickets in their Hong Kong Sixes group match at Mission Road Ground on 30 October, chasing 89 in just 3.5 overs. Khawaja Nafay made 41 off 12 balls and captain Abbas Afridi made 35 off eight balls, after India had posted 88 for five with Shashank Singh scoring 40 off 11 balls. The win kept Pakistan in the hunt for the next round after losing their opening group game to the UAE earlier the same day.',
+    whyItMatters:
+      'A fresh Pakistan-India result to quote in sports questions — remember it was the short six-a-side format, not a full international match.',
+    source: 'Centreline',
+    sourceUrl: 'https://centreline.com.pk/2026/10/30/pakistan-crush-india-in-hong-kong-sixes/',
   },
 ];
