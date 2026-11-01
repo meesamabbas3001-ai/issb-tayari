@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '30 October 2026';
+export const lastUpdated = '1 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1142,5 +1142,53 @@ export const currentAffairs: CurrentAffair[] = [
       'A fresh Pakistan-India result to quote in sports questions — remember it was the short six-a-side format, not a full international match.',
     source: 'Centreline',
     sourceUrl: 'https://centreline.com.pk/2026/10/30/pakistan-crush-india-in-hong-kong-sixes/',
+  },
+  {
+    id: 'ca-93',
+    date: '30 October 2026',
+    category: 'Defense',
+    headline: 'Pakistan Army destroys Afghan Taliban posts in retaliatory strikes',
+    summary:
+      'Security forces destroyed several Afghan Taliban posts and military installations near South Waziristan and Parachinar on 30 October, security sources said. The strikes were a response to firing from the Afghan side in the Angoor Adda area on 27 October, which had killed one civilian and injured five people. The sources said Taliban personnel abandoned their posts and fled after the action.',
+    whyItMatters:
+      'A live border-security example — know where Angoor Adda is and how Pakistan describes its response to firing from across the border.',
+    source: 'Islamabad Post',
+    sourceUrl: 'https://islamabadpost.com.pk/pakistan-army-destroys-afghan-taliban-posts-in-retaliatory-strikes-sources/',
+  },
+  {
+    id: 'ca-94',
+    date: '31 October 2026',
+    category: 'International',
+    headline: 'Pakistan calls terrorism a red line in reply to Afghan Taliban claims',
+    summary:
+      'Pakistan’s Ministry of Information said on 31 October that terrorism was a red line and the security of citizens was non-negotiable, after the Afghan Taliban spokesman said talks had failed and blamed Pakistan. The ministry said Pakistan would not tolerate militant sanctuaries in Afghanistan and reserved the right to take all necessary measures under international law to remove threats to its security. US Secretary of State Marco Rubio said at the G20 foreign ministers’ meeting in Atlanta that Washington had heard Pakistan’s concerns and did not want Pakistan targeted by terrorism.',
+    whyItMatters:
+      'A current Pak-Afghan example for group discussion — practise stating Pakistan’s position and the US response in neutral, factual words.',
+    source: 'Pakistan TV',
+    sourceUrl: 'https://pakistantv.com/article/pakistan-rejects-taliban-blame-reiterates-right-to-protect-national-security',
+  },
+  {
+    id: 'ca-95',
+    date: '31 October 2026',
+    category: 'International',
+    headline: 'Syria weighs joining Makkah defence pact, foreign minister says',
+    summary:
+      'Syria is considering joining the Makkah Joint Defence Agreement with Pakistan, Saudi Arabia and Turkiye, Syrian Foreign Minister Asaad al-Shaibani said on 31 October at the Manama Dialogue in Bahrain. He said discussions were under way to evaluate Syria’s entry, but no formal application had been submitted and no timetable had been announced. Syria first showed interest in the pact during the foreign minister’s visit to Islamabad in late August.',
+    whyItMatters:
+      'Shows the Makkah pact may grow beyond its three founders — know the members, the collective-defence idea, and that Syria has not yet joined.',
+    source: 'The Media Line',
+    sourceUrl: 'https://themedialine.org/headlines/syria-considers-joining-saudi-turkish-pakistani-defense-alliance/',
+  },
+  {
+    id: 'ca-96',
+    date: '31 October 2026',
+    category: 'Sports',
+    headline: 'Pakistan win ODI tri-series final against Sri Lanka in Lahore',
+    summary:
+      'Pakistan chased a target of 326 to beat Sri Lanka by three wickets in the ODI tri-series final in Lahore on 31 October. Fakhar Zaman scored 127 off 99 balls and Saad Baig made 74, before Arafat Minhas hit a quick 61 off 31 balls to finish the chase. Sri Lanka’s Kamindu Mendis had earlier scored 131, and captain Shaheen Afridi sealed the win with a six.',
+    whyItMatters:
+      'A fresh sporting result to quote in interviews — remember the key scores and that Pakistan chased a big total in a final.',
+    source: 'ICC',
+    sourceUrl: 'https://www.icc-cricket.com/news/pakistan-clinch-tri-series-with-big-chase-against-sri-lanka',
   },
 ];
