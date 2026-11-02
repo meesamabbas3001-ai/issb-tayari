@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '1 November 2026';
+export const lastUpdated = '2 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1190,5 +1190,53 @@ export const currentAffairs: CurrentAffair[] = [
       'A fresh sporting result to quote in interviews — remember the key scores and that Pakistan chased a big total in a final.',
     source: 'ICC',
     sourceUrl: 'https://www.icc-cricket.com/news/pakistan-clinch-tri-series-with-big-chase-against-sri-lanka',
+  },
+  {
+    id: 'ca-97',
+    date: '30 October 2026',
+    category: 'Defense',
+    headline: 'DG ISPR warns Afghan Taliban over drone threats and militant sanctuaries',
+    summary:
+      'In an interview with Reuters on 30 October, ISPR Director General Lt Gen Ahmed Sharif Chaudhry said Pakistan could counter drone and other threats coming from Afghanistan and warned Kabul that it would face a heavy cost if it kept harbouring terrorist leaders. He said any drone capability held by the Afghan Taliban was not indigenous, urged the Taliban to act like a state and stop supporting terrorism inside Pakistan, and said the Pakistan Army was adapting to drone and cyber warfare.',
+    whyItMatters:
+      'Know the ISPR position on drones and cross-border terrorism — a likely question on Pakistan-Afghanistan security.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1446417-afghan-taliban-can-t-absorb-pakistan-s-response-to-threats-ispr-dg',
+  },
+  {
+    id: 'ca-98',
+    date: '1 November 2026',
+    category: 'Economy',
+    headline: 'Pakistan takes over chairmanship of G-24 group of developing economies',
+    summary:
+      'Pakistan assumed the chairmanship of the Intergovernmental Group of Twenty-Four (G-24) on 1 November, taking over from Nigeria. Finance Minister Muhammad Aurangzeb set out three priorities for the chairmanship: placing development at the centre of global economic policymaking, stronger representation for developing countries in international institutions, and reform of the international financial architecture.',
+    whyItMatters:
+      'A landmark economic-diplomacy role — know what the G-24 is and Pakistan’s three priorities as chair.',
+    source: 'Islamabad Post',
+    sourceUrl: 'https://islamabadpost.com.pk/pakistan-assumes-g-24-chairmanship/',
+  },
+  {
+    id: 'ca-99',
+    date: '1 November 2026',
+    category: 'International',
+    headline: 'Senior Chinese Communist Party official visits Pakistan in 75th anniversary year',
+    summary:
+      'Liu Haixing, minister of the International Department of the Communist Party of China, arrived in Islamabad on 1 November at the invitation of Deputy Prime Minister and Foreign Minister Ishaq Dar. He was due to meet Pakistan’s leadership and co-chair a high-level event on 2 November, as the two countries mark 75 years of diplomatic relations and their All-Weather Strategic Cooperative Partnership.',
+    whyItMatters:
+      'Pakistan-China ties and CPEC are core interview topics — know the 75-year milestone and the partnership’s name.',
+    source: 'Pakistan TV',
+    sourceUrl: 'https://pakistantv.com/article/liu-haixing-to-undertake-first-official-visit-to-pakistan-on-nov-1',
+  },
+  {
+    id: 'ca-100',
+    date: '31 October 2026',
+    category: 'International',
+    headline: 'US offers productive role on Pakistan-Afghanistan tensions; Pakistan welcomes facilitation',
+    summary:
+      'US Secretary of State Marco Rubio said in Atlanta on 31 October that Washington had heard Pakistan’s concerns about terrorist attacks sponsored from Afghan territory and would play a productive role if there was one. Foreign Office spokesman Sajjad Haider Khan said Pakistan would welcome sincere efforts by friendly countries to help resolve the dispute, while stressing that talks with Afghanistan could not be unconditional.',
+    whyItMatters:
+      'Shows how diplomacy and security link together — useful for a group discussion on Pakistan-Afghanistan relations and third-party mediation.',
+    source: 'Islamabad Today',
+    sourceUrl: 'https://islamabadtoday.news/archives/25451',
   },
 ];
