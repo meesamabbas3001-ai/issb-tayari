@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '2 November 2026';
+export const lastUpdated = '3 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1238,5 +1238,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Shows how diplomacy and security link together — useful for a group discussion on Pakistan-Afghanistan relations and third-party mediation.',
     source: 'Islamabad Today',
     sourceUrl: 'https://islamabadtoday.news/archives/25451',
+  },
+  {
+    id: 'ca-101',
+    date: '1 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan stay fourth in ICC ODI rankings after tri-series win',
+    summary:
+      'After winning the ODI tri-series in Lahore, Pakistan stayed fourth in the ICC men’s ODI team rankings with 104 rating points, level with third-placed South Africa and ahead of Australia on 102. Fakhar Zaman’s 127 off 99 balls helped Pakistan chase 326 against Sri Lanka in the final on 31 October. India lead the table on 115 points, followed by New Zealand on 109.',
+    whyItMatters:
+      'Rankings tables are easy interview GK — know Pakistan’s position, rating points, and the teams directly above and below.',
+    source: 'Wisden',
+    sourceUrl: 'https://www.wisden.com/series/pakistan-odi-tri-series-2026/cricket-news/icc-mens-odi-team-rankings-updated-table-after-pakistan-clinch-the-tri-series',
+  },
+  {
+    id: 'ca-102',
+    date: '2 November 2026',
+    category: 'Defense',
+    headline: 'DG ISPR outlines clear counter-terrorism strategy; about 200 operations a day',
+    summary:
+      'ISPR Director General Lt Gen Ahmed Sharif Chaudhry said in a Reuters interview that Pakistan has a clear strategy against terrorism, including cutting off enablers of terrorism inside the country. He said about 200 intelligence-based operations are carried out every day with the army, police and other law-enforcement agencies, and that the operations would continue. He added that the people of Khyber Pakhtunkhwa, who have suffered the most from terrorism, want security and stability.',
+    whyItMatters:
+      'The daily-operations figure shows how the military explains its strategy — useful for security and group-discussion questions.',
+    source: 'Radio Pakistan (via Daily Imroz)',
+    sourceUrl: 'https://dailyimroz.com/news/military-says-pakistan-has-clear-strategy-against-terrorism',
+  },
+  {
+    id: 'ca-103',
+    date: '2 November 2026',
+    category: 'International',
+    headline: 'Pakistan facilitates return of 22 Iranian sailors from seized ship',
+    summary:
+      'The Foreign Office confirmed that 22 crew members of the Iranian container ship MV Touska, seized by the United States, were evacuated to Pakistan as a confidence-building measure and flown in on Sunday night to be handed over to Iran. The ship itself is to be returned to its owners after repairs in Pakistani waters, with the transfer coordinated with both the Iranian and US sides. Iranian state media reported that 15 of the sailors had already crossed back into Iran through the Rimdan border terminal.',
+    whyItMatters:
+      'A live example of Pakistan’s mediation role between the US and Iran — interviewers may ask what Pakistan actually did, not just what it said.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1413695-iranian-crew-vessel-shifted-to-pakistan-for-repatriation-confirms-fo',
+  },
+  {
+    id: 'ca-104',
+    date: '2 November 2026',
+    category: 'Economy',
+    headline: 'Inflation eases to 9.6% in October, still above State Bank target',
+    summary:
+      'Pakistan’s annual inflation eased to 9.6 per cent in October 2026, down from 10.3 per cent in September, according to Pakistan Bureau of Statistics data — the third monthly decline in a row. Food inflation eased to 7.74 per cent, while prices rose 1.1 per cent over the month. Inflation is still well above the State Bank’s 5 to 7 per cent target range, with high oil prices clouding the outlook.',
+    whyItMatters:
+      'Know the actual October figure, not just the earlier forecast — and why the State Bank raised its policy rate despite the fall.',
+    source: 'TradingView News',
+    sourceUrl: 'https://www.tradingview.com/news/te_news:597277:0-pakistan-inflation-rate-eases-for-3rd-month/',
+  },
+  {
+    id: 'ca-105',
+    date: '2 November 2026',
+    category: 'Economy',
+    headline: 'Sindh and World Bank review $3.85 billion development portfolio',
+    summary:
+      'Sindh Chief Minister Murad Ali Shah and World Bank Country Director Bolormaa Amgaabazar reviewed 12 active World Bank-financed operations in Sindh worth $3.849 billion, of which $2.334 billion has been disbursed. The projects cover Karachi water supply, the Yellow Line bus corridor, schools, health facilities and flood housing reconstruction. The Chief Minister reaffirmed Sindh’s commitment to faster implementation so the investment reaches public services.',
+    whyItMatters:
+      'Development finance is strong economy GK — know the size of the portfolio, what it funds, and the gap between commitment and disbursement.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1446536-cm-world-bank-country-director-review-3-85bn-development-portfolio',
   },
 ];
