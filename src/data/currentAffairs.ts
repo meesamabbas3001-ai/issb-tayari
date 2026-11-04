@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '3 November 2026';
+export const lastUpdated = '4 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1298,5 +1298,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Development finance is strong economy GK — know the size of the portfolio, what it funds, and the gap between commitment and disbursement.',
     source: 'The News',
     sourceUrl: 'https://www.thenews.pk/print/1446536-cm-world-bank-country-director-review-3-85bn-development-portfolio',
+  },
+  {
+    id: 'ca-106',
+    date: '3 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan flight-tests first indigenous Faaz air-to-air missile',
+    summary:
+      'Pakistan successfully conducted the flight test of Faaz, its first indigenously developed air-to-air missile, the ISPR said. The missile is equipped with a state-of-the-art terminal guidance system and can engage enemy aerial targets at longer ranges, which is expected to increase the operational flexibility of the Pakistan Air Force. Senior officers of the armed forces watched the launch with the scientists and engineers involved, and the President, Prime Minister, COAS and CDF and services chiefs congratulated the team.',
+    whyItMatters:
+      'A first home-grown air-to-air missile is a landmark defence-production fact — know the name, the guidance system, and the benefit for the Pakistan Air Force.',
+    source: 'Centreline',
+    sourceUrl: 'https://centreline.com.pk/2026/11/03/pakistan-successfully-tests-first-air-to-air-missile/',
+  },
+  {
+    id: 'ca-107',
+    date: '1 November 2026',
+    category: 'Defense',
+    headline: '17 terrorists killed in two Balochistan intelligence-based operations',
+    summary:
+      'Security forces conducted two intelligence-based operations in Kachhi and Kharan districts of Balochistan on 1 November, killing 17 terrorists linked by the ISPR to Fitna al-Hindustan and Fitna al-Khawarij. In the Sanni area of Kachhi, 10 terrorists were killed while an attempt to set up a roadblock was foiled, and in Kharan, seven were killed when a hideout was destroyed. Sepoy Hikmatullah embraced martyrdom in the exchange of fire, weapons and ammunition were recovered, and sanitisation operations were under way.',
+    whyItMatters:
+      'Know the two districts, the numbers in each operation, and the state terms for the groups — a current example of intelligence-based operations under Azm-e-Istehkam.',
+    source: 'South Punjab News',
+    sourceUrl: 'https://www.southpunjabnews.com/2026/11/soldier-two-cops-martyred-17-terrorists.html',
+  },
+  {
+    id: 'ca-108',
+    date: '3 November 2026',
+    category: 'International',
+    headline: 'US Secretary Rubio acknowledges Pakistan concerns over cross-border terrorism',
+    summary:
+      'US Secretary of State Marco Rubio acknowledged Pakistan concerns about terrorist attacks sponsored from Afghan territory, speaking to reporters in Atlanta on the sidelines of the G20 foreign ministers meeting. He said the United States opposes terrorism regardless of where it originates or whom it targets, and that Washington was open to playing a constructive role in easing tensions between Pakistan and Afghanistan. Pakistan has repeatedly called for concrete, verifiable and sustained action against terrorist groups operating from Afghan soil, a claim the Afghan Taliban reject.',
+    whyItMatters:
+      'The US position on cross-border terrorism is a key foreign-policy point for group discussion — state what Washington said accurately, without overstating it as a new policy.',
+    source: 'Khyber Chronicles',
+    sourceUrl: 'https://khyberchronicles.pk/washington-signals-openness-to-addressing-pakistans-cross-border-terrorism-concerns/',
+  },
+  {
+    id: 'ca-109',
+    date: '3 November 2026',
+    category: 'Economy',
+    headline: 'LPG prices surge after Iranian border crossings close, hitting rickshaw drivers',
+    summary:
+      'Liquefied petroleum gas prices have surged since 17 October, when two Iranian border crossings closed and halted imports, traders told Reuters. Pakistan had been importing about 7,000 metric tons of LPG a day from Iran, and traders said the price of a 12-kilogram cylinder jumped 56 percent within days to 7,000 rupees. Rickshaw drivers in Lahore said their daily earnings had roughly halved, forcing families to cut back on meals, in a month when inflation was 9.6 percent and the policy rate had been raised to 12 percent.',
+    whyItMatters:
+      'Shows how a regional conflict and a border closure reach ordinary Pakistanis — link energy prices, inflation and daily livelihoods in economy answers.',
+    source: 'Reuters (via WNCY)',
+    sourceUrl: 'https://wncy.com/2026/11/03/fuel-of-the-poor-lpg-soars-in-pakistan-forcing-rickshaw-drivers-to-cut-meals/',
+  },
+  {
+    id: 'ca-110',
+    date: '3 November 2026',
+    category: 'International',
+    headline: 'Pakistan and Saudi Arabia agree to expand media and cultural cooperation',
+    summary:
+      'Information Minister Attaullah Tarar and Saudi Ambassador Dr Rajeh Tami Albugamy agreed in Islamabad to strengthen cooperation in information, broadcasting, media, culture and public relations. The minister said Pakistan-Saudi relations were reaching new heights, with wide scope for cooperation in drama, music, tourism and people-to-people contacts. The talks build on a broader strategic partnership between the two countries, including their defence agreement.',
+    whyItMatters:
+      'Saudi ties are not only about defence — media and cultural cooperation is a useful example of soft power and bilateral relations in an interview.',
+    source: 'NAM News',
+    sourceUrl: 'https://namnews.tv/2026/11/03/pakistan-saudi-arabia-seek-to-expand-media-and-cultural-cooperation/',
   },
 ];
