@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '4 November 2026';
+export const lastUpdated = '5 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1358,5 +1358,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Saudi ties are not only about defence — media and cultural cooperation is a useful example of soft power and bilateral relations in an interview.',
     source: 'NAM News',
     sourceUrl: 'https://namnews.tv/2026/11/03/pakistan-saudi-arabia-seek-to-expand-media-and-cultural-cooperation/',
+  },
+  {
+    id: 'ca-111',
+    date: '4 November 2026',
+    category: 'Defense',
+    headline: 'Federal cabinet ratifies defence cooperation pact with Kuwait',
+    summary:
+      'The federal cabinet has ratified a defence cooperation agreement with Kuwait that was originally signed in June 2023. The agreement covers cooperation in areas such as military manufacturing, electronic communications, scientific research and military media, and it will run for five years with automatic renewal. Kuwait had already ratified the agreement in July 2023.',
+    whyItMatters:
+      'A fresh example of Pakistan’s Gulf defence diplomacy — useful when asked about defence pacts beyond Saudi Arabia and Turkiye.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1446851-cabinet-ratifies-defence-pact-with-kuwait',
+  },
+  {
+    id: 'ca-112',
+    date: '4 November 2026',
+    category: 'National',
+    headline: 'Cabinet hands KP chief minister’s powers to governor during emergency',
+    summary:
+      'The federal cabinet has approved transferring the powers of the Khyber Pakhtunkhwa chief minister to the provincial governor so day-to-day administration can run smoothly during the state of emergency in the province. The governor will send a monthly review report to the federal government on how the powers are used. The cabinet said it hoped the governor-led advisory council would work for public welfare, prosperity and law and order in the province.',
+    whyItMatters:
+      'Governor’s rule and emergency provisions are classic interview topics — know how Articles 232 and 234 work in practice.',
+    source: 'APP (via Lead Pakistan)',
+    sourceUrl: 'https://leadpakistan.com.pk/news/federal-cabinet-approves-transfer-of-kp-cms-powers-to-governor-endorses-new-currency-designs/',
+  },
+  {
+    id: 'ca-113',
+    date: '4 November 2026',
+    category: 'International',
+    headline: 'Pakistan and UK hold annual counterterrorism dialogue in Islamabad',
+    summary:
+      'Pakistan and the United Kingdom have held their annual bilateral counterterrorism dialogue in Islamabad, reviewing regional and international security threats and ways to strengthen cooperation. Both sides expressed concern about terrorist groups operating from Afghanistan, particularly the Tehreek-e-Taliban Pakistan, and their effect on regional peace. The next round of the dialogue will be held in London in 2027.',
+    whyItMatters:
+      'Shows Pakistan’s counterterrorism diplomacy with a Western partner — a strong example for questions on Pakistan-UK relations and Afghan-based militancy.',
+    source: 'Khyber Chronicles',
+    sourceUrl: 'https://khyberchronicles.pk/pakistan-uk-join-forces-to-counter-cross-border-terrorism-raise-alarm-over-ttp-safe-havens-in-afghanistan/',
+  },
+  {
+    id: 'ca-114',
+    date: '5 November 2026',
+    category: 'Economy',
+    headline: 'OGRA cuts petrol price by Rs7.06 a litre from 5 November',
+    summary:
+      'The Oil and Gas Regulatory Authority has cut the price of petrol by Rs7.06 per litre to Rs362.00 and high-speed diesel by Rs3.71 to Rs387.81, with the new rates effective from 5 November. It is the third fuel price cut in quick succession, following reductions on 2 and 4 November. The government says the cuts follow movements in international oil prices and a revised fuel pricing formula.',
+    whyItMatters:
+      'Fuel prices link directly to inflation, transport costs and household budgets — expect questions on how the government sets petroleum prices.',
+    source: 'Islamabad Post',
+    sourceUrl: 'https://islamabadpost.com.pk/ogra-slashes-petrol-price-by-rs-7-06-per-litre-effective-november-5/',
+  },
+  {
+    id: 'ca-115',
+    date: '4 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan’s Over-40s lift cricket World Cup after beating Australia',
+    summary:
+      'Pakistan’s Over-40 cricket team has won the IMC Over-40s World Cup in Guyana, beating Australia in the final to lift the trophy. PCB chairman Mohsin Naqvi congratulated the team on the victory.',
+    whyItMatters:
+      'Sporting achievements are regular lecturette and group-discussion topics — a world title win is an easy, positive example to quote.',
+    source: 'Daily The Destination',
+    sourceUrl: 'https://dailythedestination.com/pcb-chairman-mohsin-naqvi-congratulates-pakistan-on-over-40s-world-cup-win/',
   },
 ];
