@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '5 November 2026';
+export const lastUpdated = '6 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1418,5 +1418,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Sporting achievements are regular lecturette and group-discussion topics — a world title win is an easy, positive example to quote.',
     source: 'Daily The Destination',
     sourceUrl: 'https://dailythedestination.com/pcb-chairman-mohsin-naqvi-congratulates-pakistan-on-over-40s-world-cup-win/',
+  },
+  {
+    id: 'ca-116',
+    date: '5 November 2026',
+    category: 'Defense',
+    headline: 'CDF visits SSG headquarters at Tarbela, stresses sustained training',
+    summary:
+      'Field Marshal Syed Asim Munir, Chief of Army Staff and Chief of Defence Forces, visited the Special Services Group (SSG) headquarters at Tarbela on 5 November. He was briefed on the SSG’s specialised training and operational readiness, watched a display of modern equipment and a special-operations demonstration, and laid a wreath at the Shuhada Monument. He stressed sustained training, indigenous capability development and uncompromising operational preparedness against evolving threats.',
+    whyItMatters:
+      'Know what the SSG is and why special forces training matters — the CDF’s visit is a ready-made interview question on Pakistan’s elite forces.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1447174-cdf-stresses-sustained-training-for-ssg',
+  },
+  {
+    id: 'ca-117',
+    date: '5 November 2026',
+    category: 'International',
+    headline: 'Turkish parliament ratifies Mecca defence pact with Pakistan and Saudi Arabia',
+    summary:
+      'Türkiye’s parliament ratified the Mecca Joint Defence Agreement with Pakistan and Saudi Arabia, passing the bill by 279 votes to 119. Signed in Mecca on 7 August, the 16-article pact treats an armed attack on one party as an attack on all, and covers joint exercises, intelligence sharing and defence-industry cooperation. The collective-defence clause is not automatic — decisions are taken by consensus, and any Turkish troop deployment abroad still needs a separate parliamentary vote.',
+    whyItMatters:
+      'A landmark trilateral defence pact — interviewers may ask what collective defence means and how the Mecca agreement differs from a bilateral deal.',
+    source: 'The Türkiye Times',
+    sourceUrl: 'https://theturkiyetimes.com/en/news/turkiyes-mecca-defense-agreement-passes-parliament-by-279-votes',
+  },
+  {
+    id: 'ca-118',
+    date: '5 November 2026',
+    category: 'International',
+    headline: 'UN Security Council adopts Pakistan-initiated statement on diplomacy during war',
+    summary:
+      'The UN Security Council adopted by consensus a presidential statement initiated by Pakistan on “The Role of Diplomacy during Active Hostilities”. The statement, building on Resolution 2788 adopted during Pakistan’s Council presidency in July 2025, stresses keeping diplomatic engagement, mediation and communication channels open even after fighting begins, to help reach ceasefires and lasting settlements. Deputy Prime Minister Ishaq Dar said that when hostilities intensify, diplomacy must not retreat.',
+    whyItMatters:
+      'Shows Pakistan using its Security Council seat to shape global rules — a strong example of Pakistan’s diplomacy and UN role for interviews and group discussions.',
+    source: 'KhabarWire',
+    sourceUrl: 'https://khabarwire.com/blog/unsc-pakistan-diplomacy-statement-2026-11-05/',
+  },
+  {
+    id: 'ca-119',
+    date: '5 November 2026',
+    category: 'National',
+    headline: 'Pakistan reports ninth polio case of 2026, virus linked to Afghanistan',
+    summary:
+      'Pakistan reported its ninth polio case of 2026 after a seven-month-old child in Khyber district tested positive, with genetic tests linking the virus to strains circulating in Afghanistan. It is the third case from Khyber district and the seventh from Khyber Pakhtunkhwa this year; Sindh has recorded two. A seven-day nationwide vaccination campaign from 2 to 8 November aims to vaccinate about 24 million children under five across 97 districts.',
+    whyItMatters:
+      'Polio eradication is a long-running national challenge — know the case numbers, the cross-border link with Afghanistan, and why the vaccination campaigns matter.',
+    source: 'Probes Pakistan',
+    sourceUrl: 'https://www.probespakistan.com/article/pakistan-reports-ninth-polio-case-as-virus-linked-to-afghanistan',
+  },
+  {
+    id: 'ca-120',
+    date: '5 November 2026',
+    category: 'Economy',
+    headline: 'IMF urges Pakistan to move beyond stabilisation to deeper structural reforms',
+    summary:
+      'The IMF’s Resident Representative in Pakistan, Dr Mahir Binici, has urged Pakistan to move beyond macroeconomic stabilisation and carry out deeper structural reforms, including provincial tax mobilisation, better governance, energy-sector restructuring and lower business costs. Speaking at SDPI’s Sustainable Development Conference in Islamabad, he listed five priorities — preserving stability, improving resource allocation, cutting business costs, building a growth-friendly tax system and strengthening governance — and warned of renewed instability after the IMF programme ends in September 2027 unless a transition to growth policies begins.',
+    whyItMatters:
+      'The IMF programme and structural reforms are core economy topics — know the difference between stabilisation and reform, and the five priorities the IMF named.',
+    source: 'Newsman',
+    sourceUrl: 'https://newsman.pk/sdpi-sdc-imf-urges-deeper-reforms-provincial-tax-mobilization/',
   },
 ];
