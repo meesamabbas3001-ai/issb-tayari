@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '6 November 2026';
+export const lastUpdated = '7 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1478,5 +1478,53 @@ export const currentAffairs: CurrentAffair[] = [
       'The IMF programme and structural reforms are core economy topics — know the difference between stabilisation and reform, and the five priorities the IMF named.',
     source: 'Newsman',
     sourceUrl: 'https://newsman.pk/sdpi-sdc-imf-urges-deeper-reforms-provincial-tax-mobilization/',
+  },
+  {
+    id: 'ca-121',
+    date: '6 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan, Sudan pledge closer security and counterterrorism cooperation',
+    summary:
+      'Sudan’s Interior Minister Babiker Samra Mustafa Ali met Field Marshal Syed Asim Munir, Chief of Army Staff and Chief of Defence Forces, at GHQ Rawalpindi. According to ISPR, the two sides discussed regional security and agreed to strengthen cooperation in security, counterterrorism and institutional ties. Field Marshal Munir said Pakistan wants deeper engagement with Sudan to meet shared security challenges.',
+    whyItMatters:
+      'Defence diplomacy questions often ask which countries Pakistan is building security ties with — Sudan is a new name on that list.',
+    source: 'Pakistan TV',
+    sourceUrl: 'https://pakistantv.com/article/pakistan-sudan-to-strengthen-relations-security-counterterrorism-and-institutional-cooperation',
+  },
+  {
+    id: 'ca-122',
+    date: '6 November 2026',
+    category: 'International',
+    headline: 'Pakistan wins broad UN support for three disarmament resolutions',
+    summary:
+      'Pakistan secured broad international support for three resolutions it sponsored at the UN General Assembly’s First Committee, which deals with disarmament and international security. The resolution on conventional arms control at regional level won 180 votes, the one on confidence-building measures was adopted without a vote, and the resolution on protecting non-nuclear-weapon states from nuclear threats won 122 votes with none against. The Foreign Office called it an important diplomatic success.',
+    whyItMatters:
+      'Know Pakistan’s UN disarmament work — the vote counts (180 and 122) and the three topics are classic interview and lecturette material.',
+    source: 'Pakistan TV',
+    sourceUrl: 'https://pakistantv.com/article/islamabad-reaffirms-multilateral-diplomacy-after-pakistan-secures-major-un-gains',
+  },
+  {
+    id: 'ca-123',
+    date: '6 November 2026',
+    category: 'Economy',
+    headline: 'Saudi Arabia rolls over $3 billion deposits as Pakistan launches Eurobond',
+    summary:
+      'Finance Minister Muhammad Aurangzeb told the Senate Standing Committee on Finance that Saudi Arabia has rolled over $3 billion in deposits for Pakistan, and that Pakistan has also raised $3 billion through a Eurobond launch. He said Pakistan can manage its external accounts even though the United States declined its request for a $10 billion Liquidity Support Programme. The finance secretary told the committee Pakistan faces $21.5 billion in external financing repayments this year.',
+    whyItMatters:
+      'External financing — rollovers, Eurobonds and IMF support — is a core economy question; know the $3 billion figures and where the money comes from.',
+    source: 'Bloom Pakistan',
+    sourceUrl: 'https://bloompakistan.com/pakistan-gets-3-billion-saudi-rollover-after-us-rules-out-10-billion-support/',
+  },
+  {
+    id: 'ca-124',
+    date: '6 November 2026',
+    category: 'Sports',
+    headline: 'Quaid-e-Azam Trophy first round: Rizwan hits double century as FATA beat Lahore Whites',
+    summary:
+      'The first round of the Quaid-e-Azam Trophy Gold concluded on 6 November. Mohammad Rizwan scored an unbeaten 200 for Peshawar Blues against Faisalabad, while FATA beat Lahore Whites by 241 runs, with Shaheen Shah Afridi taking four wickets and Babar Azam scoring 28 and 42. Multan beat Islamabad by 10 wickets, and Sialkot Blues drew with defending champions Karachi Blues.',
+    whyItMatters:
+      'Domestic cricket is a safe sports topic for interviews — know the Quaid-e-Azam Trophy, the star performers, and that it feeds the national Test team.',
+    source: 'Wisden',
+    sourceUrl: 'https://www.wisden.com/cricket-news/rizwan-shines-babar-struggles-how-pakistan-stars-fared-in-quaid-e-azam-trophy-first-round',
   },
 ];
