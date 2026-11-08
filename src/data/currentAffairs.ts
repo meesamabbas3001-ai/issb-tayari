@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '7 November 2026';
+export const lastUpdated = '8 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1526,5 +1526,53 @@ export const currentAffairs: CurrentAffair[] = [
       'Domestic cricket is a safe sports topic for interviews — know the Quaid-e-Azam Trophy, the star performers, and that it feeds the national Test team.',
     source: 'Wisden',
     sourceUrl: 'https://www.wisden.com/cricket-news/rizwan-shines-babar-struggles-how-pakistan-stars-fared-in-quaid-e-azam-trophy-first-round',
+  },
+  {
+    id: 'ca-125',
+    date: '7 November 2026',
+    category: 'International',
+    headline: 'Pakistani astronaut to join China’s Shenzhou-24 mission',
+    summary:
+      'China’s manned space agency has announced that a Pakistani astronaut will fly aboard the Shenzhou-24 mission as a payload specialist, becoming the first foreign national to visit China’s Tiangong space station. After a short stay in orbit, the astronaut will return to Earth aboard Shenzhou-23. Two Pakistani pilots, Muhammad Zeeshan Ali and Khurram Daud, have been training in China, but the agency has not yet said which one will fly or given a launch date.',
+    whyItMatters:
+      'A landmark first for Pakistan in space — know the Shenzhou-24 mission, the payload specialist role, and that it follows a February 2025 Pakistan-China astronaut agreement.',
+    source: 'Xinhua',
+    sourceUrl: 'http://english.scio.gov.cn/internationalexchanges/2026-11/07/content_118765480.html',
+  },
+  {
+    id: 'ca-126',
+    date: '7 November 2026',
+    category: 'International',
+    headline: 'Pakistan, Sudan sign visa-free travel agreement for officials',
+    summary:
+      'Pakistan and Sudan have signed an agreement allowing holders of official and diplomatic passports to travel between the two countries without a visa. Interior Minister Mohsin Naqvi and his Sudanese counterpart, Lt Gen Babiker Samra Mustafa Ali, signed the pact in Islamabad. The two sides also agreed to expand cooperation in security, cybercrime and police training.',
+    whyItMatters:
+      'Good for questions on Pakistan’s ties with African and Muslim countries — note it covers only official and diplomatic passports, not ordinary citizens.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1447476-pakistan-sudan-agree-on-visa-free-travel-for-official-passport-holders',
+  },
+  {
+    id: 'ca-127',
+    date: '7 November 2026',
+    category: 'Economy',
+    headline: 'Pakistan, Türkiye to restart offshore oil and gas exploration after 20 years',
+    summary:
+      'Pakistan is preparing to restart offshore oil and gas exploration after nearly two decades, with a Turkish seismic survey vessel expected to reach Karachi between 17 and 20 November. The vessel, operated by the Turkish Petroleum Offshore Company, will survey the Eastern Offshore Indus-C block in the Arabian Sea. Petroleum Minister Ali Pervaiz Malik chaired a meeting to review arrangements for the vessel’s arrival.',
+    whyItMatters:
+      'Energy security is a favourite interview topic — know that a seismic survey maps underground structures but does not prove oil or gas reserves; only drilling can do that.',
+    source: 'Khabr',
+    sourceUrl: 'https://khabr.pk/en/news/pakistan-turkiye-revive-offshore-oil-gas-exploration',
+  },
+  {
+    id: 'ca-128',
+    date: '7 November 2026',
+    category: 'Economy',
+    headline: 'Government unveils Auto Policy 2026–31 focused on cheaper cars and EVs',
+    summary:
+      'The government has unveiled the Auto Policy 2026–31, built on six pillars: cheaper vehicles, higher exports, electric vehicles, greater local manufacturing, better safety standards and transparency. Proposals include raising the EV financing limit from Rs 3 million to Rs 10 million and a target of $6 billion in automobile exports over five years. Key tax measures still need agreement with the IMF before they become final.',
+    whyItMatters:
+      'Shows you follow economic policy, not just politics — know the six pillars and that the fiscal parts still need IMF clearance.',
+    source: 'PakWheels',
+    sourceUrl: 'https://www.pakwheels.com/blog/pakistan-new-auto-policy-cheaper-cars-evs/',
   },
 ];
