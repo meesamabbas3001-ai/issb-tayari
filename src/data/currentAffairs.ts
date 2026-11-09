@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '8 November 2026';
+export const lastUpdated = '9 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1574,5 +1574,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Shows you follow economic policy, not just politics — know the six pillars and that the fiscal parts still need IMF clearance.',
     source: 'PakWheels',
     sourceUrl: 'https://www.pakwheels.com/blog/pakistan-new-auto-policy-cheaper-cars-evs/',
+  },
+  {
+    id: 'ca-129',
+    date: '8 November 2026',
+    category: 'Defense',
+    headline: 'DG ISPR meets students and faculty at three Lahore universities',
+    summary:
+      'The Director General of ISPR held interactive sessions with students and faculty at the University of Lahore, the University of Central Punjab and King Edward Medical University. The discussions covered regional security, the situation in Afghanistan and the Pakistan Army’s role in promoting peace and stability, and participants paid tribute to the armed forces for their victory in Marka-e-Haq.',
+    whyItMatters:
+      'Shows the Army’s direct engagement with students — a good example if asked about civil-military relations or how the armed forces communicate with the public.',
+    source: 'The AZB',
+    sourceUrl: 'https://theazb.com/dg-ispr-engages-students-at-lahore-universities-discusses-regional-security-and-peace/',
+  },
+  {
+    id: 'ca-130',
+    date: '8 November 2026',
+    category: 'Economy',
+    headline: 'IMF Board to consider $1.2 billion tranche for Pakistan in December',
+    summary:
+      'Finance Minister Muhammad Aurangzeb has confirmed that the IMF Executive Board is expected to consider about $1.2 billion for Pakistan in December, likely in the second week of the month. The amount covers about $1.0 billion under the Extended Fund Facility and about $210 million under the Resilience and Sustainability Facility, following the staff-level agreement reached after talks in Karachi and Islamabad.',
+    whyItMatters:
+      'Know the IMF programme names (EFF and RSF) and the amounts — interviewers often ask how Pakistan funds its reserves and what the IMF expects in return.',
+    source: 'The Nation (via Pakistanipro)',
+    sourceUrl: 'https://pakistanipro.net/imf-1-2-billion-tranche-december-2026/',
+  },
+  {
+    id: 'ca-131',
+    date: '6 November 2026',
+    category: 'Economy',
+    headline: 'PM scraps 80% export condition for SME financing; Rs300bn set aside for exporters',
+    summary:
+      'Prime Minister Shehbaz Sharif has removed the condition that small and medium enterprises must earn at least 80% of their revenue from exports to qualify for long-term financing. The government has allocated Rs300 billion under the Export Finance Scheme for SMEs and new exporters, and Rs350 billion this year under the Long-Term Financing Facility; over 10,000 loan applications have already come in through a new State Bank portal.',
+    whyItMatters:
+      'SMEs and exports are a classic economy question — know that the government is easing credit access for small exporters instead of only big firms.',
+    source: 'Mettis Global',
+    sourceUrl: 'https://mettisglobal.news/PM-directs-removal-of-80-export-condition-for-SME-longterm-financing-64841',
+  },
+  {
+    id: 'ca-132',
+    date: '6 November 2026',
+    category: 'National',
+    headline: 'Government sets roadmap for 100% digital payments; cheques to end under assignment accounts',
+    summary:
+      'Prime Minister Shehbaz Sharif has directed officials to prepare a time-bound roadmap for a fully digital payments system across Pakistan. Cheque payments under Asaan Assignment Accounts will stop from 15 November, with all such payments moving to the Raast system from 16 November, and most federal and provincial government payments are to be fully digitised by December 2026.',
+    whyItMatters:
+      'Raast and the cashless economy are current national developments — know the dates 15 and 16 November, and that BISP payments already go through digital wallets.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1447397-pm-seeks-roadmap-for-100pc-digital-payments-system',
+  },
+  {
+    id: 'ca-133',
+    date: '9 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan begin home Test series against Sri Lanka at Rawalpindi',
+    summary:
+      'Pakistan start a two-match Test series against Sri Lanka at Rawalpindi today, with the second Test in Lahore from 17 November, as part of the ICC World Test Championship. Pakistan, ninth in the standings after a poor run, have made wholesale changes including a new-look squad led by Babar Azam, while Sri Lanka are boosted by the return of Pathum Nissanka.',
+    whyItMatters:
+      'A home Test series is a standard sports GK question — know the venues, the dates and that both Tests count for the World Test Championship.',
+    source: 'Wisden',
+    sourceUrl: 'https://www.wisden.com/series/pakistan-vs-sri-lanka-m-2026/cricket-news/pak-vs-sl-tests-2026-all-you-need-to-know-full-schedule-squads-venues-and-match-timings',
   },
 ];
