@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '9 November 2026';
+export const lastUpdated = '10 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1634,5 +1634,53 @@ export const currentAffairs: CurrentAffair[] = [
       'A home Test series is a standard sports GK question — know the venues, the dates and that both Tests count for the World Test Championship.',
     source: 'Wisden',
     sourceUrl: 'https://www.wisden.com/series/pakistan-vs-sri-lanka-m-2026/cricket-news/pak-vs-sl-tests-2026-all-you-need-to-know-full-schedule-squads-venues-and-match-timings',
+  },
+  {
+    id: 'ca-134',
+    date: '9 November 2026',
+    category: 'Defense',
+    headline: 'Security forces clear militant hideouts inside mosques in North Waziristan',
+    summary:
+      'In an intelligence-based operation on 8 November in Muzak village near Mir Ali, security forces cleared two hideouts of Fitna Al Khawarij militants set up inside mosques, recovering a large quantity of improvised explosive devices, explosives, weapons and ammunition. The ISPR said the militants had used the mosques to store explosives and run torture cells, and that clearance operations in the area would continue under the Azm-e-Istehkam framework.',
+    whyItMatters:
+      'A strong example of how terrorists misuse religious sites — interviewers may ask about IBOs, Fitna Al Khawarij and the Azm-e-Istehkam campaign.',
+    source: 'The Global Insight',
+    sourceUrl: 'https://tgipk.com/2026/11/09/security-forces-uncover-two-militant-hideouts-in-mosques-in-north-waziristan-ispr/',
+  },
+  {
+    id: 'ca-135',
+    date: '9 November 2026',
+    category: 'Economy',
+    headline: 'Saudi and Pakistani investors sign MoU for joint private equity fund',
+    summary:
+      'The Saudi–Pakistan Joint Business Council signed an agreement to set up a Saudi–Pakistan Private Equity Fund, starting at several hundred million dollars and growing with opportunities. Investors from both countries will contribute equally, with 75% of the fund invested in Pakistan and 25% in Saudi Arabia, targeting agriculture, mining, construction and the government’s land-bank projects.',
+    whyItMatters:
+      'Shows how the Saudi partnership is turning into economic investment — a good example of Pak-Saudi ties beyond defence.',
+    source: 'Biz Today',
+    sourceUrl: 'https://www.biztoday.news/2026/11/09/saudi-and-pakistani-investors-sign-mou-to-launch-saudi-pak-private-equity-fund/',
+  },
+  {
+    id: 'ca-136',
+    date: '9 November 2026',
+    category: 'Sports',
+    headline: 'Four fifties put Pakistan on top on day one against Sri Lanka',
+    summary:
+      'Pakistan reached 281 for 5 on the first day of the opening Test against Sri Lanka at Rawalpindi, after Sri Lanka chose to bowl. Debutants Tayyab Arif (57) and Mohammad Taha (51) both made fifties, captain Babar Azam scored 50, and Saud Shakeel finished unbeaten on 57 before bad light ended play early.',
+    whyItMatters:
+      'A home Test with four debutants is classic sports GK — know the day-one score and the names of the two debutant fifty-makers.',
+    source: 'Cricbuzz',
+    sourceUrl: 'https://m.cricbuzz.com/cricket-news/140849/batting-quartet-give-pakistan-the-edge-on-day-1-in-rawalpindi',
+  },
+  {
+    id: 'ca-137',
+    date: '8 November 2026',
+    category: 'National',
+    headline: 'KP plans faceless anti-terror courts and Rs70 billion police boost',
+    summary:
+      'Khyber Pakhtunkhwa’s administration plans faceless anti-terrorism courts to protect witnesses, prosecutors and judges, after a briefing by the provincial home secretary. The province also plans to spend about Rs59.8 billion on police and Rs10.3 billion on the Counter-Terrorism Department, strengthen checkpoints and Safe City coverage, and install anti-drone systems in Dera Ismail Khan, Lakki Marwat and Bannu.',
+    whyItMatters:
+      'Governor’s rule in KP is a live constitutional topic — know the new security measures, the figures and the anti-drone plan for the southern districts.',
+    source: 'Dawn (via 7Globe)',
+    sourceUrl: 'https://www.7globe.in/pakistans-khyber-pakhtunkhwa-plans-faceless-anti-terror-courts-report/',
   },
 ];
