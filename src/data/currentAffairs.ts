@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '10 November 2026';
+export const lastUpdated = '11 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1682,5 +1682,53 @@ export const currentAffairs: CurrentAffair[] = [
       'Governor’s rule in KP is a live constitutional topic — know the new security measures, the figures and the anti-drone plan for the southern districts.',
     source: 'Dawn (via 7Globe)',
     sourceUrl: 'https://www.7globe.in/pakistans-khyber-pakhtunkhwa-plans-faceless-anti-terror-courts-report/',
+  },
+  {
+    id: 'ca-138',
+    date: '10 November 2026',
+    category: 'International',
+    headline: 'Dar calls for diplomacy at Margalla Dialogue 2026',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar addressed the Margalla Dialogue 2026 in Islamabad, calling for a stronger role for diplomacy, dialogue and multilateral cooperation amid rising global tensions. He said Pakistan would defend its sovereignty while working for regional peace, highlighted Pakistan’s UN Security Council membership and its mediation between the United States and Iran, and described the Makkah Joint Defence Agreement as a defensive arrangement for collective security.',
+    whyItMatters:
+      'A ready-made summary of Pakistan’s foreign policy in one speech — mediation, the Makkah pact, Kashmir and the Indus Waters Treaty are all classic interview topics.',
+    source: 'APP (via Tez Khabar)',
+    sourceUrl: 'https://en.tezkhabar.tv/dar-calls-for-diplomacy-amid-global-turmoil-says-pakistan-will-defend-sovereignty-while-pursuing-peace/',
+  },
+  {
+    id: 'ca-139',
+    date: '10 November 2026',
+    category: 'International',
+    headline: 'PM Shehbaz Sharif leaves for three-day visit to Türkiye for COP31',
+    summary:
+      'Prime Minister Shehbaz Sharif left for a three-day visit to Türkiye from 10 to 12 November to attend and address the COP31 climate summit in Antalya. According to the Foreign Office, he will press for concrete climate action and predictable, adequate climate finance for developing countries, highlight Pakistan’s push for solar and renewable energy and climate resilience, and hold bilateral meetings with Turkish and other world leaders on the sidelines.',
+    whyItMatters:
+      'Climate diplomacy is a frequent lecturette topic — know why Pakistan, a low emitter hit hard by floods, demands climate finance at COP summits.',
+    source: 'The Pakistan Desk',
+    sourceUrl: 'https://www.thepakistandesk.com/2026/11/pakistan/prime-minister-shehbaz-sharif-left-for-a-three-day-visit-to-turkey?lang=en',
+  },
+  {
+    id: 'ca-140',
+    date: '10 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan declare on 434 and reduce Sri Lanka to 114 for 3 on day two',
+    summary:
+      'Pakistan declared their first innings on 434 for 9 on day two of the first Test against Sri Lanka at Rawalpindi, after resuming on 281 for 5. Saud Shakeel top-scored with 93, five Pakistan batters made fifties, and debutant Saqib Khan then took two wickets as Sri Lanka closed on 114 for 3, still 320 runs behind, before bad light ended play early for the second day running.',
+    whyItMatters:
+      'A home Test with five fifties and a debutant strike bowler is standard sports GK — know the declaration score and the overnight lead.',
+    source: 'Cricbuzz',
+    sourceUrl: 'https://www.cricbuzz.com/cricket-news/140860/pakistan-tighten-grip-on-rawalpindi-test-despite-late-sl-resistance',
+  },
+  {
+    id: 'ca-141',
+    date: '10 November 2026',
+    category: 'Economy',
+    headline: 'Petrol price cut by Rs8 to Rs338 a litre from 10 November',
+    summary:
+      'The Petroleum Division notified a fresh cut in fuel prices from 10 November, with petrol down Rs8 a litre to Rs338 and high-speed diesel down Rs7 to Rs371. Kerosene fell by Rs15.15 to Rs308.52 a litre. Pakistan now revises petrol and diesel prices daily, and the latest cut follows falling international oil prices.',
+    whyItMatters:
+      'Fuel prices link the economy to everyday life — interviewers may ask how oil prices, the petroleum levy and the rupee affect inflation and household budgets.',
+    source: 'Petroleum Division (via Daily Imroz)',
+    sourceUrl: 'https://dailyimroz.com/petrol-price-in-pakistan',
   },
 ];
