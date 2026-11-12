@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '11 November 2026';
+export const lastUpdated = '12 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1730,5 +1730,77 @@ export const currentAffairs: CurrentAffair[] = [
       'Fuel prices link the economy to everyday life — interviewers may ask how oil prices, the petroleum levy and the rupee affect inflation and household budgets.',
     source: 'Petroleum Division (via Daily Imroz)',
     sourceUrl: 'https://dailyimroz.com/petrol-price-in-pakistan',
+  },
+  {
+    id: 'ca-142',
+    date: '11 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan Army wins 4th Inter-Services Combat Shooting Championship',
+    summary:
+      'The Pakistan Army won the 4th Inter-Services Combat Shooting Championship at the closing ceremony of the 46th Pakistan Army Rifle Association Central Meet at the Army Marksmanship Unit in Jhelum. Field Marshal Syed Asim Munir, Chief of Army Staff and Chief of Defence Forces, attended as chief guest, while Chief of the Naval Staff Admiral Naveed Ashraf was guest of honour. More than 1,500 shooters from the three services, civil armed forces and civilian teams took part in the event, held from 7 October to 11 November, and Havildar Fazal Rehman of the Punjab Regiment won the top Master at Arms trophy.',
+    whyItMatters:
+      'Know the PARA Central Meet and the Master at Arms honour — a ready example of inter-services competition and military marksmanship for interview GK.',
+    source: 'ISPR (via The Public Purview)',
+    sourceUrl: 'https://thepublicpurview.com/pakistan-army-wins-inter-services-shooting-championship-2026/',
+  },
+  {
+    id: 'ca-143',
+    date: '10 November 2026',
+    category: 'International',
+    headline: 'Makkah defence pact committee to meet in Islamabad later in November',
+    summary:
+      'The Strategic Political and Defence Committee of the Makkah Joint Defence Agreement will meet in Islamabad in the last week of November, the first time the committee meets in Pakistan. The meeting is expected to bring together the foreign and defence ministers and military chiefs of Pakistan, Saudi Arabia and Turkiye, with Chief of Defence Forces Field Marshal Syed Asim Munir attending. Sources cited by The News said the meeting could take place on 27-28 November and would focus on Houthi attacks on Saudi Arabia, the US-Iran situation and regional security.',
+    whyItMatters:
+      'The Makkah pact is Pakistan’s biggest new defence alliance — know its members, its collective-defence clause and why Islamabad is hosting its committee.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1447953-makkah-pact-panel-to-meet-in-islamabad-later-this-month',
+  },
+  {
+    id: 'ca-144',
+    date: '11 November 2026',
+    category: 'International',
+    headline: 'PM Shehbaz presses Pakistan’s climate case at COP31 in Antalya',
+    summary:
+      'Prime Minister Shehbaz Sharif addressed the COP31 climate summit in Antalya, Turkiye, calling for concessional finance and affordable technology so developing countries can meet their climate targets. He said Pakistan needs about $138 billion by 2035 for low-carbon power and another $50 billion to replace coal with solar, and highlighted that Pakistan has installed nearly 22 gigawatts of rooftop solar in two years. Pakistan is among the countries worst hit by climate change despite producing less than one per cent of global emissions.',
+    whyItMatters:
+      'Climate diplomacy is now core foreign-policy GK — know Pakistan’s COP31 demands, the $138bn figure and the rooftop solar story.',
+    source: 'Pakistan TV',
+    sourceUrl: 'https://pakistantv.com/article/prime-minister-sharif-takes-pakistan-climate-justice-fight-to-cop31-in-antalya',
+  },
+  {
+    id: 'ca-145',
+    date: '11 November 2026',
+    category: 'Economy',
+    headline: 'ADB approves $500 million loan to strengthen Pakistan’s disaster resilience',
+    summary:
+      'The Asian Development Bank approved a $500 million policy-based loan for Pakistan to strengthen climate adaptation and disaster response. The Climate and Disaster Resilience Enhancement Program will improve disaster planning, risk mapping and emergency financing, including a new Contingent Disaster Financing option that releases budget support quickly after a disaster. Pakistan loses more than $2 billion a year on average to floods, earthquakes and other disasters.',
+    whyItMatters:
+      'Know the ADB’s $500m CDREP and the idea of contingent disaster financing — a strong example of how Pakistan funds climate resilience.',
+    source: 'WE News',
+    sourceUrl: 'https://wenewsenglish.com/adb-approves-500-million-for-pakistans-climate-resilience/',
+  },
+  {
+    id: 'ca-146',
+    date: '10 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan U19 crush Nepal by 101 runs to reach Asia Cup semi-final',
+    summary:
+      'Defending champions Pakistan beat Nepal by 101 runs in their final Group A match of the ACC Men’s U19 Asia Cup in Oman, finishing top of the group unbeaten. Pakistan scored 275 for 7 before bowling Nepal out for 174, with Ahmed Hussain leading the bowling. Pakistan now face Bangladesh in the semi-final on 12 November.',
+    whyItMatters:
+      'Youth cricket success is easy sports GK — know the 101-run margin, the unbeaten group record and the semi-final against Bangladesh.',
+    source: 'Geo Super',
+    sourceUrl: 'https://www.geosuper.tv/latest/61172-pakistan-crush-nepal-to-reach-u19-asia-cup-semi-finals',
+  },
+  {
+    id: 'ca-147',
+    date: '10 November 2026',
+    category: 'Sports',
+    headline: 'Second Pakistan-Sri Lanka Test moved from Lahore to Rawalpindi due to smog',
+    summary:
+      'The PCB moved the second Test against Sri Lanka, scheduled for 17-21 November, from Lahore’s Gaddafi Stadium to Rawalpindi because of severe smog and hazardous air quality in Lahore. Both Tests of the series will now be played at Rawalpindi Cricket Stadium, where the first Test is already under way. The PCB said the dates of the second Test remain unchanged.',
+    whyItMatters:
+      'A Test moved by smog links sport with environment and public health — a good discussion point for group discussion on pollution in Punjab.',
+    source: 'The SportsTak',
+    sourceUrl: 'https://thesportstak.com/cricket/story/why-did-pakistan-shift-sri-lanka-test-from-lahore-to-rawalpindi-3560478-2026-11-11',
   },
 ];
