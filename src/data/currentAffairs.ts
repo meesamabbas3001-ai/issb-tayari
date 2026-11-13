@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '12 November 2026';
+export const lastUpdated = '13 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1802,5 +1802,65 @@ export const currentAffairs: CurrentAffair[] = [
       'A Test moved by smog links sport with environment and public health — a good discussion point for group discussion on pollution in Punjab.',
     source: 'The SportsTak',
     sourceUrl: 'https://thesportstak.com/cricket/story/why-did-pakistan-shift-sri-lanka-test-from-lahore-to-rawalpindi-3560478-2026-11-11',
+  },
+  {
+    id: 'ca-148',
+    date: '12 November 2026',
+    category: 'Defense',
+    headline: 'ISPR DG "cautiously optimistic" on US-Iran mediation',
+    summary:
+      'Director General ISPR Lt Gen Ahmed Sharif Chaudhry told Reuters that Pakistan’s army is “cautiously optimistic” about efforts to revive a ceasefire in the eight-month US-Iran war. Field Marshal Asim Munir, Pakistan’s chief mediator, has visited Tehran twice this month, most recently on Monday alongside Saudi and Turkish officials. Chaudhry warned that “powerful spoilers and detractors” are trying to obstruct the mediation.',
+    whyItMatters:
+      'Pakistan’s mediation role in the US-Iran war is a likely interview topic — know who is mediating, and what “cautiously optimistic” signals.',
+    source: 'Al Jazeera',
+    sourceUrl: 'https://aljazeeranews-mggx1uo47w.edgeone.app/news/2026/10/30/pakistan-army-cautiously-optimistic-about-us-iran-mediation-efforts',
+  },
+  {
+    id: 'ca-149',
+    date: '12 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan ready to defend Saudi Arabia, says ISPR chief',
+    summary:
+      'In an interview with Saudi newspaper Asharq Al-Awsat, Director General ISPR Lt Gen Ahmed Sharif Chaudhry said Pakistan is prepared to take all necessary defensive measures to protect Saudi Arabia under the Joint Strategic Defence Agreement and the Makkah Joint Defence Alliance. He called Pakistan’s commitment to Saudi security, sovereignty and territorial integrity “absolute and non-negotiable”, and said Pakistani troops are already stationed in the Kingdom. He stressed both arrangements are defensive in nature and directed against no country.',
+    whyItMatters:
+      'Know the difference between the bilateral Saudi defence pact and the trilateral Makkah pact — interviewers often ask how the two fit together.',
+    source: 'Asharq Al-Awsat (via Daily The Destination)',
+    sourceUrl: 'https://dailythedestination.com/pakistan-ready-to-defend-saudi-arabia-says-ispr-chief/',
+  },
+  {
+    id: 'ca-150',
+    date: '11 November 2026',
+    category: 'National',
+    headline: 'Ten policemen martyred in Kohat ambush; 18 attackers killed',
+    summary:
+      'At least 10 police personnel, including DSP Gambat Haider Zaman and Sub-Inspector Mukhtiar, were martyred when terrorists ambushed a police party in Kohat’s Darbokach area during an operation against illegal gold mining. Police said the officers fought back and killed 18 attackers, described as members of the banned Tehreek-i-Taliban Pakistan (Fitna al-Khawarij). The TTP later claimed responsibility for the attack.',
+    whyItMatters:
+      'A major counter-terrorism incident in KP — know the state’s term Fitna al-Khawarij and why illegal mining areas have become militant targets.',
+    source: 'Sabah News',
+    sourceUrl: 'https://sabahnews.net/english/news/10-policemen-including-dsp-martyred-18-terrorists-killed-in-attack-on-kohat-police/',
+  },
+  {
+    id: 'ca-151',
+    date: '12 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan U19 crush Bangladesh by nine wickets to reach Asia Cup final',
+    summary:
+      'Defending champions Pakistan beat Bangladesh by nine wickets in the semi-final of the ACC Men’s U19 Asia Cup in Oman. Rizwanullah took five wickets for 30 runs as Bangladesh were bowled out for 138, then Hayam Khan (69) and Usman Khan (64 not out) chased the target down in just 21.5 overs. Pakistan face India in the final on 14 November.',
+    whyItMatters:
+      'A landmark youth-cricket win — know the five-wicket hero Rizwanullah, the nine-wicket margin and the India final on 14 November.',
+    source: 'Geo Super',
+    sourceUrl: 'https://www.geosuper.tv/latest/61219-pakistan-defeat-bangladesh-to-book-place-in-u19-asia-cup-2026-final',
+  },
+  {
+    id: 'ca-152',
+    date: '7 November 2026',
+    category: 'International',
+    headline: 'Pakistan and Sudan sign security cooperation agreement',
+    summary:
+      'Pakistan and Sudan signed a memorandum of understanding in Islamabad on 7 November to strengthen cooperation in security and interior affairs, combating cybercrime, police training and civil registration. The agreement also provides mutual visa exemption for holders of official and diplomatic passports. It was signed during delegation-level talks between Interior Minister Mohsin Naqvi and his Sudanese counterpart Lt Gen Babiker Samra Mustafa Ali, who also met the Chief of Defence Forces and the Prime Minister during his visit.',
+    whyItMatters:
+      'Shows Pakistan’s growing security and defence ties beyond its immediate region — a useful example for foreign-policy and defence-cooperation questions.',
+    source: 'EU Reporter',
+    sourceUrl: 'https://www.eureporter.co/world/pakistan/2026/11/10/after-arms-deals-a-new-security-co-operation-between-sudan-and-pakistan/',
   },
 ];
