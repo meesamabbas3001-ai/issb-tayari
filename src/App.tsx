@@ -30,6 +30,7 @@ import { InterviewExperiences } from './components/InterviewExperiences';
 import { PracticePapers } from './components/PracticePapers';
 import type { Route, Navigate } from './types';
 import { pathToRoute, routeToPath } from './types';
+import { applyRouteSeo } from './seo';
 
 export default function App() {
   const [route, setRoute] = useState<Route>(() => pathToRoute(window.location.pathname));
@@ -46,6 +47,12 @@ export default function App() {
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
   }, []);
+
+  // Unique title + canonical + description per route, so Google stops
+  // treating every sitemap URL as a duplicate of the homepage shell.
+  useEffect(() => {
+    applyRouteSeo(route);
+  }, [route]);
 
   return (
     <div className="min-h-screen flex flex-col bg-paper text-ink">
