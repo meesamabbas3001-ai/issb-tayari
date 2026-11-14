@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '13 November 2026';
+export const lastUpdated = '14 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1862,5 +1862,53 @@ export const currentAffairs: CurrentAffair[] = [
       'Shows Pakistan’s growing security and defence ties beyond its immediate region — a useful example for foreign-policy and defence-cooperation questions.',
     source: 'EU Reporter',
     sourceUrl: 'https://www.eureporter.co/world/pakistan/2026/11/10/after-arms-deals-a-new-security-co-operation-between-sudan-and-pakistan/',
+  },
+  {
+    id: 'ca-153',
+    date: '13 November 2026',
+    category: 'Defense',
+    headline: 'Security forces kill 74 militants in operations in KP and Balochistan',
+    summary:
+      'Security forces killed 74 militants in intelligence-based operations in Khyber Pakhtunkhwa and Balochistan, the ISPR said on 13 November. Thirty-one militants were killed in the Kurram area of Quetta district during an operation under way since 3 November, while 35 were killed in Mir Ali and eight in Orakzai over the previous 48 hours. The ISPR said the militants belonged to Indian-backed groups it calls Fitna al-Khawarij and Fitna al-Hindustan, and that weapons and explosives were recovered.',
+    whyItMatters:
+      'Know the places (Mir Ali, Orakzai, Quetta’s Kurram) and the Azm-e-Istehkam campaign — counter-terrorism operations are a favourite interview topic.',
+    source: 'News Pulse',
+    sourceUrl: 'https://newspulse.com.pk/en/2026/11/13/security-forces-kill-74-india-backe/',
+  },
+  {
+    id: 'ca-154',
+    date: '12 November 2026',
+    category: 'National',
+    headline: 'Population growth declared a national emergency',
+    summary:
+      'Planning Minister Ahsan Iqbal declared Pakistan’s rapidly growing population a national emergency at the first meeting of the National Population Council’s Executive Committee on 12 November. He said the population growth rate, which had fallen to 2.4 per cent, rose to 2.55 per cent in the 2023 census — the first increase in decades. He called for a joint federal and provincial strategy, linking development funds to population control, girls’ education and women’s economic empowerment.',
+    whyItMatters:
+      'A landmark policy statement — know the 2.55 per cent figure, the 2023 census, and why population growth matters for the economy and national resources.',
+    source: 'Associated Press of Pakistan',
+    sourceUrl: 'https://en.tezkhabar.tv/ahsan-sounds-alarm-over-reversal-in-population-growth-trend/',
+  },
+  {
+    id: 'ca-155',
+    date: '13 November 2026',
+    category: 'Economy',
+    headline: 'Minerals Investment Forum ends with pledge to process minerals at home',
+    summary:
+      'The Pakistan Minerals Investment Forum 2026 closed in Islamabad on 13 November with 13 agreements and memorandums of understanding signed and more than 10,000 participants from over 60 countries. Prime Minister Shehbaz Sharif told investors Pakistan would stop exporting raw minerals and instead build refineries, smelters and factories at home, saying “mine in Pakistan, process in Pakistan, manufacture in Pakistan and then export”. The forum also launched a National Minerals Data Centre and a Geological Survey of Pakistan geoportal.',
+    whyItMatters:
+      'Minerals and Reko Diq are major economy topics — know the “process at home” policy shift and the scale of the forum.',
+    source: 'EIN Presswire',
+    sourceUrl: 'https://www.einpresswire.com/article/956511255/pakistan-minerals-investment-forum-2026-concludes-with-new-partnerships-and-initiatives-to-advance-its-minerals-sector',
+  },
+  {
+    id: 'ca-156',
+    date: '13 November 2026',
+    category: 'National',
+    headline: 'Islamabad to become Pakistan’s first fully cashless city by 31 December',
+    summary:
+      'The government announced on 13 November that Islamabad will become Pakistan’s first fully cashless city by 31 December 2026. From 30 November, no department of the Islamabad Capital Territory administration or the Capital Development Authority will accept cash payments. Minister of State for Interior Talal Chaudhry said about 26,000 merchants in the capital had already joined the digital payments system, with facilities to reach every level from street vendors to large business centres.',
+    whyItMatters:
+      'A major digital-economy step — know the two dates (30 November for government offices, 31 December for the whole city) and the link to the Cashless Pakistan drive.',
+    source: 'TechJuice',
+    sourceUrl: 'https://www.techjuice.pk/islamabad-sets-date-to-stop-cash-payments-at-govt-offices/',
   },
 ];
