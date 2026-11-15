@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '14 November 2026';
+export const lastUpdated = '15 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1910,5 +1910,53 @@ export const currentAffairs: CurrentAffair[] = [
       'A major digital-economy step — know the two dates (30 November for government offices, 31 December for the whole city) and the link to the Cashless Pakistan drive.',
     source: 'TechJuice',
     sourceUrl: 'https://www.techjuice.pk/islamabad-sets-date-to-stop-cash-payments-at-govt-offices/',
+  },
+  {
+    id: 'ca-157',
+    date: '14 November 2026',
+    category: 'Defense',
+    headline: 'Four soldiers martyred, 24 militants killed in operations in KP and Balochistan',
+    summary:
+      'Security forces killed 24 militants and lost four soldiers, including a major, in intelligence-based operations in North Waziristan and Balochistan, the ISPR said on 14 November. In North Waziristan, 16 militants were killed in Mir Ali, Datta Khel and Ali Khel, while eight more, including a suicide bomber, were killed in an overnight raid in Kolpur, Balochistan. Militants also attacked a military patrol with armed quadcopters in Balochistan, martyring Major Omer Minhas Nasir and Havildar Muhammad Adnan Khan.',
+    whyItMatters:
+      'A current example of counter-terrorism operations under Azm-e-Istehkam — know the two militant labels, Fitna al-Khawarij and Fitna al-Hindustan, and the new drone threat to patrols.',
+    source: 'YeJahan',
+    sourceUrl: 'https://yejahan.com/major-among-4-martyred-in-multiple-operations-by-army/',
+  },
+  {
+    id: 'ca-158',
+    date: '14 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan reach first-ever SAFF Championship final',
+    summary:
+      'Pakistan beat hosts Bangladesh 1-0 in the SAFF Championship semi-final in Dhaka on 14 November to reach the final of the tournament for the first time since it began in 1993. Abdul Samad scored the late winner in the 86th minute after an assist from substitute Hayan Khattak. Pakistan will now face defending champions India in the final on 17 November.',
+    whyItMatters:
+      'A landmark sporting first — interviewers may ask about Pakistan football’s revival under coach Nolberto Solano and the Pakistan-India final.',
+    source: 'Geo Super',
+    sourceUrl: 'https://www.geosuper.tv/latest/61278-pakistan-stun-bangladesh-to-seal-maiden-saff-championship-final-qualification',
+  },
+  {
+    id: 'ca-159',
+    date: '15 November 2026',
+    category: 'International',
+    headline: 'Pakistan hosts ECO Council of Ministers meeting, takes chairmanship for 2026-27',
+    summary:
+      'Pakistan is hosting the 30th meeting of the Economic Cooperation Organization Council of Ministers in Islamabad on 15 and 16 November, chaired by Deputy Prime Minister and Foreign Minister Ishaq Dar. Pakistan takes over the chairmanship of the 10-member regional bloc for 2026-27 under the theme “Reviving Regionalism for a Resilient ECO”, with trade integration and regional connectivity at the top of the agenda.',
+    whyItMatters:
+      'Know what ECO is, who chairs it and why regional connectivity matters — a ready example for questions on Pakistan’s regional diplomacy.',
+    source: 'The Diplomatic Insight',
+    sourceUrl: 'https://thediplomaticinsight.com/islamabad-welcome-eco-fms-trade-connectivity/',
+  },
+  {
+    id: 'ca-160',
+    date: '13 November 2026',
+    category: 'International',
+    headline: 'Pakistan urges UN Security Council to protect Gulf shipping and crews',
+    summary:
+      'Pakistan’s ambassador to the UN, Syed Haider Shah, told the Security Council on 13 November that the security of the Gulf states is of immense importance to Pakistan, urging an end to attacks on commercial shipping and safe passage through the Strait of Hormuz and Bab al-Mandab. He condemned Houthi attacks on Saudi Arabia and said the disruption of shipping endangered seafarers and trade. The Council heard that more than 130 attacks on commercial vessels had been verified in the Strait of Hormuz since February.',
+    whyItMatters:
+      'Shows Pakistan’s stance on Gulf security and freedom of navigation — useful for questions on foreign policy, the Strait of Hormuz and Pakistan-Saudi ties.',
+    source: 'KhabarWire',
+    sourceUrl: 'https://khabarwire.com/blog/pakistan-unsc-gulf-shipping-protection-2026-11-13/',
   },
 ];
