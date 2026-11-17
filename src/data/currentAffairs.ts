@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '15 November 2026';
+export const lastUpdated = '17 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -1958,5 +1958,65 @@ export const currentAffairs: CurrentAffair[] = [
       'Shows Pakistan’s stance on Gulf security and freedom of navigation — useful for questions on foreign policy, the Strait of Hormuz and Pakistan-Saudi ties.',
     source: 'KhabarWire',
     sourceUrl: 'https://khabarwire.com/blog/pakistan-unsc-gulf-shipping-protection-2026-11-13/',
+  },
+  {
+    id: 'ca-161',
+    date: '14 November 2026',
+    category: 'Defense',
+    headline: 'Türkiye ratifies Makkah Joint Defence Agreement into law',
+    summary:
+      'Türkiye’s Official Gazette published the law approving the Makkah Joint Defence Agreement with Pakistan and Saudi Arabia on 14 November, bringing the trilateral pact into force in Ankara. Law No. 7597, adopted by the Turkish parliament by 279 votes to 119 on 5 November and signed by the President on 13 November, approves the agreement signed in Makkah on 7 August. Pakistan and Saudi Arabia had already completed their own ratification, so the pact is now legally in force in all three countries.',
+    whyItMatters:
+      'Know the Makkah pact’s timeline — signed 7 August, now in force in all three states — and its Article 5-style clause treating an attack on one member as an attack on all.',
+    source: 'KhabarWire',
+    sourceUrl: 'https://khabarwire.com/blog/turkiye-makkah-pact-takes-effect-qatar-defence-pact-2026-11-14/',
+  },
+  {
+    id: 'ca-162',
+    date: '14 November 2026',
+    category: 'Sports',
+    headline: 'India edge Pakistan by one wicket in U19 Asia Cup final',
+    summary:
+      'India beat Pakistan by one wicket off the last ball to win the ACC Men’s U19 Asia Cup final in Oman on 14 November. Pakistan, the defending champions, posted 337 for 9 after Usman Khan’s 107, but India chased 338 to finish on 339 for 9, with Mohit Ulva hitting the winning four and finishing 49 not out off 26 balls.',
+    whyItMatters:
+      'A last-ball Pakistan-India final is classic sports GK — know the scores, Usman Khan’s century and Mohit Ulva’s match-winning 49 not out.',
+    source: 'BCCI.tv',
+    sourceUrl: 'https://www.bcci.tv/news/article/india-u19-clinch-asia-cup-after-heroic-last-ball-win-over-pakistan',
+  },
+  {
+    id: 'ca-163',
+    date: '16 November 2026',
+    category: 'International',
+    headline: 'Iran, Saudi Arabia, Türkiye and Pakistan agree to keep four-way talks going',
+    summary:
+      'Senior military and security officials from Iran, Saudi Arabia, Türkiye and Pakistan met in Tehran on 16 November and agreed in a joint statement to continue their dialogue to strengthen cooperation and regional peace and security. The meeting, hosted by Iran’s security chief Mohsen Rezaei and attended by Field Marshal Asim Munir and Saudi Defence Minister Prince Khalid bin Salman, also covered US-Iran negotiations, Houthi attacks on Saudi Arabia and the Strait of Hormuz. A Pakistani official said the talks focused on building a regional non-aggression network.',
+    whyItMatters:
+      'Shows Pakistan mediating between Iran and the Makkah pact states — know the four countries, the non-aggression idea and the Strait of Hormuz link.',
+    source: 'Al Jazeera',
+    sourceUrl: 'https://aljazeeranews-mggx1uo47w.edgeone.app/news/2026/10/26/officials-from-mecca-pact-states-to-hold-talks-in-iran-amid-regional-tensions',
+  },
+  {
+    id: 'ca-164',
+    date: '16 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan to host Makkah Alliance defence committee meeting in Islamabad',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar announced on 16 November that Pakistan will host the next meeting of the Makkah Joint Defence Agreement’s Strategic Political and Defence Committee in Islamabad later this month, likely on 27-28 November. It will be the committee’s third meeting after Istanbul and Riyadh, and will bring together the foreign and defence ministers and military chiefs of Pakistan, Saudi Arabia and Türkiye. Pakistan holds the alliance’s secretariat, headed by retired Lt Gen Nauman Mahmood.',
+    whyItMatters:
+      'Islamabad hosting the alliance’s apex committee shows Pakistan’s central role — know the SPDC, the three member states and the collective-defence clause.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1447953-makkah-pact-panel-to-meet-in-islamabad-later-this-month',
+  },
+  {
+    id: 'ca-165',
+    date: '17 November 2026',
+    category: 'National',
+    headline: 'Two policemen guarding polio teams shot dead in Khyber Pakhtunkhwa',
+    summary:
+      'Gunmen on a motorcycle shot dead two police officers protecting polio vaccination teams in Khyber Pakhtunkhwa on 17 November, injuring a third officer. The attack came a day after four officers guarding polio workers were abducted in the province, and as a targeted vaccination drive aims to reach nearly 24 million children across 97 high-risk districts. No group has claimed responsibility, and Pakistan remains one of only two countries where wild poliovirus is still endemic.',
+    whyItMatters:
+      'Links security with a national health challenge — know why polio teams need police protection and that Pakistan is one of two countries where the virus is still endemic.',
+    source: 'Al Jazeera',
+    sourceUrl: 'https://aljazeeranews-3fuh52rgrl.edgeone.app/news/2026/11/3/two-police-officers-protecting-polio-workers-in-pakistan-shot-dead',
   },
 ];
