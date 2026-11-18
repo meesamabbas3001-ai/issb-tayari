@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '17 November 2026';
+export const lastUpdated = '18 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2018,5 +2018,53 @@ export const currentAffairs: CurrentAffair[] = [
       'Links security with a national health challenge — know why polio teams need police protection and that Pakistan is one of two countries where the virus is still endemic.',
     source: 'Al Jazeera',
     sourceUrl: 'https://aljazeeranews-3fuh52rgrl.edgeone.app/news/2026/11/3/two-police-officers-protecting-polio-workers-in-pakistan-shot-dead',
+  },
+  {
+    id: 'ca-166',
+    date: '17 November 2026',
+    category: 'Defense',
+    headline: 'UK and Turkish military chiefs call on Field Marshal Asim Munir at GHQ',
+    summary:
+      'A high-level UK delegation led by Chief of General Staff General Sir Charles Roland Vincent Walker and Turkish Air Force Commander General Rafet Dalkıran separately called on Field Marshal Syed Asim Munir, Chief of Army Staff and Chief of Defence Forces, at GHQ Rawalpindi on 17 November. The meetings covered regional security and ways to deepen bilateral defence cooperation with both countries. The COAS highlighted Pakistan’s deep-rooted ties with Türkiye and the strong defence partnership between the two armed forces.',
+    whyItMatters:
+      'Know the names of the two visiting chiefs — a ready example of Pakistan’s defence diplomacy with the UK and Türkiye.',
+    source: 'NAM News',
+    sourceUrl: 'https://namnews.tv/2026/11/17/turkish-and-british-military-chiefs-call-on-field-marshal-asim-munir-at-ghq/',
+  },
+  {
+    id: 'ca-167',
+    date: '17 November 2026',
+    category: 'Economy',
+    headline: 'ADB approves $500 million loan for Pakistan’s federal pension reforms',
+    summary:
+      'The Asian Development Bank approved a $500 million results-based loan on 17 November to help Pakistan reform its federal civil pension system. The money will support the first phase of the government’s Pension Reform Implementation Plan, including the shift to a defined-contribution scheme for federal civil employees appointed from July 2024. Federal pension spending has grown nearly fivefold since fiscal year 2016 and now exceeds Rs1 trillion a year.',
+    whyItMatters:
+      'A landmark economy question — know the $500m figure, the pension bill over Rs1 trillion, and the defined-contribution shift for new employees.',
+    source: 'Asian Development Bank',
+    sourceUrl: 'https://www.adb.org/news/adb-approves-500-million-loan-support-pakistan-federal-pension-reforms',
+  },
+  {
+    id: 'ca-168',
+    date: '17 November 2026',
+    category: 'Economy',
+    headline: 'Saudi Delta Energy to explore $30 billion gas infrastructure programme in Pakistan',
+    summary:
+      'Saudi Arabia’s Delta Energy Saudi signed an agreement with Pakistan’s state-owned Inter State Gas Systems on 17 November to assess an energy infrastructure programme worth about $30 billion, covering cross-border gas pipelines, LNG facilities, storage and export terminals. The proposed network would run from Pakistan’s western border towards Gwadar, with another route from Chaman to the Indian border near Fazilka. The agreement is a framework to evaluate the projects and is not a final investment decision or a commitment to build them.',
+    whyItMatters:
+      'A big Saudi-Pakistan energy story — know the $30bn figure, the Gwadar link, and that it is still only a feasibility study, not a signed investment.',
+    source: 'Reuters (via BOE Report)',
+    sourceUrl: 'https://boereport.com/2026/11/17/saudis-delta-energy-to-explore-30-billion-energy-investment-in-pakistan/',
+  },
+  {
+    id: 'ca-169',
+    date: '17 November 2026',
+    category: 'Economy',
+    headline: 'Petrol and diesel cut by Rs2 a litre from 17 November',
+    summary:
+      'The Oil and Gas Regulatory Authority cut petrol and high-speed diesel prices by Rs2 a litre each, effective 17 November. Petrol now costs Rs328 a litre and diesel Rs358, down from Rs330 and Rs360. It is the tenth straight daily price cut under OGRA’s daily pricing mechanism, which revises fuel prices every day against international benchmarks.',
+    whyItMatters:
+      'Fuel prices link the economy to everyday life — interviewers may ask how oil prices and the daily pricing mechanism affect inflation.',
+    source: 'OGRA (via The News Lark)',
+    sourceUrl: 'https://www.thenewslark.com/archives/26926',
   },
 ];
