@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '18 November 2026';
+export const lastUpdated = '19 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2066,5 +2066,53 @@ export const currentAffairs: CurrentAffair[] = [
       'Fuel prices link the economy to everyday life — interviewers may ask how oil prices and the daily pricing mechanism affect inflation.',
     source: 'OGRA (via The News Lark)',
     sourceUrl: 'https://www.thenewslark.com/archives/26926',
+  },
+  {
+    id: 'ca-170',
+    date: '18 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan Army test-fires Fatah-3 supersonic cruise missile',
+    summary:
+      'The Pakistan Army successfully test-fired the Fatah-3 supersonic cruise missile on 18 November, the ISPR announced. The missile has advanced navigation and propulsion systems and can hit targets at long range with high precision at supersonic speed. The ISPR said the test will strengthen the Army Rocket Force Command and Pakistan’s conventional deterrence.',
+    whyItMatters:
+      'A new missile system is a classic interview topic — know the name Fatah-3, that it is supersonic, and that the Army Rocket Force Command operates it.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1449452-pakistan-army-launches-fatah-3-supersonic-cruise-missile',
+  },
+  {
+    id: 'ca-171',
+    date: '16 November 2026',
+    category: 'International',
+    headline: 'ECO backs Pakistan and Qatar mediation to end US-Iran war',
+    summary:
+      'The Economic Cooperation Organisation backed the mediation efforts of Pakistan and Qatar to end the US-Iran war, in a communique adopted at its Council of Ministers meeting in Islamabad on 16 November. Member states also supported Iran’s recent initiative for a dignified and permanent end to the conflict. The communique praised Pakistan’s role in the Islamabad peace talks and the resulting Islamabad MoU.',
+    whyItMatters:
+      'Shows Pakistan as a regional peacemaker — a strong example for questions on foreign policy and Pakistan’s role in the Muslim world.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1448838-eco-throws-support-behind-pakistan-qatar-mediation-as-iran-seeks-permanent-end-to-war',
+  },
+  {
+    id: 'ca-172',
+    date: '18 November 2026',
+    category: 'International',
+    headline: 'US destroys five Iranian tankers as Iran hits back at ships and a Jordan base',
+    summary:
+      'The United States destroyed five Iranian oil tankers in the Gulf of Oman and near Kharg Island, saying Iran’s Revolutionary Guard had twice tried to hit a US warship with ballistic missiles. Iran said it hit back by attacking ships near the Strait of Hormuz and firing missiles at US forces at a base in Jordan. Oil prices jumped as the six-month-old war escalated sharply.',
+    whyItMatters:
+      'The Gulf war affects Pakistan directly through oil prices and shipping — interviewers may ask how regional wars hit Pakistan’s economy.',
+    source: 'NPR (via NCPR)',
+    sourceUrl: 'https://www.northcountrypublicradio.org/news/npr/g-s1-142496/u-s-military-destroys-5-iranian-oil-tankers-and-the-smithsonian-head-resigns',
+  },
+  {
+    id: 'ca-173',
+    date: '19 November 2026',
+    category: 'Economy',
+    headline: 'Petrol and diesel cut by Rs3 a litre from 19 November',
+    summary:
+      'The government cut petrol and high-speed diesel prices by Rs3 a litre each, OGRA announced on 18 November. Petrol now costs Rs322 a litre, down from Rs325, and diesel costs Rs355, down from Rs358. It is the twelfth straight daily cut in petrol prices under OGRA’s daily pricing mechanism.',
+    whyItMatters:
+      'A twelfth straight daily cut is worth remembering — know the new prices, Rs322 and Rs355, and how the daily pricing mechanism passes world oil prices to the pump.',
+    source: 'The Pakistan Observer',
+    sourceUrl: 'https://pakobserver.com.pk/business/petrol-and-diesel-prices-cut-by-rs-3-per-litre-each-for-november-19/',
   },
 ];
