@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '19 November 2026';
+export const lastUpdated = '20 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2114,5 +2114,65 @@ export const currentAffairs: CurrentAffair[] = [
       'A twelfth straight daily cut is worth remembering — know the new prices, Rs322 and Rs355, and how the daily pricing mechanism passes world oil prices to the pump.',
     source: 'The Pakistan Observer',
     sourceUrl: 'https://pakobserver.com.pk/business/petrol-and-diesel-prices-cut-by-rs-3-per-litre-each-for-november-19/',
+  },
+  {
+    id: 'ca-174',
+    date: '19 November 2026',
+    category: 'Defense',
+    headline: 'Security forces kill 22 militants in raids in South Waziristan, Bannu and Tank',
+    summary:
+      'Security forces killed 22 militants in intelligence-based raids on hideouts in South Waziristan, Bannu and Tank districts of Khyber Pakhtunkhwa, the military said on 19 November. The raids over the past 48 hours set off gunbattles, and weapons and ammunition were recovered from the militants. The operations are part of the continuing counter-terrorism campaign in the northwest near the Afghan border.',
+    whyItMatters:
+      'Know the names of the districts and that these were intelligence-based operations — interviewers often ask about the latest counter-terrorism operations in KP.',
+    source: 'TBS News',
+    sourceUrl: 'https://www.tbsnews.net/world/south-asia/pakistan-military-says-22-militants-killed-northwest-raids-1607641',
+  },
+  {
+    id: 'ca-175',
+    date: '19 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan extends airspace ban on Indian aircraft until 24 December',
+    summary:
+      'Pakistan extended its ban on Indian-registered aircraft until 04:59 on 24 December, the Pakistan Airports Authority said in a new notice to airmen on 19 November. The ban covers all Indian-registered commercial, private and military aircraft, including planes owned, operated or leased by Indian airlines, across the Karachi and Lahore flight information regions. The restriction was first imposed on 23 April 2025 and has been renewed roughly every month since.',
+    whyItMatters:
+      'The airspace ban is a live Pak-India issue — know when it started, what it covers, and that India has a matching ban on Pakistani aircraft.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/story/1449638-airspace-ban-on-indian-aircraft-extended-by-another-month-paa',
+  },
+  {
+    id: 'ca-176',
+    date: '19 November 2026',
+    category: 'International',
+    headline: 'Pakistan and Qatar sign security cooperation MoU and anti-drug action plan',
+    summary:
+      'Pakistan and Qatar signed a memorandum of understanding on security cooperation between Qatar’s Internal Security Force (Lekhwiya) and Pakistan’s Federal Constabulary, along with an action plan against drug trafficking, on 19 November. Prime Minister Shehbaz Sharif witnessed the signing in Islamabad as Qatar’s interior minister, Sheikh Khalifa bin Hamad bin Khalifa Al Thani, also met Interior Minister Mohsin Naqvi and Field Marshal Asim Munir. The two sides agreed to expand police officer exchanges, improve cybercrime coordination, and have Qatar build a firing range at Pakistan’s National Police Academy and provide scanners to the Anti-Narcotics Force.',
+    whyItMatters:
+      'A good example of Pakistan’s growing security ties with Gulf states — note it is a police and internal-security deal, not a defence treaty like the Badr MoU.',
+    source: 'KhabarWire',
+    sourceUrl: 'https://khabarwire.com/blog/pakistan-qatar-security-agreement-anti-drug-plan-2026-11-19/',
+  },
+  {
+    id: 'ca-177',
+    date: '19 November 2026',
+    category: 'Economy',
+    headline: 'Turkish energy minister arrives in Karachi ahead of Oruç Reis offshore survey',
+    summary:
+      'Türkiye’s Energy Minister Alparslan Bayraktar arrived in Karachi on 19 November with a delegation, ahead of the Turkish seismic research vessel Oruç Reis, which is expected to dock on 20 November to begin surveying Pakistan’s offshore waters for oil and gas. The survey is part of Pakistan’s push to revive offshore exploration after nearly two decades, following the award of 23 offshore blocks. The vessel will first collect seismic data to map rock formations beneath the seabed before any decision on drilling.',
+    whyItMatters:
+      'Offshore energy and Pak-Türkiye cooperation are strong interview topics — know the vessel’s name, Oruç Reis, and that seismic surveys map the seabed but do not prove oil or gas reserves.',
+    source: 'KhabarWire',
+    sourceUrl: 'https://khabarwire.com/blog/oruc-reis-karachi-docking-2026-11-20/',
+  },
+  {
+    id: 'ca-178',
+    date: '17 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan beat India to reach Blind Cricket Asia Cup final',
+    summary:
+      'Pakistan beat defending champions India by one wicket off the very last ball in Dhaka on 17 November to reach the final of the Blind Cricket Asia Cup. With seven runs needed off the last two balls and only one wicket left, all-rounder Niamatullah hit a six and then a four to seal the win. Captain Nisar Ali scored 64 off 51 balls and was named man of the match, and Pakistan were to play the final on 20 November.',
+    whyItMatters:
+      'A famous sporting win over India — know the scoreline, Niamatullah’s last-ball finish, and that it was the Blind Cricket Asia Cup.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1449303-pakistan-down-champs-india-to-enter-blind-cricket-asia-cup-final',
   },
 ];
