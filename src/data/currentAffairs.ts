@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '20 November 2026';
+export const lastUpdated = '21 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2174,5 +2174,65 @@ export const currentAffairs: CurrentAffair[] = [
       'A famous sporting win over India — know the scoreline, Niamatullah’s last-ball finish, and that it was the Blind Cricket Asia Cup.',
     source: 'The News',
     sourceUrl: 'https://www.thenews.pk/print/1449303-pakistan-down-champs-india-to-enter-blind-cricket-asia-cup-final',
+  },
+  {
+    id: 'ca-179',
+    date: '20 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan win Blind Cricket Asia Cup after rain washes out final against India',
+    summary:
+      'Pakistan were declared champions of the Blind Cricket Asia Cup in Dhaka on 20 November after rain washed out the final against India without a ball being bowled. The match referee awarded Pakistan the title on the basis of their unbeaten league run and better net run rate, having topped the table with three wins from three matches. India disputed the decision and boycotted the trophy ceremony, arguing that both teams should have been declared joint winners.',
+    whyItMatters:
+      'A big Pakistan sporting title over India — and a live example of a disputed decision, useful for group discussion on sportsmanship and fair rules.',
+    source: 'K21 News',
+    sourceUrl: 'https://k21news.pk/pakistan-blind-cricket-asia-cup-t20-champions-dhaka/',
+  },
+  {
+    id: 'ca-180',
+    date: '19 November 2026',
+    category: 'National',
+    headline: 'Federal Constitutional Court voids infrastructure cess in Sindh and KP',
+    summary:
+      'The Federal Constitutional Court has declared the infrastructure cess imposed by Sindh and Khyber Pakhtunkhwa unconstitutional, ruling that the provinces had no power to levy it. A two-member bench headed by Chief Justice Amin-ud-Din Khan set aside earlier Sindh High Court and Peshawar High Court judgements that had upheld the cess, deciding 568 appeals together. The court held that a levy on goods moving in and out of the country works like a customs duty, which only Parliament can impose.',
+    whyItMatters:
+      'A landmark ruling on fiscal federalism — know which level of government can tax trade, and why the court called the cess a customs duty in disguise.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1449803-fcc-voids-infrastructure-cess-in-sindh-kp',
+  },
+  {
+    id: 'ca-181',
+    date: '20 November 2026',
+    category: 'International',
+    headline: 'Attacks from Afghan soil caused over 3,500 casualties, Foreign Office says',
+    summary:
+      'Pakistan said on 20 November that attacks originating from Afghan territory had caused more than 3,500 casualties in the country, including over 1,400 people killed in 2026 alone. Foreign Office spokesperson Tahir Andrabi gave the figures at the weekly press briefing in Islamabad, rejecting Taliban claims that Pakistani counter-terrorism operations had caused civilian casualties. He also said Pakistan would keep working with regional partners, including Qatar, to push for a peaceful end to the tensions involving the United States, Israel and Iran.',
+    whyItMatters:
+      'Key figures for any question on Pakistan-Afghanistan relations — know the casualty numbers and Pakistan’s demand that Kabul act against cross-border militancy.',
+    source: 'The South Asia Times',
+    sourceUrl: 'https://www.thesouthasiatimes.com/story/Pakistan-FO-anov7',
+  },
+  {
+    id: 'ca-182',
+    date: '20 November 2026',
+    category: 'Economy',
+    headline: 'Dar puts Pakistan’s natural resource wealth at $8-10 trillion',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar has estimated Pakistan’s mineral deposits, hydrocarbons, gemstones and other natural resources at between $8 trillion and $10 trillion, calling it the most conservative estimate. He was speaking in Karachi at a ceremony welcoming the Turkish seismic research vessel Oruç Reis, which has arrived to survey Pakistan’s offshore waters for oil and gas. The Foreign Office also rejected Indian remarks at the UN about Pakistan’s mineral wealth, calling them undiplomatic and irresponsible.',
+    whyItMatters:
+      'Minerals and offshore energy are now a headline economic story — know the $8-10 trillion estimate, that it is a ministerial estimate not an audited valuation, and the Oruç Reis link.',
+    source: 'The Diplomatic Insight',
+    sourceUrl: 'https://thediplomaticinsight.com/pakistans-natural-resources-valued-at-8-10tr/',
+  },
+  {
+    id: 'ca-183',
+    date: '20 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan thrash Canada 5-1 in Sultan Azlan Shah Cup opener',
+    summary:
+      'Pakistan opened their Sultan Azlan Shah Cup campaign with a 5-1 win over Canada in Ipoh, Malaysia, on 20 November. Drag-flick specialist Sufyan Khan scored a hat-trick from three penalty corners, while Muhammad Ammad and Hannan Shahid added a goal each. Canada’s only goal came from Karan Robinson in the 45th minute.',
+    whyItMatters:
+      'A strong start in a major hockey tournament — know Sufyan Khan’s hat-trick and that hockey, Pakistan’s national sport, is back in the news.',
+    source: 'A-Sports',
+    sourceUrl: 'https://a-sports.tv/pakistan-crush-canada-5-1-sultan-azlan-shah-cup-opener',
   },
 ];
