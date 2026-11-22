@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '21 November 2026';
+export const lastUpdated = '22 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2234,5 +2234,77 @@ export const currentAffairs: CurrentAffair[] = [
       'A strong start in a major hockey tournament — know Sufyan Khan’s hat-trick and that hockey, Pakistan’s national sport, is back in the news.',
     source: 'A-Sports',
     sourceUrl: 'https://a-sports.tv/pakistan-crush-canada-5-1-sultan-azlan-shah-cup-opener',
+  },
+  {
+    id: 'ca-184',
+    date: '21 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan and Indonesia conclude Elang Strike-III counter-terrorism exercise',
+    summary:
+      'The Pakistan Army and the Indonesian Army concluded the third edition of their joint counter-terrorism exercise, Elang Strike-III, at the National Counter Terrorism Centre in Pabbi on 21 November. The exercise ran from 9 to 21 November and focused on sharing operational experience, counter-terrorism drills and improving joint procedures. ISPR announced the conclusion, calling it another step in strengthening military cooperation between the two countries.',
+    whyItMatters:
+      'Know the exercise name, the partner country and the venue — joint exercises with friendly countries are a regular interview topic.',
+    source: 'The Diplomatic Insight',
+    sourceUrl: 'https://thediplomaticinsight.com/pakistan-indonesia-third-edition-counterterrorism-exercise-elang-strike-iii/',
+  },
+  {
+    id: 'ca-185',
+    date: '20 November 2026',
+    category: 'Defense',
+    headline: 'Kohat Police Lines attack mastermind killed in CTD operation',
+    summary:
+      'The Counter Terrorism Department and Kohat district police killed three terrorists of the banned Ittehadul Mujahideen Pakistan in a joint intelligence-based operation near Mankara Hill in Kohat on 20 November. One of those killed, Abdul Hai, was identified by the CTD as the mastermind of the September suicide attack on Kohat Police Lines, in which at least 21 people, including 15 policemen, were killed. Three submachine guns and nine magazines were recovered, and a search is under way for accomplices who escaped.',
+    whyItMatters:
+      'The Kohat Police Lines attack was one of the worst attacks of the year — know who planned it and how the case was closed.',
+    source: 'Khyber Chronicles',
+    sourceUrl: 'https://khyberchronicles.pk/kohat-police-lines-attack-mastermind-among-three-khawarij-killed-in-fierce-ctd-operation/',
+  },
+  {
+    id: 'ca-186',
+    date: '20 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan beat Sri Lanka to win first Test series in two years',
+    summary:
+      'Pakistan beat Sri Lanka by eight wickets in the second Test at Rawalpindi on 20 November to win the two-match series 1-0, their first Test series win in two years. Chasing only 90 runs on the fourth morning, Pakistan reached the target in 13 overs, with Aamer Jamal unbeaten on 34. The first Test of the series had ended in a draw, and both matches were played in Rawalpindi after the second was moved from Lahore because of smog.',
+    whyItMatters:
+      'A landmark result after a long winless run — know the margin, the venue and that it was Pakistan’s first Test series win since beating England in 2024.',
+    source: 'ICC',
+    sourceUrl: 'https://www.icc-cricket.com/tournaments/world-test-championship/news/pakistan-secure-wtc27-series-win-over-sri-lanka',
+  },
+  {
+    id: 'ca-187',
+    date: '21 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan thump USA 5-1 for second straight Azlan Shah Cup win',
+    summary:
+      'Pakistan beat the United States 5-1 in the Sultan Azlan Shah Cup in Ipoh, Malaysia, on 21 November, their second win by the same score after beating Canada in the opener. Rana Waheed Ashraf opened the scoring in the 18th minute, and Sufyan Khan, Muhammad Ammad, Abu Bakar Mahmood and captain Hannan Shahid added a goal each. Pakistan next face Australia on 23 November.',
+    whyItMatters:
+      'Hockey is Pakistan’s national sport — a strong start in a major tournament is exactly the kind of sporting news interviewers ask about.',
+    source: 'Geo Super',
+    sourceUrl: 'https://www.geosuper.tv/latest/61446-sultan-azlan-shah-cup-pakistan-thump-usa-to-clinch-second-consecutive-victory',
+  },
+  {
+    id: 'ca-188',
+    date: '21 November 2026',
+    category: 'Economy',
+    headline: 'Petrol cut to Rs322, diesel up to Rs357 from 21 November',
+    summary:
+      'The Oil and Gas Regulatory Authority cut petrol by Re1 to Rs322 per litre and raised high-speed diesel by Rs2 to Rs357 per litre, effective from 21 to 23 November. The revision was announced on 20 November under the daily pricing mechanism, under which fuel prices are reviewed every morning. Petrol has now fallen from Rs323, while diesel has risen from Rs355.',
+    whyItMatters:
+      'Everyday-economy awareness — interviewers check whether you follow prices that affect ordinary citizens.',
+    source: 'K21 News',
+    sourceUrl: 'https://k21news.pk/petrol-diesel-prices-pakistan-november-21-23/',
+  },
+  {
+    id: 'ca-189',
+    date: '20 November 2026',
+    category: 'National',
+    headline: 'Pakistan climbs 17 places to 119th in UN E-Government Index',
+    summary:
+      'Pakistan has climbed 17 places to rank 119th among 194 countries in the United Nations E-Government Development Index 2026, its best-ever position in the survey. The country’s score rose by about 23 percent, from 0.5096 in 2024 to 0.6264 in 2026, and it has gained 31 places over the past four years. The improvement was credited to the Digital Nation Pakistan Act 2025 and the government’s digital services push.',
+    whyItMatters:
+      'A rare positive national ranking — know the rank, the 17-place jump and the Digital Nation Pakistan Act behind it.',
+    source: 'TechJuice',
+    sourceUrl: 'https://www.techjuice.pk/pakistan-gains-31-places-in-un-digital-government-rankings/',
   },
 ];
