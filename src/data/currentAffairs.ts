@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '22 November 2026';
+export const lastUpdated = '23 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2307,4 +2307,77 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'TechJuice',
     sourceUrl: 'https://www.techjuice.pk/pakistan-gains-31-places-in-un-digital-government-rankings/',
   },
+  {
+    id: 'ca-190',
+    date: '22 November 2026',
+    category: 'Defense',
+    headline: 'Security forces kill 15 terrorists in two Mastung operations',
+    summary:
+      'Security forces killed 15 terrorists in two separate operations in Balochistan’s Mastung district under Operation Radd-ul-Fitna 3, targeting Fitna al-Hindustan. Five terrorists were killed in the first operation and 10 in the second, and several militant hideouts were destroyed with a large cache of weapons recovered. The areas of Killi Pasand Khan, Musa Khan, Khorasani and Kaftari were cleared of militants.',
+    whyItMatters:
+      'Know the name Operation Radd-ul-Fitna 3 and the term Fitna al-Hindustan — interviewers ask about the ongoing counter-terrorism campaign in Balochistan.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1450196-forces-kill-15-terrorists-in-mastung',
+  },
+  {
+    id: 'ca-191',
+    date: '22 November 2026',
+    category: 'Defense',
+    headline: 'Three terrorists killed in joint CTD-Army operation in Peshawar',
+    summary:
+      'Three terrorists belonging to Fitna al-Khawarij were killed in a joint operation by the Counter Terrorism Department and Pakistan Army troops in the Mattani area of Peshawar. The operation followed intelligence reports that the men were planning attacks on government installations. Weapons, hand grenades and identity cards were recovered from the scene.',
+    whyItMatters:
+      'A recent example of intelligence-based operations in Khyber Pakhtunkhwa — useful for questions on internal security and the CTD’s role.',
+    source: 'Xinhua',
+    sourceUrl: 'http://chinaview.cn/20261122/8d62d950b4824f57b4d19298d3e5399f/c.html',
+  },
+  {
+    id: 'ca-192',
+    date: '20 November 2026',
+    category: 'International',
+    headline: 'Pakistan rejects India’s “baseless” remarks at the UN',
+    summary:
+      'Pakistan categorically rejected remarks made by India at a United Nations meeting, calling them undiplomatic, irresponsible and baseless interference in its internal affairs. The Foreign Office said Pakistan’s representative had rebutted the remarks during the same meeting. Pakistan also restated that the Court of Arbitration had ruled on 31 August that the Indus Waters Treaty remains binding and in force.',
+    whyItMatters:
+      'The Indus Waters Treaty and the Court of Arbitration ruling of 31 August are favourite interview topics — know Pakistan’s position cold.',
+    source: 'Ministry of Foreign Affairs',
+    sourceUrl: 'https://mofa.gov.pk/press-releases/pakistan-categorically-rejects-indias-undiplomatic-and-baseless-remarks-at-the-un',
+  },
+  {
+    id: 'ca-193',
+    date: '22 November 2026',
+    category: 'International',
+    headline: 'Dar says Islamabad was the shared choice for US-Iran talks',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar said Islamabad was the venue both the United States and Iran could accept for their talks, with Iran choosing between Muscat and Islamabad and the US between Doha and Islamabad. He was speaking in a Euronews interview aired on 21 November, in which he also expressed hope that Washington and Tehran would reach an agreement. Pakistan had earlier hosted direct US-Iran talks in Islamabad in April.',
+    whyItMatters:
+      'Shows Pakistan’s role as a mediator between the US and Iran — a strong example of Pakistan’s diplomacy in group discussion.',
+    source: 'The Business Standard',
+    sourceUrl: 'https://www.tbsnews.net/world/south-asia/pakistans-dar-optimistic-about-eventual-us-iran-agreement-warns-costs-prolonged',
+  },
+  {
+    id: 'ca-194',
+    date: '22 November 2026',
+    category: 'Economy',
+    headline: 'PSO signs Oman fuel deal with $200 million credit facility',
+    summary:
+      'Pakistan State Oil signed a sale and purchase agreement with Oman’s OQ Trading in Muscat for the supply of petroleum products, with the Omani firm extending a $200 million credit facility to finance PSO’s fuel purchases. The deal was witnessed by Petroleum Minister Ali Pervaiz Malik and Oman’s Energy Minister Salim Al Aufi. OQ Trading has already supplied more than one million tonnes of gasoline to PSO during 2026.',
+    whyItMatters:
+      'Energy security and import diversification matter in interviews — know why Pakistan is turning to Oman for fuel supplies.',
+    source: 'The News',
+    sourceUrl: 'https://www.thenews.pk/print/1450365-200m-oman-credit-facility-for-fuel-imports-secured',
+  },
+  {
+    id: 'ca-195',
+    date: '21 November 2026',
+    category: 'Economy',
+    headline: 'ECC approves export of 416,000 tonnes of sugar',
+    summary:
+      'The Economic Coordination Committee approved the export of another 416,000 tonnes of sugar, the third export approval in four months, taking the total authorised for this season to 724,000 tonnes. The Cabinet Committee on Export of Sugar had recommended 400,000 tonnes, with an extra 16,000 tonnes for Sindh. The decision came despite an IMF condition to deregulate the sugar sector.',
+    whyItMatters:
+      'Sugar exports, the IMF programme and deregulation are linked — interviewers may ask how economic decisions interact with IMF conditions.',
+    source: 'The AZB',
+    sourceUrl: 'https://theazb.com/ecc-approves-export-of-416000-tonnes-of-sugar-despite-imf-deregulation-condition/',
+  },
+
 ];
