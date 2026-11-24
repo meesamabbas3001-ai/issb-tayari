@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '23 November 2026';
+export const lastUpdated = '24 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2380,4 +2380,76 @@ export const currentAffairs: CurrentAffair[] = [
     sourceUrl: 'https://theazb.com/ecc-approves-export-of-416000-tonnes-of-sugar-despite-imf-deregulation-condition/',
   },
 
+  {
+    id: 'ca-196',
+    date: '24 November 2026',
+    category: 'National',
+    headline: 'Pakistan’s first astronaut to fly to space on 25 November',
+    summary:
+      'China announced the crew of the Shenzhou-24 mission: Pakistan Air Force Wing Commander Muhammad Zeeshan Ali will fly as a payload specialist with two Chinese astronauts to the Tiangong space station, launching on 25 November from the Jiuquan Satellite Launch Center. He will become the first Pakistani in space and the first foreign astronaut to visit Tiangong, spending about a week in orbit running joint Pakistan-China science experiments before returning to Earth with the Shenzhou-23 crew.',
+    whyItMatters:
+      'A landmark national first — know his name and rank, the mission name Shenzhou-24, and that he flies as a payload specialist.',
+    source: 'China Daily Asia',
+    sourceUrl: 'https://www.chinadailyasia.com/hk/article/643147',
+  },
+  {
+    id: 'ca-197',
+    date: '23 November 2026',
+    category: 'Defense',
+    headline: 'Field Marshal Munir visits Malaysia to strengthen defence ties',
+    summary:
+      'Field Marshal Asim Munir, Chief of Defence Forces and Chief of Army Staff, met Malaysian Prime Minister Anwar Ibrahim in Putrajaya during an official visit to Malaysia. The talks covered defence and security cooperation, regional security and institutional links between the two armed forces. He also met the Malaysian defence minister and service chiefs, and was due to be inducted into the National Defence Studies Centre Hall of Fame.',
+    whyItMatters:
+      'Defence diplomacy with a key Muslim-majority partner — a good example of Pakistan’s defence ties beyond the usual partners.',
+    source: 'Pakistan TV',
+    sourceUrl: 'https://pakistantv.com/article/field-marshal-asim-munir-malaysian-pm-vow-to-strengthen-defence-cooperation',
+  },
+  {
+    id: 'ca-198',
+    date: '23 November 2026',
+    category: 'International',
+    headline: 'Pakistan, Saudi Arabia, Türkiye to review Makkah defence pact in Islamabad',
+    summary:
+      'Pakistan, Saudi Arabia and Türkiye will hold talks in Islamabad on 26–27 November to review progress on the Makkah Joint Defence Agreement, signed on 7 August 2026, under which an armed attack on one member is treated as an attack on all three. The meeting will review implementation and strengthen coordination between the three countries’ institutions. The Foreign Office stressed the pact is defensive in nature and is not aimed at any country.',
+    whyItMatters:
+      'Know the pact’s three members, the 7 August 2026 signing date and the collective-defence principle — one of the most likely foreign-policy questions.',
+    source: 'Emra News',
+    sourceUrl: 'https://en.emranews.com/173332/',
+  },
+  {
+    id: 'ca-199',
+    date: '19 November 2026',
+    category: 'Defense',
+    headline: 'Pakistan Army test-fires Fatah-3 supersonic cruise missile',
+    summary:
+      'The Pakistan Army successfully test-fired the Fatah-3 supersonic cruise missile. According to the ISPR, the missile has advanced navigation and propulsion systems and can strike distant targets with high accuracy at supersonic speed, adding to the strike range and flexibility of the Army Rocket Force Command. The President, Prime Minister, Chief of Defence Forces and services chiefs congratulated the team on the milestone.',
+    whyItMatters:
+      'Missile-program GK — know the Fatah-3, what supersonic speed means, and the role of the Army Rocket Force Command.',
+    source: 'CGN Today',
+    sourceUrl: 'https://cgntoday.com/news.php?slug=pakistan-army-successfully-test-fires-fatah-3-supersonic-cruise-missile&lang=en',
+  },
+  {
+    id: 'ca-200',
+    date: '20 November 2026',
+    category: 'Defense',
+    headline: 'Field Marshal reviews counter-terrorism operations in Miranshah; 65 militants killed in KP',
+    summary:
+      'Field Marshal Asim Munir visited Miranshah in North Waziristan, where he was briefed on intelligence-based counter-terrorism operations and paid tribute at the martyrs’ memorial. The visit followed a week of operations across Khyber Pakhtunkhwa in which security forces killed 65 militants — 43 in Mir Ali and Orakzai on 13 November and 22 more in South Waziristan, Bannu and Tank on 16–17 November — under the Azm-e-Istehkam campaign.',
+    whyItMatters:
+      'Know the Azm-e-Istehkam campaign and the scale of recent operations — interviewers ask how Pakistan is tackling terrorism.',
+    source: 'CGN Today',
+    sourceUrl: 'https://cgntoday.com/news.php?slug=field-marshal-reviews-ct-ops-in-miranshah-as-forces-killed-65-militants-across-kp&lang=en',
+  },
+  {
+    id: 'ca-201',
+    date: '23 November 2026',
+    category: 'International',
+    headline: 'PM Shehbaz to visit Russia on 30 November; up to 16 agreements expected',
+    summary:
+      'Prime Minister Shehbaz Sharif will make his first official three-day visit to Russia from 30 November, meeting President Vladimir Putin. Pakistan’s ambassador to Russia said 15 to 16 bilateral agreements are expected, covering trade, energy, investment, culture and education, and a first direct freight train from Islamabad to Moscow is planned by the end of the year. Technical talks on banking and payment issues are being held in Moscow on 23–24 November ahead of the visit.',
+    whyItMatters:
+      'A major foreign-policy development — know why Pakistan-Russia ties matter and what the visit aims to achieve.',
+    source: 'Emra News',
+    sourceUrl: 'https://en.emranews.com/173284/',
+  },
 ];
