@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '24 November 2026';
+export const lastUpdated = '25 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2451,5 +2451,67 @@ export const currentAffairs: CurrentAffair[] = [
       'A major foreign-policy development — know why Pakistan-Russia ties matter and what the visit aims to achieve.',
     source: 'Emra News',
     sourceUrl: 'https://en.emranews.com/173284/',
+  },
+  {
+    id: 'ca-202',
+    date: '25 November 2026',
+    category: 'National',
+    headline: 'Pakistan’s first astronaut reaches orbit aboard Shenzhou-24',
+    summary:
+      'Pakistan Air Force Wing Commander Muhammad Zeeshan Ali became the first Pakistani to travel into space when China’s Shenzhou-24 spacecraft lifted off from Jiuquan on 25 November. He is flying as a payload specialist to China’s Tiangong space station, where he will spend about a week carrying out joint Pakistan-China science experiments before returning to Earth aboard Shenzhou-23. He is also the first foreign astronaut ever to visit Tiangong.',
+    whyItMatters:
+      'A landmark national first — know his name, the Shenzhou-24 mission, and that he is the first foreign astronaut to visit Tiangong.',
+    source: 'collectSPACE',
+    sourceUrl:
+      'https://www.collectspace.com/news/news-112426a-china-shenzhou-24-taikonauts-launch-tiangong-station-pakistan.html',
+  },
+  {
+    id: 'ca-203',
+    date: '24 November 2026',
+    category: 'Economy',
+    headline: 'IMF board to meet on 11 December over $1.2 billion tranche for Pakistan',
+    summary:
+      'The IMF Executive Board will meet on 11 December 2026 to consider the fourth review of Pakistan’s Extended Fund Facility and the third review of the Resilience and Sustainability Facility. Approval would release about $1 billion under the EFF and $210 million under the RSF, taking total disbursements under the two programmes to about $5.7 billion. The IMF said Pakistan’s progress has been broadly satisfactory, estimating FY26 growth at 3.6% and foreign exchange reserves at about $21.5 billion by end-September.',
+    whyItMatters:
+      'The next big economy date to know — the 11 December board meeting decides whether Pakistan gets about $1.2 billion.',
+    source: 'TechJuice',
+    sourceUrl: 'https://www.techjuice.pk/pakistan-awaits-1-2-billion-imf-funding-in-december/',
+  },
+  {
+    id: 'ca-204',
+    date: '25 November 2026',
+    category: 'Economy',
+    headline: 'Petrol cut to Rs318, diesel to Rs353 from 25 November',
+    summary:
+      'The Oil and Gas Regulatory Authority cut petrol by Re1 per litre to Rs318 and high-speed diesel by Rs4 per litre to Rs353, effective from 25 November. The revision was made under the federal government’s petroleum pricing mechanism as global crude prices fell to three-month lows. The new rates apply for 25 November under the daily pricing system, with another revision due the following night.',
+    whyItMatters:
+      'Everyday-economy awareness — interviewers check whether you follow prices that affect ordinary citizens.',
+    source: 'Feature Pakistan',
+    sourceUrl: 'https://featurepakistan.com/petrol-price-rs318-diesel-rs353-november-2026/',
+  },
+  {
+    id: 'ca-205',
+    date: '22 November 2026',
+    category: 'Sports',
+    headline: 'Pakistan Shaheens beat India A by 48 runs, reach Rising Stars Asia Cup semi-final',
+    summary:
+      'Pakistan Shaheens defeated India A by 48 runs in a Group B match of the ACC Men’s Asia Cup Rising Stars 2026 in Doha on 22 November. Batting first, Pakistan scored 313, with half-centuries from Hasan Nawaz (79), Maaz Sadaqat (59) and Farhan Yousaf (56), before bowling India A out for 265 despite captain Tilak Varma’s century. The win, Pakistan’s second in the group, sealed their place in the semi-finals.',
+    whyItMatters:
+      'A Pak-India win to know — the score, the venue (Doha), and that the win took Pakistan into the semi-finals.',
+    source: 'The Tribune International',
+    sourceUrl:
+      'https://thetribuneinternational.com/pakistan-shaheens-beat-india-a-by-48-runs-in-rising-stars-asia-cup/',
+  },
+  {
+    id: 'ca-206',
+    date: '23 November 2026',
+    category: 'Sports',
+    headline: 'Peshawar to host PSL 12 opening ceremony and first match',
+    summary:
+      'PCB Chairman Mohsin Naqvi announced that Peshawar will host the opening ceremony and first match of the 12th Pakistan Super League, scheduled from 18 March to 2 May 2027 — the first time the tournament will open in the city. KP Governor Faisal Karim Kundi also announced that the venue’s historic name, Arbab Niaz Stadium, is being restored, reversing the decision to rename it after Imran Khan. Naqvi also announced a T20 tri-series involving Pakistan, the Shaheens and the Under-19 team in Peshawar in the third week of January.',
+    whyItMatters:
+      'Know why Peshawar matters for PSL 12 — the first PSL opener in the city after a 12-year wait, and the stadium’s name change.',
+    source: 'Emra News',
+    sourceUrl: 'https://en.emranews.com/173377/',
   },
 ];
