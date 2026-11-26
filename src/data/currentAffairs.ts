@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '25 November 2026';
+export const lastUpdated = '26 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2513,5 +2513,81 @@ export const currentAffairs: CurrentAffair[] = [
       'Know why Peshawar matters for PSL 12 — the first PSL opener in the city after a 12-year wait, and the stadium’s name change.',
     source: 'Emra News',
     sourceUrl: 'https://en.emranews.com/173377/',
+  },
+  {
+    id: 'ca-207',
+    date: '25 November 2026',
+    category: 'International',
+    headline: 'President Zardari offers defence cooperation to Bangladesh',
+    summary:
+      'President Asif Ali Zardari met a Bangladeshi parliamentary delegation led by Speaker Hafiz Uddin Ahmad Bir Bikram at the President House in Islamabad and called for a forward-looking partnership based on sovereign equality and mutual respect. He reaffirmed Pakistan’s readiness to extend defence cooperation to Bangladesh, noted potential in agriculture, food security, digital governance and space research, and hoped around 26 memorandums of understanding under consideration would be finalised early. He also highlighted the Pakistan-Bangladesh Knowledge Corridor offering 500 fully funded scholarships and welcomed the start of direct Biman Bangladesh Airlines flights.',
+    whyItMatters:
+      'Know the thaw in Pakistan-Bangladesh ties — the 26 MoUs, 500 scholarships, and the defence-cooperation offer are likely interview points.',
+    source: 'Centreline (DNA)',
+    sourceUrl:
+      'https://centreline.com.pk/2026/11/25/president-zardari-calls-for-forward-looking-partnership-with-bangladesh-emphasises-parliamentary-trade-and-educational-cooperation/',
+  },
+  {
+    id: 'ca-208',
+    date: '25 November 2026',
+    category: 'Economy',
+    headline: 'ADB approves $250 million loan to strengthen Pakistan’s PPP system',
+    summary:
+      'The Asian Development Bank approved a $250 million policy-based loan to help Pakistan strengthen its public-private partnership (PPP) system and build a pipeline of bankable, sustainable projects that can attract private capital. The programme supports dedicated PPP units in four federal ministries and agencies, a national framework for disclosing PPP-related fiscal liabilities, and a medium-term project pipeline for 2026–2030. It also carries $1.1 million in technical assistance from ADB’s Technical Assistance Special Fund and $950,000 from the Asia Pacific Project Preparation Facility.',
+    whyItMatters:
+      'A clear economy fact to quote — the $250 million PPP loan and the 2026–2030 pipeline show how Pakistan is funding infrastructure beyond the budget.',
+    source: 'Asian Development Bank (official)',
+    sourceUrl:
+      'https://www.adb.org/news/adb-approves-250-million-loan-strengthen-pakistans-public-private-partnerships-and-attract',
+  },
+  {
+    id: 'ca-209',
+    date: '25 November 2026',
+    category: 'International',
+    headline: 'Pakistan and Russia set $5 billion trade target for 2030',
+    summary:
+      'Pakistan and Russia signed the protocol of the 11th Pakistan-Russia Intergovernmental Commission and a Programme of Economic Cooperation for 2026–2030 at the close of the commission’s session in Moscow. The two sides set a target of raising bilateral trade to $5 billion by 2030 through better market access, investment facilitation and stronger business-to-business links. The 12th session of the commission will be held in Pakistan in 2027.',
+    whyItMatters:
+      'Know the $5 billion-by-2030 target and the 2026–2030 programme — a concrete example of Pakistan widening its economic partnerships.',
+    source: 'TechJuice',
+    sourceUrl: 'https://www.techjuice.pk/pakistan-and-russia-target-5-billion-trade-by-2030/',
+  },
+  {
+    id: 'ca-210',
+    date: '24 November 2026',
+    category: 'Economy',
+    headline: 'Cabinet approves sugar-sector deregulation, clearing IMF benchmark',
+    summary:
+      'The federal cabinet approved the National Policy for Deregulation of Sugar Sector through circulation, ending government control over sugarcane prices, sugar production and trade, and removing export subsidies and restrictions on moving sugar between provinces. Growers will be free to sell their crop to any buyer, with cane prices set by market forces. The approval clears a long-delayed IMF structural benchmark that Pakistan had been in breach of since June 2026 and was needed to schedule the IMF Executive Board meeting expected on 11 December.',
+    whyItMatters:
+      'Links the IMF programme to a real reform — know that sugar deregulation was the benchmark blocking the 11 December board meeting.',
+    source: 'Feature Pakistan',
+    sourceUrl: 'https://featurepakistan.com/cabinet-approves-sugar-sector-deregulation-november-2026/',
+  },
+  {
+    id: 'ca-211',
+    date: '25 November 2026',
+    category: 'National',
+    headline: 'PM orders NCCIA restructuring; Pakistan Cyber Police proposed',
+    summary:
+      'Prime Minister Shehbaz Sharif chaired a meeting on restructuring the National Cyber Crime Investigation Agency (NCCIA) and directed that its modernisation be expedited, with information technology and artificial intelligence experts appointed at the agency and its subordinate offices through merit-based recruitment. A committee of four federal ministers — Mohsin Naqvi, Azam Nazeer Tarar, Muhammad Aurangzeb and Shaza Fatima Khawaja — will review the reform proposals and submit recommendations by the end of the week. The meeting was briefed on a proposal to transform the NCCIA into a national-level Pakistan Cyber Police.',
+    whyItMatters:
+      'Cyber security is a modern national-security topic — know what the NCCIA is and that a Pakistan Cyber Police has been proposed.',
+    source: 'TechJuice',
+    sourceUrl:
+      'https://www.techjuice.pk/pakistan-to-establish-cyber-police-as-govt-approves-nccia-restructuring/',
+  },
+  {
+    id: 'ca-212',
+    date: '25 November 2026',
+    category: 'Economy',
+    headline: 'PM directs fast-track privatisation of loss-making state enterprises',
+    summary:
+      'Prime Minister Shehbaz Sharif directed authorities to accelerate the privatisation of loss-making state-owned enterprises and government-owned properties, saying privatising inactive and financially struggling entities is crucial for improving the economy and reducing the burden on the national exchequer. The meeting reviewed progress on privatising electricity distribution companies including IESCO, LESCO and GEPCO, as well as Zarai Taraqiati Bank Limited and State Life Insurance Corporation. The Public-Private Partnership Authority is working on 15 projects worth Rs1,352 billion, including the M-6, M-13 and M-10 motorways.',
+    whyItMatters:
+      'Privatisation is a recurring economy question — name the entities in line (DISCOs, ZTBL, State Life) and the reason: cutting losses on the exchequer.',
+    source: 'Capital News Point',
+    sourceUrl:
+      'https://english.capitalnewspoint.com/2026/11/25/shehbaz-sharif-orders-fast-track-privatization-of-loss-making-state-owned-entities/',
   },
 ];
