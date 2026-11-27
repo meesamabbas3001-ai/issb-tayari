@@ -15,7 +15,7 @@ export interface CurrentAffair {
 // Every item below was reported by a named publication in October 2026.
 // Summaries are written in our own words. No gossip, no entertainment, no crime.
 // sourceUrl is the direct article link; the UI renders the source as a clickable link.
-export const lastUpdated = '26 November 2026';
+export const lastUpdated = '27 November 2026';
 
 export const currentAffairs: CurrentAffair[] = [
   {
@@ -2589,5 +2589,81 @@ export const currentAffairs: CurrentAffair[] = [
     source: 'Capital News Point',
     sourceUrl:
       'https://english.capitalnewspoint.com/2026/11/25/shehbaz-sharif-orders-fast-track-privatization-of-loss-making-state-owned-entities/',
+  },
+  {
+    id: 'ca-213',
+    date: '26 November 2026',
+    category: 'Defense',
+    headline: 'Security forces kill 12 terrorists in Balochistan operations: ISPR',
+    summary:
+      'Security forces killed 12 India-backed terrorists of Fitna al-Hindustan in intelligence-based operations in Balochistan\u2019s Nushki, Sevi, Panjgur and Kech districts between 20 and 23 November, ISPR said. Eight were killed when a hideout was targeted in Nushki on 20 November, two in Sevi on 21 November, and two more in Panjgur and Kech on 22 and 23 November, with weapons and ammunition recovered. ISPR vowed the counter-terrorism campaign would continue at full pace.',
+    whyItMatters:
+      'Fresh counter-terrorism facts for interview \u2014 know the districts, the dates and the state term Fitna al-Hindustan.',
+    source: 'The News',
+    sourceUrl:
+      'https://www.thenews.pk/story/1450907-security-forces-kill-12-india-sponsored-terrorists-in-balochistan-ibos-ispr',
+  },
+  {
+    id: 'ca-214',
+    date: '25 November 2026',
+    category: 'Economy',
+    headline: 'Pakistan, China agree to fast-track LPG and petrol projects',
+    summary:
+      'Pakistan and China agreed to fast-track government-to-government projects for an LPG plant with storage and terminal facilities and for motor gasoline imports, after Petroleum Minister Ali Pervaiz Malik met Chinese Ambassador Jiang Zaidong in Islamabad on 25 November. The two sides also explored investment in oil and gas exploration, offshore development and minerals, with Pakistan State Oil as a key commercial partner. A Joint Commercial Team will evaluate proposals and prepare a roadmap.',
+    whyItMatters:
+      'Energy security is a favourite GD topic \u2014 know the two priority projects (LPG plant, MoGas imports) and PSO\u2019s role.',
+    source: 'The News',
+    sourceUrl:
+      'https://www.thenews.pk/print/1450750-pakistan-china-agree-to-fast-track-energy-investment-projects',
+  },
+  {
+    id: 'ca-215',
+    date: '26 November 2026',
+    category: 'International',
+    headline: 'Dar, Araghchi discuss ECO; Iran invites Pakistan to Tehran summit',
+    summary:
+      'Deputy Prime Minister and Foreign Minister Ishaq Dar spoke by telephone with Iranian Foreign Minister Seyyed Abbas Araghchi on 26 November. They discussed cooperation at multilateral forums including the Economic Cooperation Organization (ECO), and Araghchi reiterated Iran\u2019s invitation to Pakistan for the 18th ECO Summit in Tehran on 3\u20134 December 2026. They also exchanged views on the regional situation and peace efforts.',
+    whyItMatters:
+      'Know what ECO is, that Pakistan chairs it for 2026\u201327, and that the next summit is in Tehran on 3\u20134 December.',
+    source: 'Press Information Department',
+    sourceUrl: 'https://pid.gov.pk/site/press_detail/35002',
+  },
+  {
+    id: 'ca-216',
+    date: '26 November 2026',
+    category: 'International',
+    headline: 'Pakistan envoy raises militant groups in Afghanistan with Dutch officials',
+    summary:
+      'Pakistan\u2019s special representative for Afghanistan, Mohammad Sadiq Khan, met Dutch Ambassador Robert Jan Siegert and Eline Botger of the Dutch Foreign Ministry in Islamabad on 26 November. They discussed regional developments and Afghanistan\u2019s security situation, including the presence of terrorist groups in Afghanistan as reported by international organisations including the United Nations. Pakistan has repeatedly raised concern that militant groups operate from Afghan territory, which the Taliban authorities deny.',
+    whyItMatters:
+      'Shows Pakistan taking its Afghanistan security concern to European partners \u2014 useful for \u201cPakistan\u2019s Afghan policy\u201d questions.',
+    source: 'The Kabul Tribune',
+    sourceUrl: 'https://thekabultribune.com/en/0012048',
+  },
+  {
+    id: 'ca-217',
+    date: '27 November 2026',
+    category: 'Economy',
+    headline: 'Pakistan to receive second Qatari LNG cargo on 27 November',
+    summary:
+      'Pakistan was scheduled to receive its second liquefied natural gas cargo from Qatar on 27 November, with the vessel Al Mashabiyyah expected at the Engro Elengy Terminal, following the Al-Daayen cargo on 15 November. The government is negotiating four more cargoes in December and six in January, and Pakistan LNG Limited will invite bids on 30 November for two spot cargoes. Winter gas demand on the SNGPL network is expected to rise from about 500 to 1,500 mmcfd.',
+    whyItMatters:
+      'Energy imports and winter gas shortage are recurring economy questions \u2014 know the supplier (Qatar) and why demand triples in winter.',
+    source: 'TechJuice',
+    sourceUrl:
+      'https://www.techjuice.pk/pakistan-to-receive-second-qatari-lng-cargo-on-november-27/',
+  },
+  {
+    id: 'ca-218',
+    date: '26 November 2026',
+    category: 'International',
+    headline: 'UAE seeks to expand investment in Pakistan energy, trade, infrastructure',
+    summary:
+      'The United Arab Emirates reaffirmed its interest in expanding investment and economic cooperation with Pakistan in energy, trade and infrastructure, Ambassador Salem Muhammad Al Zaabi said at the UAE National Day reception in Islamabad. He noted close ties since 1971 and the large Pakistani community in the Emirates. IT Minister Shaza Fatima Khawaja, the chief guest, reaffirmed Pakistan\u2019s commitment to stronger economic and strategic cooperation.',
+    whyItMatters:
+      'Gulf relations are core interview material \u2014 know the three sectors named (energy, trade, infrastructure) and the diaspora link.',
+    source: 'The News',
+    sourceUrl:
+      'https://www.thenews.pk/print/1451068-uae-seeks-to-expand-investments-in-energy-trade-infrastructure',
   },
 ];
